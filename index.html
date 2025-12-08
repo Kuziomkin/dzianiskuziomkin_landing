@@ -144,7 +144,8 @@
             <span class="text-primary">Dzianis</span><span>Kuziomkin</span>
         </div>
         <button
-            class="bg-primary hover:bg-primary-hover text-white font-medium px-6 py-2.5 rounded-full text-sm transition-transform transform hover:scale-105 shadow-md shadow-primary/20 dark:shadow-primary/20">
+            class="bg-primary hover:bg-primary-hover text-white font-medium px-6 py-2.5 rounded-full text-sm transition-transform transform hover:scale-105 shadow-md shadow-primary/20 dark:shadow-primary/20"
+            data-action="scroll-newsletter">
             Join Newsletter
         </button>
     </nav>
@@ -203,7 +204,7 @@
                         </p>
                     </div>
                     <div class="max-w-xl mx-auto flex justify-center">
-                        <div class="sender-form-field" data-sender-form-id="egJGvl"></div>
+                        <div class="sender-form-field" data-sender-form-id="egJGvl" id="newsletter-form"></div>
                     </div>
                 </div>
             </div>
@@ -216,7 +217,7 @@
                 <span class="text-primary">Dzianis</span><span>Kuziomkin</span>
             </div>
             <div class="text-sm text-text-muted-light dark:text-text-muted-dark">
-                © 2023 Dzianis Kuziomkin. All rights reserved.
+                © 2025 Dzianis Kuziomkin. All rights reserved.
             </div>
             <div class="flex gap-4">
                 <a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors"
@@ -231,6 +232,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const scrollButton = document.querySelector('[data-action="scroll-newsletter"]');
+            const formAnchor = document.getElementById("newsletter-form");
+            if (!scrollButton || !formAnchor) return;
+
+            scrollButton.addEventListener("click", (event) => {
+                event.preventDefault();
+                const rect = formAnchor.getBoundingClientRect();
+                const offset = window.pageYOffset + rect.top - 180; // adjust offset to avoid cutting the image
+                window.scrollTo({ top: offset, behavior: "smooth" });
+            });
+        });
+    </script>
 </body>
 
 </html>
