@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Dzianis Kuziomkin</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
-<script>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dzianis Kuziomkin</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -42,11 +46,12 @@
             },
         };
     </script>
-<style>
+    <style>
         .hand-drawn-underline {
             position: relative;
             display: inline-block;
         }
+
         .hand-drawn-underline::after {
             content: "";
             position: absolute;
@@ -59,118 +64,173 @@
             background-repeat: no-repeat;
             z-index: -1;
         }
+
         .hand-wave-anim {
             animation: wave 2.5s infinite;
             transform-origin: 70% 70%;
         }
+
         @keyframes wave {
-            0% { transform: rotate( 0.0deg) }
-            10% { transform: rotate(14.0deg) }
-            20% { transform: rotate(-8.0deg) }
-            30% { transform: rotate(14.0deg) }
-            40% { transform: rotate(-4.0deg) }
-            50% { transform: rotate(10.0deg) }
-            60% { transform: rotate( 0.0deg) }
-            100% { transform: rotate( 0.0deg) }
+            0% {
+                transform: rotate(0.0deg)
+            }
+
+            10% {
+                transform: rotate(14.0deg)
+            }
+
+            20% {
+                transform: rotate(-8.0deg)
+            }
+
+            30% {
+                transform: rotate(14.0deg)
+            }
+
+            40% {
+                transform: rotate(-4.0deg)
+            }
+
+            50% {
+                transform: rotate(10.0deg)
+            }
+
+            60% {
+                transform: rotate(0.0deg)
+            }
+
+            100% {
+                transform: rotate(0.0deg)
+            }
         }
+
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: transparent;
         }
+
         ::-webkit-scrollbar-thumb {
             background: #cbd5e1;
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: #94a3b8;
         }
     </style>
+    <script>
+        (function (s, e, n, d, er) {
+            s['Sender'] = er;
+            s[er] = s[er] || function () {
+                (s[er].q = s[er].q || []).push(arguments)
+            }, s[er].l = 1 * new Date();
+            var a = e.createElement(n),
+                m = e.getElementsByTagName(n)[0];
+            a.async = 1;
+            a.src = d;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+        sender('2fd8ae76ea0993')
+    </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-sans antialiased transition-colors duration-300">
-<nav class="w-full py-6 px-4 sm:px-8 max-w-7xl mx-auto flex items-center justify-between">
-<div class="flex items-center gap-2 font-display text-2xl tracking-tight text-gray-900 dark:text-white">
-<span class="text-primary">Dzianis</span><span>Kuziomkin</span>
-</div>
-<button class="bg-primary hover:bg-primary-hover text-white font-medium px-6 py-2.5 rounded-full text-sm transition-transform transform hover:scale-105 shadow-md shadow-primary/20 dark:shadow-primary/20">
-        Join Newsletter
-    </button>
-</nav>
-<main class="relative overflow-hidden">
-<div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl dark:bg-primary/10 -z-10"></div>
-<div class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-accent/10 rounded-full blur-3xl dark:bg-accent/10 -z-10"></div>
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-<div class="relative flex justify-center lg:justify-end order-1 lg:order-1">
-<div class="relative w-72 h-72 sm:w-96 sm:h-96">
-<div class="absolute inset-0 bg-primary/20 dark:bg-primary/20 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] rotate-12 scale-110 -z-10 transform transition-transform duration-700 hover:rotate-45"></div>
-<img alt="Illustration of Dzianis Kuziomkin" class="w-full h-full object-cover rounded-full border-4 border-white dark:border-surface-dark shadow-xl" src="images/portrait-square-800.png" srcset="images/portrait-square-800.png 1x, images/portrait-square-1200.png 2x"/>
-</div>
-</div>
-<div class="text-center lg:text-left order-2 lg:order-2 space-y-6">
-<h1 class="font-display text-5xl sm:text-6xl md:text-7xl text-text-light dark:text-text-dark leading-tight whitespace-nowrap">
-                    Hi Friends <span class="inline-block hand-wave-anim">👋</span>
-</h1>
-<div class="h-2 w-32 bg-primary/40 rounded-full mx-auto lg:mx-0"></div>
-<p class="text-xl sm:text-2xl text-text-muted-light dark:text-text-muted-dark font-light leading-relaxed">
-                    I’m Dzianis — an analyst turned indie developer. I share systems, insights, and real progress from building products in public.
-                </p>
-</div>
-</div>
-</div>
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
-<div class="bg-surface-light dark:bg-surface-dark rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-100 dark:border-neutral-800 relative z-10 overflow-hidden">
-<div class="absolute -top-16 -right-16 w-48 h-48 bg-primary/10 dark:bg-primary/20 rounded-full -z-10"></div>
-<div class="absolute -bottom-24 -left-12 w-64 h-64 bg-primary/5 dark:bg-primary/10 rounded-full -z-10"></div>
-<div class="relative z-20">
-<div class="text-center max-w-2xl mx-auto">
-<div class="flex justify-center items-center gap-3 mb-4">
-<h2 class="font-display text-4xl md:text-5xl text-text-light dark:text-text-dark">
-                        Analyst Notes
-                    </h2>
-<span class="material-icons-outlined text-4xl text-primary transform -rotate-12">send</span>
-</div>
-<p class="text-lg text-text-muted-light dark:text-text-muted-dark leading-relaxed mb-8">
-                    Join a growing community for clearer thinking, better systems, and honest insights from my product-building journey.
-                </p>
-</div>
-<div class="max-w-xl mx-auto">
-<form class="flex flex-col items-center gap-4">
-<div class="w-full">
-<label class="sr-only" for="email-address">Email address</label>
-<input autocomplete="email" class="w-full bg-gray-50 dark:bg-neutral-800 border-2 border-gray-200 dark:border-neutral-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-primary focus:border-primary px-5 py-3 rounded-xl shadow-inner transition" id="email-address" name="email-address" placeholder="your.email@example.com" required="" type="email"/>
-</div>
-<button class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-xl px-6 py-3.5 transition-all duration-300 shadow-lg shadow-emerald-500/30 transform hover:scale-105" type="submit">
-                        Submit
-                    </button>
-</form>
-<p class="text-sm text-center text-text-muted-light dark:text-text-muted-dark opacity-80 mt-6 leading-relaxed">
-                    By signing up, you’ll get my weekly notes on analysis, system design, and what I’m building as an indie dev. No spam, no noise — unsubscribe whenever you want. Here’s our <a class="underline hover:text-primary" href="#">privacy policy</a> if you like reading.
-                </p>
-</div>
-</div>
-</div>
-</div>
-</main>
-<footer class="bg-background-light dark:bg-background-dark py-12 border-t border-gray-200 dark:border-neutral-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="flex items-center gap-2 font-display text-xl text-gray-900 dark:text-white">
-<span class="text-primary">Dzianis</span><span>Kuziomkin</span>
-</div>
-<div class="text-sm text-text-muted-light dark:text-text-muted-dark">
-            © 2023 Dzianis Kuziomkin. All rights reserved.
+
+<body
+    class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-sans antialiased transition-colors duration-300">
+    <nav class="w-full py-6 px-4 sm:px-8 max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-2 font-display text-2xl tracking-tight text-gray-900 dark:text-white">
+            <span class="text-primary">Dzianis</span><span>Kuziomkin</span>
         </div>
-<div class="flex gap-4">
-<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
-<span class="sr-only">Twitter</span>
-<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
-</a>
-<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
-<span class="sr-only">Instagram</span>
-<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363.416 2.427.465 1.067-.047 1.407-.06 3.808-.06zm0 1.8c-2.43 0-2.784.013-3.808.06-1.064.049-1.791.218-2.427.465a3.102 3.102 0 00-1.153 1.153c-.247.636-.416 1.363-.465 2.427-.047 1.024-.06 1.379-.06 3.808v.63c0 2.43.013 2.784.06 3.808.049 1.064.218 1.791.465 2.427a3.102 3.102 0 001.153 1.153c.636.247 1.363.416 2.427.465 1.024.047 1.379.06 3.808.06h.63c2.43 0 2.784-.013 3.808-.06 1.064-.049 1.791.218 2.427.465a3.102 3.102 0 001.153 1.153c.247-.636.416-1.363.465-2.427.047-1.024.06-1.379.06-3.808v-.63c0-2.43-.013-2.784-.06-3.808-.049-1.064-.218-1.791-.465-2.427a3.102 3.102 0 00-1.153-1.153c-.636-.247-1.363-.416-2.427-.465-1.024-.047-1.379-.06-3.808-.06h-.63zm0 4.865a5.335 5.335 0 110 10.67 5.335 5.335 0 010-10.67zm0 1.8a3.535 3.535 0 100 7.07 3.535 3.535 0 000-7.07zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
-</a>
-</div>
-</div>
-</footer>
-</body></html>
+        <button
+            class="bg-primary hover:bg-primary-hover text-white font-medium px-6 py-2.5 rounded-full text-sm transition-transform transform hover:scale-105 shadow-md shadow-primary/20 dark:shadow-primary/20">
+            Join Newsletter
+        </button>
+    </nav>
+    <main class="relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl dark:bg-primary/10 -z-10">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-accent/10 rounded-full blur-3xl dark:bg-accent/10 -z-10">
+        </div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="relative flex justify-center lg:justify-end order-1 lg:order-1">
+                    <div class="relative w-72 h-72 sm:w-96 sm:h-96">
+                        <div
+                            class="absolute inset-0 bg-primary/20 dark:bg-primary/20 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] rotate-12 scale-110 -z-10 transform transition-transform duration-700 hover:rotate-45">
+                        </div>
+                        <img alt="Illustration of Dzianis Kuziomkin"
+                            class="w-full h-full object-cover rounded-full border-4 border-white dark:border-surface-dark shadow-xl"
+                            src="images/portrait-square-800.png"
+                            srcset="images/portrait-square-800.png 1x, images/portrait-square-1200.png 2x" />
+                    </div>
+                </div>
+                <div class="text-center lg:text-left order-2 lg:order-2 space-y-6">
+                    <h1
+                        class="font-display text-5xl sm:text-6xl md:text-7xl text-text-light dark:text-text-dark leading-tight whitespace-nowrap">
+                        Hi Friends <span class="inline-block hand-wave-anim">👋</span>
+                    </h1>
+                    <div class="h-2 w-32 bg-primary/40 rounded-full mx-auto lg:mx-0"></div>
+                    <p
+                        class="text-xl sm:text-2xl text-text-muted-light dark:text-text-muted-dark font-light leading-relaxed">
+                        I’m Dzianis — an analyst turned indie developer. I share systems, insights, and real progress
+                        from building products in public.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
+            <div
+                class="bg-surface-light dark:bg-surface-dark rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-100 dark:border-neutral-800 relative z-10 overflow-hidden">
+                <div class="absolute -top-16 -right-16 w-48 h-48 bg-primary/10 dark:bg-primary/20 rounded-full -z-10">
+                </div>
+                <div class="absolute -bottom-24 -left-12 w-64 h-64 bg-primary/5 dark:bg-primary/10 rounded-full -z-10">
+                </div>
+                <div class="relative z-20">
+                    <div class="text-center max-w-2xl mx-auto">
+                        <div class="flex justify-center items-center gap-3 mb-4">
+                            <h2 class="font-display text-4xl md:text-5xl text-text-light dark:text-text-dark">
+                                Analyst Notes
+                            </h2>
+                            <span class="material-icons-outlined text-4xl text-primary transform -rotate-12">send</span>
+                        </div>
+                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark leading-relaxed mb-8">
+                            Join a growing community for clearer thinking, better systems, and honest insights from my
+                            product-building journey.
+                        </p>
+                    </div>
+                    <div class="max-w-xl mx-auto">
+                        <div style="text-align: left" class="sender-form-field" data-sender-form-id="egJGvV"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-background-light dark:bg-background-dark py-12 border-t border-gray-200 dark:border-neutral-800">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2 font-display text-xl text-gray-900 dark:text-white">
+                <span class="text-primary">Dzianis</span><span>Kuziomkin</span>
+            </div>
+            <div class="text-sm text-text-muted-light dark:text-text-muted-dark">
+                © 2023 Dzianis Kuziomkin. All rights reserved.
+            </div>
+            <div class="flex gap-4">
+                <a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors"
+                    href="https://www.linkedin.com/in/dzianis-kuziomkin/">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
