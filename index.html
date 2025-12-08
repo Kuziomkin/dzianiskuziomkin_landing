@@ -246,6 +246,17 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.senderFormsLoaded) {
+                senderForms.render();
+            } else {
+                window.addEventListener("onSenderFormsLoaded", function () {
+                    senderForms.render();
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
