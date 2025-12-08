@@ -204,7 +204,8 @@
                         </p>
                     </div>
                     <div class="max-w-xl mx-auto flex justify-center">
-                        <div class="sender-form-field" data-sender-form-id="egJGvl" id="newsletter-form"></div>
+                        <div style="text-align:left;" class="sender-form-field" data-sender-form-id="egJGvl"
+                            id="newsletter-form"></div>
                     </div>
                 </div>
             </div>
@@ -244,17 +245,6 @@
                 const offset = window.pageYOffset + rect.top - 180; // adjust offset to avoid cutting the image
                 window.scrollTo({ top: offset, behavior: "smooth" });
             });
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            if (window.senderFormsLoaded) {
-                senderForms.render();
-            } else {
-                window.addEventListener("onSenderFormsLoaded", function () {
-                    senderForms.render();
-                });
-            }
         });
     </script>
 </body>
