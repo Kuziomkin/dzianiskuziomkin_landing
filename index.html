@@ -1,256 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Dzianis Kuziomkin</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#8095ff", // New primary color
-                        "primary-hover": "#6c7fe6", // Darker shade of new primary
-                        secondary: "#7091E6",
-                        accent: "#ADBBDA",
-                        "background-light": "#F8F9FA",
-                        "background-dark": "#121212",
-                        "surface-light": "#FFFFFF",
-                        "surface-dark": "#1E1E1E",
-                        "text-light": "#1C1C1E",
-                        "text-dark": "#EAEAEA",
-                        "text-muted-light": "#5A5A5E",
-                        "text-muted-dark": "#A0A0A0",
-                    },
-                    fontFamily: {
-                        display: ['"DM Serif Display"', 'serif'],
-                        sans: ['"Inter"', 'sans-serif'],
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.75rem",
-                        'xl': '1rem',
-                        '2xl': '1.5rem',
-                        '3xl': '2rem',
-                    },
-                    boxShadow: {
-                        soft: '0 18px 45px rgba(15, 23, 42, 0.08)',
-                        'soft-lg': '0 32px 90px rgba(15, 23, 42, 0.12)',
-                    },
-                    backgroundImage: {
-                        'hero-pattern': "url('https://www.transparenttextures.com/patterns/cubes.png')",
-                    }
-                },
-            },
-        };
-    </script>
-    <style>
-        .hand-drawn-underline {
-            position: relative;
-            display: inline-block;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dzianis Kuziomkin — Lead BI Analyst &amp; Indie Builder</title>
+  <meta name="description" content="Lead Business Intelligence Analyst with 8 years in enterprise data. CBAP &amp; CBDA certified. Based in Málaga, Spain. Building software products on the side." />
 
-        .hand-drawn-underline::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            width: 100%;
-            height: 4px;
-            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yLDUgQzUwLDEwIDE1MCwwIDE5OCw1IiBzdHJva2U9IiM1QUM4RkEiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPjwvc3ZnPg==');
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            z-index: -1;
-        }
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
 
-        .hand-wave-anim {
-            animation: wave 2.5s infinite;
-            transform-origin: 70% 70%;
-        }
-
-        @keyframes wave {
-            0% {
-                transform: rotate(0.0deg)
-            }
-
-            10% {
-                transform: rotate(14.0deg)
-            }
-
-            20% {
-                transform: rotate(-8.0deg)
-            }
-
-            30% {
-                transform: rotate(14.0deg)
-            }
-
-            40% {
-                transform: rotate(-4.0deg)
-            }
-
-            50% {
-                transform: rotate(10.0deg)
-            }
-
-            60% {
-                transform: rotate(0.0deg)
-            }
-
-            100% {
-                transform: rotate(0.0deg)
-            }
-        }
-
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-    </style>
-    <script>
-        (function (s, e, n, d, er) {
-            s['Sender'] = er;
-            s[er] = s[er] || function () {
-                (s[er].q = s[er].q || []).push(arguments)
-            }, s[er].l = 1 * new Date();
-            var a = e.createElement(n),
-                m = e.getElementsByTagName(n)[0];
-            a.async = 1;
-            a.src = d;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
-        sender('2fd8ae76ea0993');
-    </script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 
-<body
-    class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-sans antialiased transition-colors duration-300">
-    <nav class="w-full py-6 px-4 sm:px-8 max-w-7xl mx-auto flex items-center justify-between">
-        <div class="flex items-center gap-2 font-display text-2xl tracking-tight text-gray-900 dark:text-white">
-            <span class="text-primary">Dzianis</span><span>Kuziomkin</span>
-        </div>
-        <button
-            class="bg-primary hover:bg-primary-hover text-white font-medium px-6 py-2.5 rounded-full text-sm transition-transform transform hover:scale-105 shadow-md shadow-primary/20 dark:shadow-primary/20"
-            data-action="scroll-newsletter">
-            Join Newsletter
-        </button>
-    </nav>
-    <main class="relative overflow-hidden">
-        <div
-            class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl dark:bg-primary/10 -z-10">
-        </div>
-        <div
-            class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-accent/10 rounded-full blur-3xl dark:bg-accent/10 -z-10">
-        </div>
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                <div class="relative flex justify-center lg:justify-end order-1 lg:order-1">
-                    <div class="relative w-72 h-72 sm:w-96 sm:h-96">
-                        <div
-                            class="absolute inset-0 bg-primary/20 dark:bg-primary/20 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] rotate-12 scale-110 -z-10 transform transition-transform duration-700 hover:rotate-45">
-                        </div>
-                        <img alt="Illustration of Dzianis Kuziomkin"
-                            class="w-full h-full object-cover rounded-full border-4 border-white dark:border-surface-dark shadow-soft"
-                            src="images/portrait-square-800.png"
-                            srcset="images/portrait-square-800.png 1x, images/portrait-square-1200.png 2x" />
-                    </div>
-                </div>
-                <div class="text-center lg:text-left order-2 lg:order-2 space-y-6">
-                    <h1
-                        class="font-display text-5xl sm:text-6xl md:text-7xl text-text-light dark:text-text-dark leading-tight whitespace-nowrap">
-                        Hi Friends <span class="inline-block hand-wave-anim">👋</span>
-                    </h1>
-                    <div class="h-2 w-32 bg-primary/40 rounded-full mx-auto lg:mx-0"></div>
-                    <p
-                        class="text-xl sm:text-2xl text-text-muted-light dark:text-text-muted-dark font-light leading-relaxed">
-                        I’m Dzianis — an analyst building my own products. I share my experience, systems, insights, and
-                        the real progress behind creating products.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
-            <div
-                class="bg-surface-light dark:bg-surface-dark rounded-3xl shadow-soft-lg p-8 md:p-12 border border-gray-100 dark:border-neutral-800 relative z-10 overflow-hidden">
-                <div class="absolute -top-16 -right-16 w-48 h-48 bg-primary/10 dark:bg-primary/20 rounded-full -z-10">
-                </div>
-                <div class="absolute -bottom-24 -left-12 w-64 h-64 bg-primary/5 dark:bg-primary/10 rounded-full -z-10">
-                </div>
-                <div class="relative z-20">
-                    <div class="text-center max-w-2xl mx-auto">
-                        <div class="flex justify-center items-center gap-3 mb-4">
-                            <h2 class="font-display text-4xl md:text-5xl text-text-light dark:text-text-dark">
-                                The Indie Analyst
-                            </h2>
-                            <span class="material-icons-outlined text-4xl text-primary transform -rotate-12">send</span>
-                        </div>
-                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark leading-relaxed mb-8">
-                            Join a growing community for clearer thinking, better systems, and honest insights from my
-                            product-building journey.
-                        </p>
-                    </div>
-                    <div class="max-w-xl mx-auto flex justify-center">
-                        <div style="text-align:left;" class="sender-form-field" data-sender-form-id="egJGvl"
-                            id="newsletter-form"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="bg-background-light dark:bg-background-dark py-12 border-t border-gray-200 dark:border-neutral-800">
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-2 font-display text-xl text-gray-900 dark:text-white">
-                <span class="text-primary">Dzianis</span><span>Kuziomkin</span>
-            </div>
-            <div class="text-sm text-text-muted-light dark:text-text-muted-dark">
-                © 2025 Dzianis Kuziomkin. All rights reserved.
-            </div>
-            <div class="flex gap-4">
-                <a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors"
-                    href="https://www.linkedin.com/in/dzianis-kuziomkin/">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z">
-                        </path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const scrollButton = document.querySelector('[data-action="scroll-newsletter"]');
-            const formAnchor = document.getElementById("newsletter-form");
-            if (!scrollButton || !formAnchor) return;
+<body>
 
-            scrollButton.addEventListener("click", (event) => {
-                event.preventDefault();
-                const rect = formAnchor.getBoundingClientRect();
-                const offset = window.pageYOffset + rect.top - 180; // adjust offset to avoid cutting the image
-                window.scrollTo({ top: offset, behavior: "smooth" });
-            });
-        });
-    </script>
+  <!-- ============================================================
+       Navigation
+       ============================================================ -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">Dzianis Kuziomkin</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav-mobile" id="mobile-nav" aria-hidden="true">
+    <ul role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         Hero
+         ============================================================ -->
+    <section class="hero">
+      <div class="hero-inner fade-in">
+        <div class="hero-text">
+          <span class="hero-eyebrow">Lead BI Analyst · Indie Builder</span>
+          <h1 class="hero-name">Dzianis Kuziomkin</h1>
+          <p class="hero-subtitle">
+            8 years turning data into decisions — across fintech, banking,
+            and enterprise platforms. CBAP and CBDA certified.<br /><br />
+            I also ship my own software products, because the best
+            analysts don't just advise. They build.
+          </p>
+          <div class="hero-ctas">
+            <a href="https://www.linkedin.com/in/dzianis-kuziomkin/" target="_blank" rel="noopener noreferrer">
+              → View my work on LinkedIn
+            </a>
+            <a href="#products">
+              → See what I'm building
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img
+            src="images/portrait-square-800.png"
+            srcset="images/portrait-square-800.png 1x, images/portrait-square-1200.png 2x"
+            alt="Portrait of Dzianis Kuziomkin"
+            class="hero-portrait"
+            loading="eager"
+            width="280"
+            height="280"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         About
+         ============================================================ -->
+    <section class="section" id="about">
+      <div class="container">
+        <hr class="divider" />
+        <div class="fade-in">
+          <span class="section-label">About</span>
+          <div class="about-body">
+            <p>
+              I spent 8 years as a Business Intelligence Analyst in enterprise
+              environments — working across fintech, payments, banking, and insurance.
+              I'm currently a Lead BI Analyst at EPAM Systems, based in Málaga, Spain.
+              Originally from Belarus.
+            </p>
+            <p>
+              I'm obsessed with the gap between analysis and action — why good insights
+              don't get implemented, and how to close that gap through better requirements,
+              better systems, and better tooling.
+            </p>
+            <p>
+              Outside of client work, I build software products from scratch. Not as a
+              hobby — as a serious parallel track. I believe the best analysts of the
+              next decade will be people who can both understand a business problem and
+              ship a solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Expertise
+         ============================================================ -->
+    <section class="section" id="expertise">
+      <div class="container">
+        <hr class="divider" />
+        <div class="fade-in">
+          <span class="section-label">Expertise</span>
+          <p class="expertise-intro">
+            My technical and domain depth — built over 8 years of real client work.
+          </p>
+          <div class="expertise-grid">
+            <div class="expertise-item">
+              <p class="expertise-title">Data Platform Architecture</p>
+              <p class="expertise-sub">Databricks, Azure Synapse, Microsoft Fabric, Delta Lake, Unity Catalog</p>
+            </div>
+            <div class="expertise-item">
+              <p class="expertise-title">Business Analysis &amp; Requirements</p>
+              <p class="expertise-sub">BABOK v3, stakeholder alignment, process modeling, CBAP certified</p>
+            </div>
+            <div class="expertise-item">
+              <p class="expertise-title">Analytics Engineering</p>
+              <p class="expertise-sub">dbt, SQL, Python, Power BI, data pipeline design</p>
+            </div>
+            <div class="expertise-item">
+              <p class="expertise-title">AI Integration in Analytics</p>
+              <p class="expertise-sub">LLM tooling, AI-assisted workflows, prompt engineering for data teams</p>
+            </div>
+            <div class="expertise-item">
+              <p class="expertise-title">Data Governance</p>
+              <p class="expertise-sub">Unity Catalog, data contracts, lineage, access control</p>
+            </div>
+            <div class="expertise-item">
+              <p class="expertise-title">Certifications</p>
+              <p class="expertise-sub">CBAP (Certified Business Analysis Professional)<br />CBDA (Certification in Business Data Analytics)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Products
+         ============================================================ -->
+    <section class="section" id="products">
+      <div class="container">
+        <hr class="divider" />
+        <div class="fade-in">
+          <span class="section-label">What I Build</span>
+          <p class="expertise-intro">
+            I build my own software products alongside my analyst career.<br />
+            Real products. Real users. Real revenue.
+          </p>
+          <div class="product-card">
+            <h3 class="product-name">OilFinderPro</h3>
+            <p class="product-desc">
+              An iOS app that tells drivers exactly which engine oil their vehicle
+              needs — by VIN lookup or Make &amp; Model search. Accurate specs for
+              thousands of vehicles. Live on the App Store with paying subscribers.
+            </p>
+            <div class="product-tags">
+              <span class="product-tag">iOS</span>
+              <span class="product-tag">Swift</span>
+              <span class="product-tag">Supabase</span>
+              <span class="product-tag">FastAPI</span>
+            </div>
+            <!-- TODO: replace href="#" with the real App Store URL for OilFinderPro -->
+            <a href="#" class="product-link" target="_blank" rel="noopener noreferrer">
+              → View on App Store
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Publications
+         ============================================================ -->
+    <section class="section" id="publications">
+      <div class="container">
+        <hr class="divider" />
+        <div class="fade-in">
+          <span class="section-label">Publications &amp; Writing</span>
+          <p class="pub-intro">
+            I write about data analytics, business analysis, and building with AI.
+          </p>
+          <ul class="pub-list" role="list">
+            <li class="pub-item">
+              <span class="pub-source">Medium</span>
+              <div class="pub-body">
+                <p class="pub-title">A Comprehensive Guide to Analyzing FBI Wanted API Data</p>
+                <p class="pub-sub">End-to-end data analysis with Python and Pandas · 2024</p>
+              </div>
+              <a
+                href="https://medium.com/@kuziomkin/a-comprehensive-guide-to-analyzing-fbi-wanted-api-data-part-1-obtaining-the-data-53ac4177e277"
+                class="pub-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >→ Read on Medium</a>
+            </li>
+            <li class="pub-item">
+              <span class="pub-source">Medium</span>
+              <div class="pub-body">
+                <p class="pub-title">A Comprehensive Guide to Analyzing FBI Wanted API Data — Part 2</p>
+                <p class="pub-sub">Data preparation and analysis · 2024</p>
+              </div>
+              <a
+                href="https://medium.com/@kuziomkin/a-comprehensive-guide-to-analyzing-fbi-wanted-api-data-part-2-prepare-and-analyse-data-b1d88a965e5d"
+                class="pub-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >→ Read on Medium</a>
+            </li>
+            <li class="pub-item">
+              <span class="pub-source">LinkedIn</span>
+              <div class="pub-body">
+                <p class="pub-title">Regular writing on AI workflows, analytics, and indie building</p>
+                <p class="pub-sub">295+ posts · active</p>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/dzianis-kuziomkin/"
+                class="pub-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >→ Follow on LinkedIn</a>
+            </li>
+            <li class="pub-item muted">
+              <span class="pub-source">IIBA</span>
+              <div class="pub-body">
+                <p class="pub-title">Article coming soon</p>
+                <p class="pub-sub">International Institute of Business Analysis</p>
+              </div>
+              <span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Contact
+         ============================================================ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <hr class="divider" />
+        <div class="fade-in">
+          <span class="section-label">Get in Touch</span>
+          <p class="contact-body">
+            If you're working on something interesting in data analytics, business
+            analysis, or AI integration — I'm open to conversations.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:dzianis@dzianiskuziomkin.com">
+              → dzianis@dzianiskuziomkin.com
+            </a>
+            <a href="https://www.linkedin.com/in/dzianis-kuziomkin/" target="_blank" rel="noopener noreferrer">
+              → LinkedIn: linkedin.com/in/dzianis-kuziomkin
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       Footer
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      &copy; 2026 Dzianis Kuziomkin · Málaga, Spain
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
