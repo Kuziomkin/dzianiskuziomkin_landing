@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep -E \"\\\\.\\(toml|yaml|yml\\)$\")"
+      "Bash(grep -E \"\\\\.\\(toml|yaml|yml\\)$\")",
+      "WebFetch(domain:oilfinderpro.com)",
+      "WebFetch(domain:pullcontent.com)",
+      "WebFetch(domain:fetchposts.com)",
+      "WebFetch(domain:dzianiskuziomkin.com)",
+      "WebFetch(domain:smartsummaries.app)"
     ]
   }
 }
