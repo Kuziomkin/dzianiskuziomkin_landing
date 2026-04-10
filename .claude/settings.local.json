@@ -6,7 +6,9 @@
       "WebFetch(domain:pullcontent.com)",
       "WebFetch(domain:fetchposts.com)",
       "WebFetch(domain:dzianiskuziomkin.com)",
-      "WebFetch(domain:smartsummaries.app)"
+      "WebFetch(domain:smartsummaries.app)",
+      "WebFetch(domain:apps.apple.com)",
+      "Bash(curl -sL \"https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/f4/26/34f4264d-5b2e-cbe0-d4b9-2f8bb1e47aac/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/1200x630wa.png\" -o /Users/dzianiskuziomkin/Repositories/dzianiskuziomkin_landing/images/fxboard-icon.png)"
     ]
   }
 }

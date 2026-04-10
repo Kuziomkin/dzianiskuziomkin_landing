@@ -337,6 +337,24 @@ img { display: block; max-width: 100%; }
   line-height: 1.5;
 }
 
+.cert-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.cert-badge {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-sec);
+  background: var(--bg);
+  border: 1px solid var(--divider);
+  border-radius: 4px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
 /* =========================================
    Products Section
    ========================================= */
@@ -447,6 +465,24 @@ img { display: block; max-width: 100%; }
 .product-link:hover {
   color: var(--accent-hv);
   border-color: var(--accent-hv);
+}
+
+.product-card--wide {
+  grid-column: 1 / -1;
+  max-width: calc(50% - 10px);
+}
+
+@media (max-width: 600px) {
+  .product-card--wide {
+    max-width: 100%;
+  }
+}
+
+.product-store-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: auto;
 }
 
 /* =========================================
