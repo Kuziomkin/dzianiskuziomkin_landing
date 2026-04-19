@@ -1,0 +1,36 @@
+title: Dzianis Kuziomkin
+description: Data Platform Consultant & Business Analyst
+url: "https://dzianiskuziomkin.com"
+baseurl: ""
+timezone: UTC
+author:
+  name: Dzianis Kuziomkin
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - AGENTS.md
+  - CLAUDE.md
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/blog/:title/"

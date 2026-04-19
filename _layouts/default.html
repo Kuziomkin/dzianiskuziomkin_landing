@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% else %}
+    <meta name="description" content="{{ site.description }}" />
+    {% endif %}
+
+    <link rel="canonical" href="{{ page.url | prepend: site.url }}" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:image" content="{{ site.url }}/images/portrait-square-800.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:image" content="{{ site.url }}/images/portrait-square-800.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232563A8'/%3E%3Ctext x='16' y='22' font-family='Georgia%2C serif' font-size='14' font-weight='700' fill='white' text-anchor='middle' letter-spacing='-0.5'%3EDK%3C/text%3E%3C/svg%3E" />
+    <link rel="apple-touch-icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%232563A8'/%3E%3Ctext x='90' y='124' font-family='Georgia%2C serif' font-size='80' font-weight='700' fill='white' text-anchor='middle' letter-spacing='-2'%3EDK%3C/text%3E%3C/svg%3E" />
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css" />
+    {% seo %}
+
+    <!-- Ahrefs Analytics -->
+    <script>
+        var ahrefs_analytics_script = document.createElement('script');
+        ahrefs_analytics_script.async = true;
+        ahrefs_analytics_script.src = 'https://analytics.ahrefs.com/analytics.js';
+        ahrefs_analytics_script.setAttribute('data-key', 'amTewPEpj6DY3VwB3BTrgA');
+        document.getElementsByTagName('head')[0].appendChild(ahrefs_analytics_script);
+    </script>
+
+    {% if page.extra_css %}{{ page.extra_css }}{% endif %}
+</head>
+
+<body>
+
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="{{ site.baseurl }}/" class="nav-logo">Dzianis Kuziomkin</a>
+            <ul class="nav-links" role="list">
+                <li><a href="{{ site.baseurl }}/#about">About</a></li>
+                <li><a href="{{ site.baseurl }}/#expertise">Expertise</a></li>
+                <li><a href="{{ site.baseurl }}/#products">Products</a></li>
+                <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+                <li><a href="{{ site.baseurl }}/#contact">Contact</a></li>
+            </ul>
+            <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="nav-mobile" id="mobile-nav" aria-hidden="true">
+        <ul role="list">
+            <li><a href="{{ site.baseurl }}/#about">About</a></li>
+            <li><a href="{{ site.baseurl }}/#expertise">Expertise</a></li>
+            <li><a href="{{ site.baseurl }}/#products">Products</a></li>
+            <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+            <li><a href="{{ site.baseurl }}/#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            &copy; 2026 Dzianis Kuziomkin · Málaga, Spain
+        </div>
+    </footer>
+
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+---
+layout: default
+title: Blog
+description: Writing on data platforms, business analysis, and building software.
+permalink: /blog/
+---
+<style>
+    .blog-header {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 48px 24px 32px;
+    }
+
+    .blog-header .back-link {
+        font-size: 13px;
+        color: var(--color-text-secondary);
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .blog-header .back-link:hover { color: var(--color-text-primary); }
+
+    .blog-header h1 {
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: clamp(26px, 4vw, 36px);
+        font-weight: 400;
+        color: var(--color-text-primary);
+        margin: 0 0 10px;
+    }
+
+    .blog-header p {
+        font-size: 15px;
+        color: var(--color-text-secondary);
+        margin: 0;
+    }
+
+    .post-list {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 8px 24px 64px;
+        list-style: none;
+    }
+
+    .post-list-item {
+        padding: 24px 0;
+        border-bottom: 1px solid var(--color-border-primary);
+    }
+
+    .post-list-item:last-child { border-bottom: none; }
+
+    .post-list-item .post-date {
+        font-size: 12px;
+        color: var(--color-text-tertiary);
+        margin-bottom: 6px;
+    }
+
+    .post-list-item h2 {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 0 6px;
+    }
+
+    .post-list-item h2 a {
+        color: var(--color-text-primary);
+        text-decoration: none;
+    }
+
+    .post-list-item h2 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    .post-list-item .post-excerpt {
+        font-size: 14px;
+        color: var(--color-text-secondary);
+        line-height: 1.6;
+        margin: 0;
+    }
+</style>
+
+<div class="blog-header">
+    <a href="/" class="back-link">← Back</a>
+    <h1>Blog</h1>
+    <p>Writing on data platforms, business analysis, and building software.</p>
+</div>
+
+<ul class="post-list">
+    {% for post in site.posts %}
+    <li class="post-list-item">
+        <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {% if post.description %}
+        <p class="post-excerpt">{{ post.description }}</p>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
