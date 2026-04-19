@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BA → Data Analyst: Skills Roadmap — Dzianis Kuziomkin</title>
+    <meta name="description"
+        content="A visual mind map of the skills Business Analysts need to transition into data analysis — organized by priority across six key areas." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://dzianiskuziomkin.com/ba-to-data" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dzianiskuziomkin.com/ba-to-data" />
+    <meta property="og:title" content="BA → Data Analyst: Skills Roadmap" />
+    <meta property="og:description"
+        content="A visual mind map of the skills Business Analysts need to transition into data analysis — organized by priority across six key areas." />
+    <meta property="og:image" content="https://dzianiskuziomkin.com/images/portrait-square-800.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BA → Data Analyst: Skills Roadmap" />
+    <meta name="twitter:description"
+        content="A visual mind map of the skills Business Analysts need to transition into data analysis." />
+    <meta name="twitter:image" content="https://dzianiskuziomkin.com/images/portrait-square-800.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap"
+        rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232563A8'/%3E%3Ctext x='16' y='22' font-family='Georgia%2C serif' font-size='14' font-weight='700' fill='white' text-anchor='middle' letter-spacing='-0.5'%3EDK%3C/text%3E%3C/svg%3E" />
+    <link rel="apple-touch-icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%232563A8'/%3E%3Ctext x='90' y='124' font-family='Georgia%2C serif' font-size='80' font-weight='700' fill='white' text-anchor='middle' letter-spacing='-2'%3EDK%3C/text%3E%3C/svg%3E" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Ahrefs Analytics -->
+    <script>
+        var ahrefs_analytics_script = document.createElement('script');
+        ahrefs_analytics_script.async = true;
+        ahrefs_analytics_script.src = 'https://analytics.ahrefs.com/analytics.js';
+        ahrefs_analytics_script.setAttribute('data-key', 'amTewPEpj6DY3VwB3BTrgA');
+        document.getElementsByTagName('head')[0].appendChild(ahrefs_analytics_script);
+    </script>
+
+    <style>
+        .guide-header {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 32px;
+        }
+
+        .guide-header .back-link {
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .guide-header .back-link:hover {
+            color: var(--color-text-primary);
+        }
+
+        .guide-header h1 {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: clamp(26px, 4vw, 36px);
+            font-weight: 400;
+            color: var(--color-text-primary);
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+
+        .guide-header p {
+            font-size: 15px;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .mindmap-wrap {
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            background: var(--color-background-tertiary);
+            padding: 14px 0 10px;
+        }
+
+        #mm {
+            position: relative;
+            width: 1300px;
+            height: 895px;
+        }
+
+        #mmsvg {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+        }
+
+        .mn {
+            position: absolute;
+            width: 160px;
+            height: 48px;
+            background: var(--color-background-secondary);
+            border-radius: 0 8px 8px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0 10px;
+            z-index: 2;
+            box-sizing: border-box;
+        }
+
+        .mn-t {
+            font-size: 11.5px;
+            font-weight: 500;
+            color: var(--color-text-primary);
+            line-height: 1.25;
+        }
+
+        .mn-b {
+            font-size: 9.5px;
+            margin-top: 2px;
+        }
+
+        .sn {
+            position: absolute;
+            width: 170px;
+            height: 32px;
+            background: var(--color-background-primary);
+            border-radius: 0 6px 6px 0;
+            display: flex;
+            align-items: center;
+            padding: 0 7px;
+            font-size: 11px;
+            color: var(--color-text-primary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            box-sizing: border-box;
+        }
+
+        .sp {
+            font-size: 10px;
+            margin-left: 3px;
+            flex-shrink: 0;
+        }
+
+        .guide-footer {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 28px 24px 64px;
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+
+        .guide-footer a {
+            color: var(--color-text-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">Dzianis Kuziomkin</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="guide-header">
+            <a href="/" class="back-link">← Back</a>
+            <h1>BA → Data Analyst: Skills Roadmap</h1>
+            <p>Six areas Business Analysts need to cover to transition into data analysis roles, organized by suggested learning priority. ✦ marks items added beyond the core list.</p>
+        </div>
+
+        <h2 class="sr-only">Mind map: skills BAs need to transition to data analysis, organized into six color-coded branches with priority order</h2>
+
+        <div class="mindmap-wrap">
+            <div id="mm">
+                <svg id="mmsvg" width="1300" height="895">
+                    <path d="M560 445 C500 445,500 130,440 130" stroke="#378ADD" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"></path>
+                    <path d="M560 445 C500 445,500 445,440 445" stroke="#1D9E75" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"></path>
+                    <path d="M560 445 C500 445,500 760,440 760" stroke="#BA7517" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"></path>
+                    <path d="M740 445 C800 445,800 130,860 130" stroke="#534AB7" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"></path>
+                    <path d="M740 445 C800 445,800 445,860 445" stroke="#D85A30" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"></path>
+                    <path d="M740 445 C800 445,800 760,860 760" stroke="#3B6D11" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"></path>
+                    <path d="M280 130 C226 130,226 50,172 50" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 130 C226 130,226 90,172 90" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 130 C226 130,226 130,172 130" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 130 C226 130,226 170,172 170" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 130 C226 130,226 210,172 210" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 445 C226 445,226 325,172 325" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 445 C226 445,226 365,172 365" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 445 C226 445,226 405,172 405" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 445 C226 445,226 445,172 445" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 445 C226 445,226 485,172 485" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 445 C226 445,226 525,172 525" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 760 C226 760,226 680,172 680" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 760 C226 760,226 720,172 720" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 760 C226 760,226 760,172 760" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 760 C226 760,226 800,172 800" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 760 C226 760,226 840,172 840" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 130 C1072.5 130,1072.5 50,1125 50" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 130 C1072.5 130,1072.5 90,1125 90" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 130 C1072.5 130,1072.5 130,1125 130" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 130 C1072.5 130,1072.5 170,1125 170" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 130 C1072.5 130,1072.5 210,1125 210" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 445 C1072.5 445,1072.5 325,1125 325" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 445 C1072.5 445,1072.5 365,1125 365" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 445 C1072.5 445,1072.5 405,1125 405" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 445 C1072.5 445,1072.5 445,1125 445" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 445 C1072.5 445,1072.5 485,1125 485" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 445 C1072.5 445,1072.5 525,1125 525" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 760 C1072.5 760,1072.5 645,1125 645" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 760 C1072.5 760,1072.5 685,1125 685" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 760 C1072.5 760,1072.5 725,1125 725" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 760 C1072.5 760,1072.5 765,1125 765" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 760 C1072.5 760,1072.5 805,1125 805" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 760 C1072.5 760,1072.5 845,1125 845" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                </svg>
+
+                <!-- Center node -->
+                <div style="position:absolute;left:560px;top:405px;width:180px;height:80px;background:var(--color-background-secondary);border:1.5px solid var(--color-border-primary);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:3;box-sizing:border-box;padding:0 10px;">
+                    <div style="font-size:14px;font-weight:500;color:var(--color-text-primary);">BA → Data Analyst</div>
+                    <div style="font-size:10px;color:var(--color-text-secondary);margin-top:4px;">Learning Roadmap</div>
+                </div>
+
+                <!-- Data Platforms -->
+                <div class="mn" style="left:280px;top:106px;border-left:4px solid #378ADD;">
+                    <span class="mn-t">Data Platforms</span>
+                    <span class="mn-b" style="color:#378ADD;">⑥ pick one to learn</span>
+                </div>
+                <div class="sn" style="left:2px;top:34px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">Snowflake</div>
+                <div class="sn" style="left:2px;top:74px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">Databricks</div>
+                <div class="sn" style="left:2px;top:114px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">MS Synapse</div>
+                <div class="sn" style="left:2px;top:154px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">BigQuery<span class="sp" style="color:#378ADD;">✦</span></div>
+                <div class="sn" style="left:2px;top:194px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">Cloud basics (AWS/Azure)<span class="sp" style="color:#378ADD;">✦</span></div>
+
+                <!-- Data Formats & Storage -->
+                <div class="mn" style="left:280px;top:421px;border-left:4px solid #1D9E75;">
+                    <span class="mn-t">Data Formats &amp; Storage</span>
+                    <span class="mn-b" style="color:#1D9E75;">③ foundational</span>
+                </div>
+                <div class="sn" style="left:2px;top:309px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">Structured (CSV, tables)</div>
+                <div class="sn" style="left:2px;top:349px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">Semi-structured (JSON, Parquet)</div>
+                <div class="sn" style="left:2px;top:389px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">Unstructured (docs, logs)</div>
+                <div class="sn" style="left:2px;top:429px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">Databases (OLTP / OLAP)</div>
+                <div class="sn" style="left:2px;top:469px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">Lakehouses (Delta, Iceberg)</div>
+                <div class="sn" style="left:2px;top:509px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">Object Storage (S3, Blob)<span class="sp" style="color:#1D9E75;">✦</span></div>
+
+                <!-- ETL & ELT -->
+                <div class="mn" style="left:280px;top:736px;border-left:4px solid #BA7517;">
+                    <span class="mn-t">ETL &amp; ELT</span>
+                    <span class="mn-b" style="color:#BA7517;">⑤ pipeline thinking</span>
+                </div>
+                <div class="sn" style="left:2px;top:664px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">ETL vs ELT</div>
+                <div class="sn" style="left:2px;top:704px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">dbt<span class="sp" style="color:#BA7517;">✦</span></div>
+                <div class="sn" style="left:2px;top:744px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">Azure Data Factory<span class="sp" style="color:#BA7517;">✦</span></div>
+                <div class="sn" style="left:2px;top:784px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">Airbyte / Fivetran<span class="sp" style="color:#BA7517;">✦</span></div>
+                <div class="sn" style="left:2px;top:824px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">Airflow (orchestration)<span class="sp" style="color:#BA7517;">✦</span></div>
+
+                <!-- Data Modeling -->
+                <div class="mn" style="left:860px;top:106px;border-left:4px solid #534AB7;">
+                    <span class="mn-t">Data Modeling</span>
+                    <span class="mn-b" style="color:#534AB7;">④ design skills</span>
+                </div>
+                <div class="sn" style="left:1125px;top:34px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Normalized vs Denorm.</div>
+                <div class="sn" style="left:1125px;top:74px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Star Schema</div>
+                <div class="sn" style="left:1125px;top:114px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Snowflake Schema</div>
+                <div class="sn" style="left:1125px;top:154px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Dimensional Modeling<span class="sp" style="color:#534AB7;">✦</span></div>
+                <div class="sn" style="left:1125px;top:194px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Data Vault<span class="sp" style="color:#534AB7;">✦</span></div>
+
+                <!-- BA Artifacts -->
+                <div class="mn" style="left:860px;top:421px;border-left:4px solid #D85A30;">
+                    <span class="mn-t">BA Artifacts</span>
+                    <span class="mn-b" style="color:#D85A30;">① your core strength</span>
+                </div>
+                <div class="sn" style="left:1125px;top:309px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">Source Mappings</div>
+                <div class="sn" style="left:1125px;top:349px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">Data Flow Diagrams</div>
+                <div class="sn" style="left:1125px;top:389px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">Data Catalog</div>
+                <div class="sn" style="left:1125px;top:429px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">Data Dictionary</div>
+                <div class="sn" style="left:1125px;top:469px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">Data Lineage</div>
+                <div class="sn" style="left:1125px;top:509px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">C / L / P Data Models</div>
+
+                <!-- SQL & Analytics -->
+                <div class="mn" style="left:860px;top:736px;border-left:4px solid #3B6D11;">
+                    <span class="mn-t">SQL &amp; Analytics</span>
+                    <span class="mn-b" style="color:#3B6D11;">② learn this first</span>
+                </div>
+                <div class="sn" style="left:1125px;top:629px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">SQL Fundamentals</div>
+                <div class="sn" style="left:1125px;top:669px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Joins &amp; Aggregations</div>
+                <div class="sn" style="left:1125px;top:709px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Window Functions<span class="sp" style="color:#3B6D11;">✦</span></div>
+                <div class="sn" style="left:1125px;top:749px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">CTEs<span class="sp" style="color:#3B6D11;">✦</span></div>
+                <div class="sn" style="left:1125px;top:789px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Power BI / Tableau<span class="sp" style="color:#3B6D11;">✦</span></div>
+                <div class="sn" style="left:1125px;top:829px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Python basics<span class="sp" style="color:#3B6D11;">✦</span></div>
+
+                <!-- Legend -->
+                <div style="position:absolute;left:0;right:0;bottom:8px;display:flex;justify-content:center;gap:24px;font-size:10px;color:var(--color-text-tertiary);">
+                    <span>① ② ... = suggested learning priority</span>
+                    <span>✦ = added beyond your original list</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="guide-footer">
+            Written by <a href="/">Dzianis Kuziomkin</a> — Data Platform Consultant &amp; Business Analyst.
+        </div>
+    </main>
+
+    <script>
+        (function () {
+            const svg = document.getElementById('mmsvg');
+            function c(x1, y1, x2, y2, col, w, op) {
+                const mx = (x1 + x2) / 2;
+                const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                p.setAttribute('d', 'M' + x1 + ' ' + y1 + ' C' + mx + ' ' + y1 + ',' + mx + ' ' + y2 + ',' + x2 + ' ' + y2);
+                p.setAttribute('stroke', col);
+                p.setAttribute('stroke-width', String(w || 2));
+                p.setAttribute('fill', 'none');
+                p.setAttribute('stroke-linecap', 'round');
+                p.setAttribute('opacity', String(op || 0.65));
+                svg.appendChild(p);
+            }
+            c(560, 445, 440, 130, '#378ADD', 2, 0.7);
+            c(560, 445, 440, 445, '#1D9E75', 2, 0.7);
+            c(560, 445, 440, 760, '#BA7517', 2, 0.7);
+            c(740, 445, 860, 130, '#534AB7', 2, 0.7);
+            c(740, 445, 860, 445, '#D85A30', 2, 0.7);
+            c(740, 445, 860, 760, '#3B6D11', 2, 0.7);
+            [50, 90, 130, 170, 210].forEach(y => c(280, 130, 172, y, '#378ADD', 1, 0.4));
+            [325, 365, 405, 445, 485, 525].forEach(y => c(280, 445, 172, y, '#1D9E75', 1, 0.4));
+            [680, 720, 760, 800, 840].forEach(y => c(280, 760, 172, y, '#BA7517', 1, 0.4));
+            [50, 90, 130, 170, 210].forEach(y => c(1020, 130, 1125, y, '#534AB7', 1, 0.4));
+            [325, 365, 405, 445, 485, 525].forEach(y => c(1020, 445, 1125, y, '#D85A30', 1, 0.4));
+            [645, 685, 725, 765, 805, 845].forEach(y => c(1020, 760, 1125, y, '#3B6D11', 1, 0.4));
+        })();
+    </script>
+
+</body>
+
+</html>
