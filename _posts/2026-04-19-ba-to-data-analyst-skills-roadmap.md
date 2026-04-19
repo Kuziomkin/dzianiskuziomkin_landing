@@ -5,7 +5,7 @@ date: 2026-04-19
 ---
 
 <div class="post-wide">
-<svg viewBox="0 0 1300 895" width="100%" style="display:block;background:var(--color-background-tertiary);border-radius:12px;" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1300 895" width="100%" style="display:block;background:var(--surface);border-radius:12px;" xmlns="http://www.w3.org/2000/svg">
 
 <!-- Main branch paths from center -->
 <path d="M560 445 C500 445,500 130,440 130" stroke="#378ADD" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
@@ -61,194 +61,194 @@ date: 2026-04-19
 <path d="M1020 760 C1072.5 760,1072.5 845,1125 845" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
 
 <!-- ===== CENTER NODE ===== -->
-<rect x="560" y="405" width="180" height="80" rx="12" fill="var(--color-background-secondary)" stroke="var(--color-border-primary)" stroke-width="1.5"/>
-<text x="650" y="440" text-anchor="middle" style="font-size:14px;font-weight:500;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">BA &#x2192; Data Analyst</text>
-<text x="650" y="457" text-anchor="middle" style="font-size:10px;fill:var(--color-text-secondary);font-family:'DM Sans',sans-serif;">Learning Roadmap</text>
+<rect x="560" y="405" width="180" height="80" rx="12" fill="var(--surface)" stroke="var(--divider)" stroke-width="1.5"/>
+<text x="650" y="440" text-anchor="middle" style="font-size:14px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">BA &#x2192; Data Analyst</text>
+<text x="650" y="457" text-anchor="middle" style="font-size:10px;fill:var(--text-sec);font-family:'DM Sans',sans-serif;">Learning Roadmap</text>
 
 <!-- ===== LEFT BRANCH NODES ===== -->
 
 <!-- Data Platforms -->
-<rect x="280" y="106" width="160" height="48" rx="4" fill="var(--color-background-secondary)"/>
+<rect x="280" y="106" width="160" height="48" rx="4" fill="var(--surface)"/>
 <rect x="280" y="106" width="4" height="48" rx="0" fill="#378ADD"/>
-<text x="292" y="129" style="font-size:11.5px;font-weight:500;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Data Platforms</text>
+<text x="292" y="129" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Platforms</text>
 <text x="292" y="143" style="font-size:9.5px;fill:#378ADD;font-family:'DM Sans',sans-serif;">&#x2465; pick one to learn</text>
 
 <!-- Data Formats & Storage -->
-<rect x="280" y="421" width="160" height="48" rx="4" fill="var(--color-background-secondary)"/>
+<rect x="280" y="421" width="160" height="48" rx="4" fill="var(--surface)"/>
 <rect x="280" y="421" width="4" height="48" fill="#1D9E75"/>
-<text x="292" y="444" style="font-size:11px;font-weight:500;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Data Formats &amp; Storage</text>
+<text x="292" y="444" style="font-size:11px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Formats &amp; Storage</text>
 <text x="292" y="458" style="font-size:9.5px;fill:#1D9E75;font-family:'DM Sans',sans-serif;">&#x2462; foundational</text>
 
 <!-- ETL & ELT -->
-<rect x="280" y="736" width="160" height="48" rx="4" fill="var(--color-background-secondary)"/>
+<rect x="280" y="736" width="160" height="48" rx="4" fill="var(--surface)"/>
 <rect x="280" y="736" width="4" height="48" fill="#BA7517"/>
-<text x="292" y="759" style="font-size:11.5px;font-weight:500;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">ETL &amp; ELT</text>
+<text x="292" y="759" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">ETL &amp; ELT</text>
 <text x="292" y="773" style="font-size:9.5px;fill:#BA7517;font-family:'DM Sans',sans-serif;">&#x2464; pipeline thinking</text>
 
 <!-- ===== RIGHT BRANCH NODES ===== -->
 
 <!-- Data Modeling -->
-<rect x="860" y="106" width="160" height="48" rx="4" fill="var(--color-background-secondary)"/>
+<rect x="860" y="106" width="160" height="48" rx="4" fill="var(--surface)"/>
 <rect x="860" y="106" width="4" height="48" fill="#534AB7"/>
-<text x="872" y="129" style="font-size:11.5px;font-weight:500;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Data Modeling</text>
+<text x="872" y="129" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Modeling</text>
 <text x="872" y="143" style="font-size:9.5px;fill:#534AB7;font-family:'DM Sans',sans-serif;">&#x2463; design skills</text>
 
 <!-- BA Artifacts -->
-<rect x="860" y="421" width="160" height="48" rx="4" fill="var(--color-background-secondary)"/>
+<rect x="860" y="421" width="160" height="48" rx="4" fill="var(--surface)"/>
 <rect x="860" y="421" width="4" height="48" fill="#D85A30"/>
-<text x="872" y="444" style="font-size:11.5px;font-weight:500;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">BA Artifacts</text>
+<text x="872" y="444" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">BA Artifacts</text>
 <text x="872" y="458" style="font-size:9.5px;fill:#D85A30;font-family:'DM Sans',sans-serif;">&#x2460; your core strength</text>
 
 <!-- SQL & Analytics -->
-<rect x="860" y="736" width="160" height="48" rx="4" fill="var(--color-background-secondary)"/>
+<rect x="860" y="736" width="160" height="48" rx="4" fill="var(--surface)"/>
 <rect x="860" y="736" width="4" height="48" fill="#3B6D11"/>
-<text x="872" y="759" style="font-size:11.5px;font-weight:500;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">SQL &amp; Analytics</text>
+<text x="872" y="759" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">SQL &amp; Analytics</text>
 <text x="872" y="773" style="font-size:9.5px;fill:#3B6D11;font-family:'DM Sans',sans-serif;">&#x2461; learn this first</text>
 
 <!-- ===== LEFT LEAF NODES ===== -->
 
 <!-- Data Platforms leaves (center y: 50, 90, 130, 170, 210) -->
-<rect x="2" y="34" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#B5D4F4" stroke-width="0.5"/>
+<rect x="2" y="34" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
 <rect x="2" y="34" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="55" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Snowflake</text>
+<text x="11" y="55" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Snowflake</text>
 
-<rect x="2" y="74" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#B5D4F4" stroke-width="0.5"/>
+<rect x="2" y="74" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
 <rect x="2" y="74" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="95" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Databricks</text>
+<text x="11" y="95" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Databricks</text>
 
-<rect x="2" y="114" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#B5D4F4" stroke-width="0.5"/>
+<rect x="2" y="114" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
 <rect x="2" y="114" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="135" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">MS Synapse</text>
+<text x="11" y="135" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">MS Synapse</text>
 
-<rect x="2" y="154" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#B5D4F4" stroke-width="0.5"/>
+<rect x="2" y="154" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
 <rect x="2" y="154" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="175" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">BigQuery <tspan fill="#378ADD" font-size="10">&#x2726;</tspan></text>
+<text x="11" y="175" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">BigQuery <tspan fill="#378ADD" font-size="10">&#x2726;</tspan></text>
 
-<rect x="2" y="194" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#B5D4F4" stroke-width="0.5"/>
+<rect x="2" y="194" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
 <rect x="2" y="194" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="215" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Cloud basics (AWS/Azure) <tspan fill="#378ADD" font-size="10">&#x2726;</tspan></text>
+<text x="11" y="215" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Cloud basics (AWS/Azure) <tspan fill="#378ADD" font-size="10">&#x2726;</tspan></text>
 
 <!-- Data Formats leaves (center y: 325, 365, 405, 445, 485, 525) -->
-<rect x="2" y="309" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="309" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
 <rect x="2" y="309" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="330" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Structured (CSV, tables)</text>
+<text x="11" y="330" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Structured (CSV, tables)</text>
 
-<rect x="2" y="349" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="349" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
 <rect x="2" y="349" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="370" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Semi-struct. (JSON, Parquet)</text>
+<text x="11" y="370" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Semi-struct. (JSON, Parquet)</text>
 
-<rect x="2" y="389" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="389" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
 <rect x="2" y="389" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="410" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Unstructured (docs, logs)</text>
+<text x="11" y="410" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Unstructured (docs, logs)</text>
 
-<rect x="2" y="429" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="429" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
 <rect x="2" y="429" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="450" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Databases (OLTP / OLAP)</text>
+<text x="11" y="450" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Databases (OLTP / OLAP)</text>
 
-<rect x="2" y="469" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="469" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
 <rect x="2" y="469" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="490" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Lakehouses (Delta, Iceberg)</text>
+<text x="11" y="490" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Lakehouses (Delta, Iceberg)</text>
 
-<rect x="2" y="509" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="509" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
 <rect x="2" y="509" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="530" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Object Storage (S3, Blob) <tspan fill="#1D9E75" font-size="10">&#x2726;</tspan></text>
+<text x="11" y="530" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Object Storage (S3, Blob) <tspan fill="#1D9E75" font-size="10">&#x2726;</tspan></text>
 
 <!-- ETL leaves (center y: 680, 720, 760, 800, 840) -->
-<rect x="2" y="664" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="664" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
 <rect x="2" y="664" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="685" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">ETL vs ELT</text>
+<text x="11" y="685" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">ETL vs ELT</text>
 
-<rect x="2" y="704" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="704" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
 <rect x="2" y="704" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="725" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">dbt <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
+<text x="11" y="725" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">dbt <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
 
-<rect x="2" y="744" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="744" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
 <rect x="2" y="744" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="765" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Azure Data Factory <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
+<text x="11" y="765" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Azure Data Factory <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
 
-<rect x="2" y="784" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="784" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
 <rect x="2" y="784" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="805" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Airbyte / Fivetran <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
+<text x="11" y="805" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Airbyte / Fivetran <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
 
-<rect x="2" y="824" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="824" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
 <rect x="2" y="824" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="845" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Airflow (orchestration) <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
+<text x="11" y="845" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Airflow (orchestration) <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
 
 <!-- ===== RIGHT LEAF NODES ===== -->
 
 <!-- Data Modeling leaves (center y: 50, 90, 130, 170, 210) -->
-<rect x="1125" y="34" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="34" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
 <rect x="1125" y="34" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="55" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Normalized vs Denorm.</text>
+<text x="1134" y="55" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Normalized vs Denorm.</text>
 
-<rect x="1125" y="74" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="74" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
 <rect x="1125" y="74" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="95" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Star Schema</text>
+<text x="1134" y="95" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Star Schema</text>
 
-<rect x="1125" y="114" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="114" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
 <rect x="1125" y="114" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="135" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Snowflake Schema</text>
+<text x="1134" y="135" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Snowflake Schema</text>
 
-<rect x="1125" y="154" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="154" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
 <rect x="1125" y="154" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="175" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Dimensional Modeling <tspan fill="#534AB7" font-size="10">&#x2726;</tspan></text>
+<text x="1134" y="175" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Dimensional Modeling <tspan fill="#534AB7" font-size="10">&#x2726;</tspan></text>
 
-<rect x="1125" y="194" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="194" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
 <rect x="1125" y="194" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="215" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Data Vault <tspan fill="#534AB7" font-size="10">&#x2726;</tspan></text>
+<text x="1134" y="215" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Vault <tspan fill="#534AB7" font-size="10">&#x2726;</tspan></text>
 
 <!-- BA Artifacts leaves (center y: 325, 365, 405, 445, 485, 525) -->
-<rect x="1125" y="309" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="309" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
 <rect x="1125" y="309" width="3" height="32" fill="#D85A30"/>
-<text x="1134" y="330" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Source Mappings</text>
+<text x="1134" y="330" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Source Mappings</text>
 
-<rect x="1125" y="349" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="349" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
 <rect x="1125" y="349" width="3" height="32" fill="#D85A30"/>
-<text x="1134" y="370" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Data Flow Diagrams</text>
+<text x="1134" y="370" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Flow Diagrams</text>
 
-<rect x="1125" y="389" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="389" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
 <rect x="1125" y="389" width="3" height="32" fill="#D85A30"/>
-<text x="1134" y="410" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Data Catalog</text>
+<text x="1134" y="410" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Catalog</text>
 
-<rect x="1125" y="429" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="429" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
 <rect x="1125" y="429" width="3" height="32" fill="#D85A30"/>
-<text x="1134" y="450" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Data Dictionary</text>
+<text x="1134" y="450" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Dictionary</text>
 
-<rect x="1125" y="469" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="469" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
 <rect x="1125" y="469" width="3" height="32" fill="#D85A30"/>
-<text x="1134" y="490" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Data Lineage</text>
+<text x="1134" y="490" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Lineage</text>
 
-<rect x="1125" y="509" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="509" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
 <rect x="1125" y="509" width="3" height="32" fill="#D85A30"/>
-<text x="1134" y="530" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">C / L / P Data Models</text>
+<text x="1134" y="530" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">C / L / P Data Models</text>
 
 <!-- SQL leaves (center y: 645, 685, 725, 765, 805, 845) -->
-<rect x="1125" y="629" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="629" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
 <rect x="1125" y="629" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="650" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">SQL Fundamentals</text>
+<text x="1134" y="650" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">SQL Fundamentals</text>
 
-<rect x="1125" y="669" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="669" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
 <rect x="1125" y="669" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="690" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Joins &amp; Aggregations</text>
+<text x="1134" y="690" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Joins &amp; Aggregations</text>
 
-<rect x="1125" y="709" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="709" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
 <rect x="1125" y="709" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="730" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Window Functions <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
+<text x="1134" y="730" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Window Functions <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
 
-<rect x="1125" y="749" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="749" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
 <rect x="1125" y="749" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="770" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">CTEs <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
+<text x="1134" y="770" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">CTEs <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
 
-<rect x="1125" y="789" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="789" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
 <rect x="1125" y="789" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="810" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Power BI / Tableau <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
+<text x="1134" y="810" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Power BI / Tableau <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
 
-<rect x="1125" y="829" width="170" height="32" rx="3" fill="var(--color-background-primary)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="829" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
 <rect x="1125" y="829" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="850" style="font-size:11px;fill:var(--color-text-primary);font-family:'DM Sans',sans-serif;">Python basics <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
+<text x="1134" y="850" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Python basics <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
 
 <!-- Legend -->
-<text x="650" y="880" text-anchor="middle" style="font-size:10px;fill:var(--color-text-tertiary);font-family:'DM Sans',sans-serif;">&#x2460; &#x2461; ... = suggested learning priority &#xB7; &#x2726; = added beyond your original list</text>
+<text x="650" y="880" text-anchor="middle" style="font-size:10px;fill:var(--text-sec);font-family:'DM Sans',sans-serif;">&#x2460; &#x2461; ... = suggested learning priority &#xB7; &#x2726; = added beyond your original list</text>
 
 </svg>
 </div>
@@ -280,7 +280,7 @@ date: 2026-04-19
 .branch-section p {
     font-size: 15px;
     line-height: 1.75;
-    color: var(--color-text-primary);
+    color: var(--text);
     margin: 0 0 14px;
 }
 .branch-section p:last-child { margin-bottom: 0; }
