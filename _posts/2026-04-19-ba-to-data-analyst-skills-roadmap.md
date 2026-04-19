@@ -5,7 +5,7 @@ date: 2026-04-19
 ---
 
 <div class="post-wide">
-<svg viewBox="0 0 1300 895" width="100%" style="display:block;background:var(--surface);border-radius:12px;" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1300 895" width="100%" style="display:block;" xmlns="http://www.w3.org/2000/svg">
 <title>BA to Data Analyst Learning Roadmap</title>
 <defs>
   <filter id="node-shadow" x="-10%" y="-10%" width="120%" height="120%">
@@ -318,49 +318,107 @@ date: 2026-04-19
     font-size: 15px;
     line-height: 1.75;
     color: var(--text);
-    margin: 0 0 14px;
+    margin: 0 0 16px;
 }
-.branch-section p:last-child { margin-bottom: 0; }
+.branch-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.branch-section ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--branch-color) 20%, transparent);
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--text);
+}
+.branch-section ul li:last-child { border-bottom: none; padding-bottom: 0; }
+.branch-section ul li strong {
+    color: var(--branch-color);
+    font-weight: 500;
+    display: inline-block;
+    min-width: 0;
+    margin-right: 4px;
+}
 </style>
 
 <div class="branch-section" style="--branch-color: #D85A30;">
   <span class="branch-priority">① Start here — your core strength</span>
   <h2>BA Artifacts</h2>
   <p>This is your home territory — but the artifacts have different shapes in data projects than in process or requirements work.</p>
-  <p><em>Source mappings</em> (also called source-to-target mappings) document exactly where each field in the target system comes from — what source table, what transformation logic, what business rules apply. This is often the most critical BA deliverable in a data project. <em>Data Flow Diagrams</em> in a data context show how data moves between systems, pipelines, and storage layers — from source databases through ETL processes into the warehouse and then into BI tools. They give developers and architects a shared picture of the data landscape. <em>Data Catalog</em> is a searchable inventory of all data assets in an organization — tables, fields, owners, freshness, usage. As a BA you may be asked to populate or maintain one. Think of it as the data equivalent of a requirements register. <em>Data Dictionary</em> defines what each field means in business terms — not just the column name, but the business definition, valid values, and owner. Without this, different teams end up using the same field to mean different things. <em>Data Lineage</em> documents where a piece of data was born, how it was transformed, and where it ends up — from the source system all the way to the dashboard. Critical for debugging data quality issues and for regulatory compliance. <em>Conceptual, Logical, and Physical data models</em> map to increasing levels of technical detail — conceptual defines business entities and relationships, logical adds attributes and data types, physical translates into actual database tables and constraints. As a BA you'll own the conceptual layer and collaborate on the logical one.</p>
+  <ul>
+    <li><strong>Source Mappings</strong> — document exactly where each field in the target system comes from: source table, transformation logic, business rules. Often the most critical BA deliverable in a data project.</li>
+    <li><strong>Data Flow Diagrams</strong> — show how data moves between systems, pipelines, and storage layers. Give developers and architects a shared picture of the data landscape.</li>
+    <li><strong>Data Catalog</strong> — a searchable inventory of all data assets: tables, fields, owners, freshness, usage. Think of it as the data equivalent of a requirements register.</li>
+    <li><strong>Data Dictionary</strong> — defines what each field means in business terms: business definition, valid values, owner. Without this, different teams use the same field to mean different things.</li>
+    <li><strong>Data Lineage</strong> — documents where a piece of data was born, how it was transformed, and where it ends up. Critical for debugging data quality issues and for regulatory compliance.</li>
+    <li><strong>C / L / P Data Models</strong> — Conceptual defines business entities and relationships, Logical adds attributes and data types, Physical translates into actual database tables and constraints. As a BA you'll own the conceptual layer and collaborate on the logical one.</li>
+  </ul>
 </div>
 
 <div class="branch-section" style="--branch-color: #3B6D11;">
   <span class="branch-priority">② Learn this first</span>
   <h2>SQL &amp; Analytics</h2>
   <p>You don't need to become a data engineer. But you do need to be able to query data yourself — otherwise you're dependent on someone else to answer every question.</p>
-  <p><em>SQL fundamentals</em> means SELECT, WHERE, GROUP BY, ORDER BY, and basic filtering. If you already know this, you're not starting from zero. <em>Joins and aggregations</em> are where most of the real analysis happens — INNER JOIN, LEFT JOIN, COUNT, SUM, AVG. Understanding joins deeply (not just knowing they exist) is what lets you trace data across tables and validate source mappings. <em>Window functions</em> let you calculate things like running totals, rankings, and moving averages without collapsing your data into a summary. They're the difference between a BA who can answer "what were total sales this month" and one who can answer "show me each customer's rank within their region over time." <em>CTEs</em> (Common Table Expressions) make complex queries readable by breaking them into named steps. They're how data engineers and analysts structure their SQL — learning to read and write them makes collaboration much easier. <em>Power BI and Tableau</em> are the most common BI tools you'll encounter. You don't need to master both, but knowing how to build a basic dashboard, understand the data model behind it, and read the DAX or calculated fields inside it is genuinely useful. <em>Python basics</em> — specifically pandas for data manipulation and basic scripting — is increasingly expected even from non-engineers in data teams. You don't need to build pipelines, but being able to run a notebook, inspect a dataframe, and understand what your engineers are doing puts you in a much stronger position.</p>
+  <ul>
+    <li><strong>SQL Fundamentals</strong> — SELECT, WHERE, GROUP BY, ORDER BY, basic filtering. If you already know this, you're not starting from zero.</li>
+    <li><strong>Joins &amp; Aggregations</strong> — where most real analysis happens. Understanding joins deeply (not just knowing they exist) is what lets you trace data across tables and validate source mappings.</li>
+    <li><strong>Window Functions</strong> — calculate running totals, rankings, and moving averages without collapsing your data. The difference between answering "total sales this month" vs "each customer's rank within their region over time."</li>
+    <li><strong>CTEs</strong> — Common Table Expressions make complex queries readable by breaking them into named steps. How data engineers structure SQL — learning to read and write them makes collaboration much easier.</li>
+    <li><strong>Power BI / Tableau</strong> — the most common BI tools you'll encounter. You don't need to master both, but knowing how to build a basic dashboard and read the underlying data model is genuinely useful.</li>
+    <li><strong>Python basics</strong> — specifically pandas for data manipulation and basic scripting. Being able to run a notebook, inspect a dataframe, and understand what your engineers are doing puts you in a much stronger position.</li>
+  </ul>
 </div>
 
 <div class="branch-section" style="--branch-color: #1D9E75;">
   <span class="branch-priority">③ Foundational</span>
   <h2>Data Formats &amp; Storage</h2>
   <p>Before you can work with data, you need to understand what shape it comes in and where it lives.</p>
-  <p><em>Structured data</em> is what most BAs already know — rows and columns, like a spreadsheet or a SQL table. Clean, predictable, easy to query. <em>Semi-structured data</em> has some structure but is more flexible — JSON and Parquet are the most common formats. JSON is what APIs return. Parquet is a columnar file format optimized for analytics, widely used in data lakes. <em>Unstructured data</em> has no predefined schema — documents, emails, logs, images. It's the hardest to work with but increasingly common in data projects. <em>Databases</em> split into two types: OLTP (Online Transaction Processing) handles live operational data — your CRM, ERP, order system. OLAP (Online Analytical Processing) is optimized for querying large historical datasets — that's the warehouse side. Understanding this distinction helps you ask the right questions about data sources. <em>Lakehouses</em> combine the flexibility of a data lake with the structure of a warehouse. Delta Lake and Apache Iceberg are the two dominant open formats. You'll hear these names often in modern data architectures. <em>Object Storage</em> (S3 on AWS, Blob on Azure) is where raw files live before they're processed — think of it as a giant cheap hard drive in the cloud. Data almost always passes through here at some point.</p>
+  <ul>
+    <li><strong>Structured data</strong> — rows and columns, like a spreadsheet or SQL table. What most BAs already know. Clean, predictable, easy to query.</li>
+    <li><strong>Semi-structured (JSON, Parquet)</strong> — some structure, more flexible. JSON is what APIs return. Parquet is a columnar file format optimized for analytics, widely used in data lakes.</li>
+    <li><strong>Unstructured data</strong> — no predefined schema: documents, emails, logs, images. Hardest to work with but increasingly common in data projects.</li>
+    <li><strong>Databases (OLTP / OLAP)</strong> — OLTP handles live operational data (CRM, ERP, order systems). OLAP is optimized for querying large historical datasets — the warehouse side. Understanding this distinction helps you ask better questions about data sources.</li>
+    <li><strong>Lakehouses (Delta, Iceberg)</strong> — combine the flexibility of a data lake with the structure of a warehouse. Delta Lake and Apache Iceberg are the two dominant open formats you'll hear often in modern architectures.</li>
+    <li><strong>Object Storage (S3, Blob)</strong> — where raw files live before they're processed. Think of it as a giant cheap hard drive in the cloud. Data almost always passes through here at some point.</li>
+  </ul>
 </div>
 
 <div class="branch-section" style="--branch-color: #534AB7;">
   <span class="branch-priority">④ Design skills</span>
   <h2>Data Modeling</h2>
-  <p>This is where your BA background gives you the most leverage. Data modeling is fundamentally about understanding business entities and their relationships — which is exactly what you've been doing with ERDs and process flows.</p>
-  <p><em>Normalization vs denormalization</em> is the foundational design choice. Normalized models eliminate redundancy by splitting data into many related tables — good for operational databases. Denormalized models flatten and duplicate data for faster analytics queries — good for warehouses. Knowing when to use which, and why, is one of the most valuable things a BA can contribute to a data team. <em>Star schema</em> is the most common warehouse pattern: one central fact table (transactions, events, measurements) surrounded by dimension tables (customers, products, time). Simple, fast, easy to understand. Most BI tools are optimized for it. <em>Snowflake schema</em> is a normalized version of the star — dimensions are broken into sub-dimensions. More flexible, slightly more complex to query. <em>Dimensional Modeling</em> is the formal methodology behind star schemas, developed by Ralph Kimball. It gives you a vocabulary and a set of design principles for building warehouses that business users can actually understand. Worth reading the basics. <em>Data Vault</em> is an alternative modeling approach designed for auditability and scalability — common in financial services and large enterprises. You won't design one as a BA, but you'll encounter the terminology and need to understand why it was chosen.</p>
+  <p>This is where your BA background gives you the most leverage. Data modeling is fundamentally about understanding business entities and their relationships — exactly what you've been doing with ERDs and process flows.</p>
+  <ul>
+    <li><strong>Normalized vs Denormalized</strong> — the foundational design choice. Normalized models eliminate redundancy (good for operational databases). Denormalized models flatten data for faster analytics queries (good for warehouses). Knowing when to use which is one of the most valuable things a BA can contribute.</li>
+    <li><strong>Star Schema</strong> — the most common warehouse pattern: one central fact table surrounded by dimension tables. Simple, fast, easy to understand. Most BI tools are optimized for it.</li>
+    <li><strong>Snowflake Schema</strong> — a normalized version of the star where dimensions are broken into sub-dimensions. More flexible, slightly more complex to query.</li>
+    <li><strong>Dimensional Modeling</strong> — the formal methodology behind star schemas (Ralph Kimball). Gives you a vocabulary and design principles for building warehouses business users can actually understand.</li>
+    <li><strong>Data Vault</strong> — an alternative modeling approach designed for auditability and scalability. Common in financial services and large enterprises. You won't design one as a BA, but you'll encounter the terminology.</li>
+  </ul>
 </div>
 
 <div class="branch-section" style="--branch-color: #BA7517;">
   <span class="branch-priority">⑤ Pipeline thinking</span>
   <h2>ETL &amp; ELT</h2>
   <p>This is about understanding how data moves from source systems into your warehouse — and who does the work of transforming it.</p>
-  <p><em>ETL</em> (Extract, Transform, Load) means data is cleaned and transformed before it lands in the warehouse. <em>ELT</em> (Extract, Load, Transform) means raw data lands first, then gets transformed inside the warehouse using SQL. Modern data stacks have largely shifted to ELT because storage is cheap and warehouse compute is powerful. Knowing the difference helps you understand your team's architecture and ask better questions about data quality and timing. <em>dbt</em> (data build tool) is the most widely used tool for the Transform step in ELT. It lets data teams write modular SQL transformations that are version-controlled and testable. You probably won't write dbt yourself as a BA, but you'll reference dbt models when documenting lineage and data flow. <em>Azure Data Factory</em> is Microsoft's managed pipeline service — it extracts data from sources, moves it, and schedules runs. Common in Azure-heavy environments. <em>Airbyte and Fivetran</em> are connectors — they handle the Extract and Load part automatically, syncing data from SaaS tools (Salesforce, HubSpot, Stripe) into your warehouse without custom code. <em>Airflow</em> is an orchestration tool — it schedules and monitors pipelines. Think of it as the manager that makes sure everything runs in the right order at the right time.</p>
+  <ul>
+    <li><strong>ETL vs ELT</strong> — ETL transforms data before it lands in the warehouse. ELT loads raw data first, then transforms it inside the warehouse using SQL. Modern stacks have largely shifted to ELT because storage is cheap and warehouse compute is powerful.</li>
+    <li><strong>dbt</strong> — the most widely used tool for the Transform step in ELT. Lets data teams write modular, version-controlled SQL transformations. You probably won't write dbt as a BA, but you'll reference its models when documenting lineage and data flow.</li>
+    <li><strong>Azure Data Factory</strong> — Microsoft's managed pipeline service. Extracts data from sources, moves it, and schedules runs. Common in Azure-heavy environments.</li>
+    <li><strong>Airbyte / Fivetran</strong> — connectors that handle Extract and Load automatically, syncing SaaS tools (Salesforce, HubSpot, Stripe) into your warehouse without custom code.</li>
+    <li><strong>Airflow</strong> — an orchestration tool that schedules and monitors pipelines. Think of it as the manager that makes sure everything runs in the right order at the right time.</li>
+  </ul>
 </div>
 
 <div class="branch-section" style="--branch-color: #378ADD;">
   <span class="branch-priority">⑥ Pick one to learn</span>
   <h2>Data Platforms</h2>
-  <p>This is where most BAs feel lost first. A data platform is the engine that stores and processes large-scale data — think of it as the database, but built for analytics at scale rather than transactional operations.</p>
-  <p><em>Snowflake</em> is cloud-native, fully SQL-based, and one of the most widely adopted warehouses right now. It's a great starting point because it behaves like a regular database — you query it with SQL, and it handles all the infrastructure for you. <em>Databricks</em> is built on Apache Spark and leans more toward engineering and machine learning workloads. You'll encounter it more in data-heavy or ML-focused teams. <em>Microsoft Synapse</em> is Microsoft's integrated analytics service — common in enterprises already using the Azure ecosystem. If your client or employer is in Azure, you'll likely meet Synapse. <em>BigQuery</em> is Google's equivalent — serverless, fast, and deeply integrated with Google Cloud. Worth knowing even if you don't use it day one. And <em>cloud basics</em> just means understanding that all of these platforms live somewhere — AWS, Azure, or GCP — and that storage, compute, and networking costs are real things your team cares about.</p>
+  <p>A data platform is the engine that stores and processes large-scale data — like a database, but built for analytics at scale. You don't need to know all of these. Pick one that matches your current environment.</p>
+  <ul>
+    <li><strong>Snowflake</strong> — cloud-native, fully SQL-based, and one of the most widely adopted warehouses right now. A great starting point: you query it with SQL and it handles all the infrastructure.</li>
+    <li><strong>Databricks</strong> — built on Apache Spark, leans toward engineering and machine learning workloads. You'll encounter it more in data-heavy or ML-focused teams.</li>
+    <li><strong>MS Synapse</strong> — Microsoft's integrated analytics service. Common in enterprises already using the Azure ecosystem. If your client is in Azure, you'll likely meet Synapse.</li>
+    <li><strong>BigQuery</strong> — Google's equivalent: serverless, fast, deeply integrated with Google Cloud. Worth knowing even if you don't use it day one.</li>
+    <li><strong>Cloud basics (AWS / Azure / GCP)</strong> — understanding that all these platforms live somewhere, and that storage, compute, and networking costs are real things your team cares about.</li>
+  </ul>
 </div>
