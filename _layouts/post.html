@@ -112,8 +112,13 @@ layout: default
     }
 
     .post-wide {
-        width: 100%;
-        overflow-x: auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        max-width: 1340px;
+        padding: 0 16px;
+        box-sizing: border-box;
         margin: 32px 0;
     }
 </style>
