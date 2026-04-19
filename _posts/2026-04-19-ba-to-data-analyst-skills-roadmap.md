@@ -1,6 +1,6 @@
 ---
-title: "BA → Data Analyst: Skills Roadmap"
-description: "Six areas Business Analysts need to cover to transition into data analysis roles, organized by suggested learning priority."
+title: "Business Analyst on Data Projects: Skills Roadmap"
+description: "Six skill areas Business Analysts need to cover when working on data platform and analytics projects, organized by suggested learning priority."
 date: 2026-04-19
 ---
 
@@ -69,8 +69,8 @@ date: 2026-04-19
 
 <!-- ===== CENTER NODE ===== -->
 <rect x="560" y="405" width="180" height="80" rx="12" fill="var(--surface)" stroke="var(--divider)" stroke-width="1.5" filter="url(#node-shadow)"/>
-<text x="650" y="440" text-anchor="middle" style="font-size:14px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">BA &#x2192; Data Analyst</text>
-<text x="650" y="457" text-anchor="middle" style="font-size:10px;fill:var(--text-sec);font-family:'DM Sans',sans-serif;">Learning Roadmap</text>
+<text x="650" y="437" text-anchor="middle" style="font-size:12px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">BA on Data Projects</text>
+<text x="650" y="453" text-anchor="middle" style="font-size:10px;fill:var(--text-sec);font-family:'DM Sans',sans-serif;">Skills Roadmap</text>
 
 <!-- ===== LEFT BRANCH NODES ===== -->
 <rect x="280" y="106" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
