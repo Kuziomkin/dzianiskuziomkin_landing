@@ -138,9 +138,9 @@ date: 2026-04-19
 <rect x="2" y="194" width="3" height="32" fill="#378ADD"/>
 <text x="11" y="215" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Cloud basics (AWS/Azure) <tspan fill="#378ADD" font-size="10">&#x2726;</tspan></text>
 
-<rect x="2" y="218" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
-<rect x="2" y="218" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="239" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Git basics <tspan fill="#378ADD" font-size="10">&#x2726;</tspan></text>
+<rect x="2" y="234" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
+<rect x="2" y="234" width="3" height="32" fill="#378ADD"/>
+<text x="11" y="255" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Git basics <tspan fill="#378ADD" font-size="10">&#x2726;</tspan></text>
 
 <!-- Data Formats -->
 <rect x="2" y="309" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
@@ -196,9 +196,9 @@ date: 2026-04-19
 <text class="ltext" x="11" y="845" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Airflow (orchestration) <tspan fill="#BA7517" font-size="9">&#x2197;</tspan> <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
 </a>
 
-<rect x="2" y="848" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
-<rect x="2" y="848" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="869" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Quality &amp; Testing <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
+<rect x="2" y="864" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="864" width="3" height="32" fill="#BA7517"/>
+<text x="11" y="885" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Quality &amp; Testing <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
 
 <!-- ===== RIGHT LEAF NODES ===== -->
 
@@ -225,9 +225,9 @@ date: 2026-04-19
 <rect x="1125" y="194" width="3" height="32" fill="#534AB7"/>
 <text x="1134" y="215" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Vault <tspan fill="#534AB7" font-size="10">&#x2726;</tspan></text>
 
-<rect x="1125" y="218" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
-<rect x="1125" y="218" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="239" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">SCD Types (1/2/3) <tspan fill="#534AB7" font-size="10">&#x2726;</tspan></text>
+<rect x="1125" y="234" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="234" width="3" height="32" fill="#534AB7"/>
+<text x="1134" y="255" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">SCD Types (1/2/3) <tspan fill="#534AB7" font-size="10">&#x2726;</tspan></text>
 
 <!-- BA Artifacts -->
 <a class="leaf-link" href="https://www.youtube.com/watch?v=0GuDMjERWYc" target="_blank" rel="noopener noreferrer"><title>Watch: Source to Target Mappings (STTM) — CBAP Tutorials</title>
@@ -264,9 +264,9 @@ date: 2026-04-19
 <text class="ltext" x="1134" y="530" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">C / L / P Data Models <tspan fill="#D85A30" font-size="9">&#x2197;</tspan></text>
 </a>
 
-<rect x="1125" y="533" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
-<rect x="1125" y="533" width="3" height="32" fill="#D85A30"/>
-<text x="1134" y="554" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Acceptance Criteria <tspan fill="#D85A30" font-size="10">&#x2726;</tspan></text>
+<rect x="1125" y="549" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="549" width="3" height="32" fill="#D85A30"/>
+<text x="1134" y="570" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Acceptance Criteria <tspan fill="#D85A30" font-size="10">&#x2726;</tspan></text>
 
 <!-- SQL & Analytics -->
 <a class="leaf-link" href="https://www.youtube.com/watch?v=3KABA76euyY" target="_blank" rel="noopener noreferrer"><title>Watch: SQL Full Course 2026 — Beginner to Advanced</title>
@@ -305,9 +305,9 @@ date: 2026-04-19
 <text class="ltext" x="1134" y="850" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Python (Pandas+Jupyter) <tspan fill="#3B6D11" font-size="9">&#x2197;</tspan> <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
 </a>
 
-<rect x="1125" y="853" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="853" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="874" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Statistical Thinking <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
+<rect x="1125" y="869" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="869" width="3" height="32" fill="#3B6D11"/>
+<text x="1134" y="890" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Statistical Thinking <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
 
 <!-- Legend -->
 <text x="650" y="908" text-anchor="middle" style="font-size:10px;fill:var(--text-sec);font-family:'DM Sans',sans-serif;">&#x2460; &#x2461; ... = priority &#xB7; &#x2726; = added &#xB7; &#x2197; = video resource</text>
