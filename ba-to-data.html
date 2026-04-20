@@ -71,28 +71,28 @@
 
         .guide-header .back-link {
             font-size: 13px;
-            color: var(--color-text-secondary);
+            color: var(--text-sec);
             text-decoration: none;
             display: inline-block;
             margin-bottom: 20px;
         }
 
         .guide-header .back-link:hover {
-            color: var(--color-text-primary);
+            color: var(--text);
         }
 
         .guide-header h1 {
             font-family: 'DM Serif Display', Georgia, serif;
             font-size: clamp(26px, 4vw, 36px);
             font-weight: 400;
-            color: var(--color-text-primary);
+            color: var(--text);
             margin: 0 0 12px;
             line-height: 1.2;
         }
 
         .guide-header p {
             font-size: 15px;
-            color: var(--color-text-secondary);
+            color: var(--text-sec);
             line-height: 1.6;
             margin: 0;
         }
@@ -101,14 +101,28 @@
             width: 100%;
             overflow-x: auto;
             overflow-y: hidden;
-            background: var(--color-background-tertiary);
+            background: var(--surface);
             padding: 14px 0 10px;
+        }
+
+        @media (max-width: 900px) {
+            .mindmap-wrap {
+                position: relative;
+            }
+            .mindmap-wrap::after {
+                content: '';
+                position: absolute;
+                top: 0; right: 0; bottom: 0;
+                width: 40px;
+                background: linear-gradient(to right, transparent, var(--surface));
+                pointer-events: none;
+            }
         }
 
         #mm {
             position: relative;
             width: 1300px;
-            height: 895px;
+            height: 920px;
         }
 
         #mmsvg {
@@ -121,7 +135,7 @@
             position: absolute;
             width: 160px;
             height: 48px;
-            background: var(--color-background-secondary);
+            background: var(--surface);
             border-radius: 0 8px 8px 0;
             display: flex;
             flex-direction: column;
@@ -135,7 +149,7 @@
         .mn-t {
             font-size: 11.5px;
             font-weight: 500;
-            color: var(--color-text-primary);
+            color: var(--text);
             line-height: 1.25;
         }
 
@@ -148,13 +162,13 @@
             position: absolute;
             width: 170px;
             height: 32px;
-            background: var(--color-background-primary);
+            background: var(--bg);
             border-radius: 0 6px 6px 0;
             display: flex;
             align-items: center;
             padding: 0 7px;
             font-size: 11px;
-            color: var(--color-text-primary);
+            color: var(--text);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -172,12 +186,71 @@
             margin: 0 auto;
             padding: 28px 24px 64px;
             font-size: 13px;
-            color: var(--color-text-secondary);
+            color: var(--text-sec);
             line-height: 1.6;
         }
 
         .guide-footer a {
-            color: var(--color-text-primary);
+            color: var(--text);
+        }
+
+        .branch-section {
+            max-width: 720px;
+            margin: 48px auto 0;
+            padding: 0 24px 0 20px;
+            border-left: 3px solid var(--branch-color, #ccc);
+            box-sizing: border-box;
+        }
+
+        .branch-section h2 {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--branch-color);
+            margin: 0 0 12px;
+            letter-spacing: -0.01em;
+        }
+
+        .branch-section .branch-priority {
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--branch-color);
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        .branch-section p {
+            font-size: 15px;
+            line-height: 1.75;
+            color: var(--text);
+            margin: 0 0 16px;
+        }
+
+        .branch-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .branch-section ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid color-mix(in srgb, var(--branch-color) 20%, transparent);
+            font-size: 15px;
+            line-height: 1.65;
+            color: var(--text);
+        }
+
+        .branch-section ul li:last-child { border-bottom: none; padding-bottom: 0; }
+
+        .branch-section ul li strong {
+            color: var(--branch-color);
+            font-weight: 500;
+            display: inline-block;
+            min-width: 0;
+            margin-right: 4px;
         }
     </style>
 </head>
@@ -201,7 +274,7 @@
 
         <div class="mindmap-wrap">
             <div id="mm">
-                <svg id="mmsvg" width="1300" height="895">
+                <svg id="mmsvg" width="1300" height="920">
                     <path d="M560 445 C500 445,500 130,440 130" stroke="#378ADD" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"></path>
                     <path d="M560 445 C500 445,500 445,440 445" stroke="#1D9E75" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"></path>
                     <path d="M560 445 C500 445,500 760,440 760" stroke="#BA7517" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"></path>
@@ -213,6 +286,7 @@
                     <path d="M280 130 C226 130,226 130,172 130" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M280 130 C226 130,226 170,172 170" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M280 130 C226 130,226 210,172 210" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 130 C226 130,226 234,172 234" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M280 445 C226 445,226 325,172 325" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M280 445 C226 445,226 365,172 365" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M280 445 C226 445,226 405,172 405" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
@@ -224,46 +298,51 @@
                     <path d="M280 760 C226 760,226 760,172 760" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M280 760 C226 760,226 800,172 800" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M280 760 C226 760,226 840,172 840" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M280 760 C226 760,226 864,172 864" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 130 C1072.5 130,1072.5 50,1125 50" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 130 C1072.5 130,1072.5 90,1125 90" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 130 C1072.5 130,1072.5 130,1125 130" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 130 C1072.5 130,1072.5 170,1125 170" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 130 C1072.5 130,1072.5 210,1125 210" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 130 C1072.5 130,1072.5 234,1125 234" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 445 C1072.5 445,1072.5 325,1125 325" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 445 C1072.5 445,1072.5 365,1125 365" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 445 C1072.5 445,1072.5 405,1125 405" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 445 C1072.5 445,1072.5 445,1125 445" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 445 C1072.5 445,1072.5 485,1125 485" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 445 C1072.5 445,1072.5 525,1125 525" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 445 C1072.5 445,1072.5 549,1125 549" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 760 C1072.5 760,1072.5 645,1125 645" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 760 C1072.5 760,1072.5 685,1125 685" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 760 C1072.5 760,1072.5 725,1125 725" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 760 C1072.5 760,1072.5 765,1125 765" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 760 C1072.5 760,1072.5 805,1125 805" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                     <path d="M1020 760 C1072.5 760,1072.5 845,1125 845" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
+                    <path d="M1020 760 C1072.5 760,1072.5 869,1125 869" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"></path>
                 </svg>
 
                 <!-- Center node -->
-                <div style="position:absolute;left:560px;top:405px;width:180px;height:80px;background:var(--color-background-secondary);border:1.5px solid var(--color-border-primary);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:3;box-sizing:border-box;padding:0 10px;">
-                    <div style="font-size:14px;font-weight:500;color:var(--color-text-primary);">BA → Data Analyst</div>
-                    <div style="font-size:10px;color:var(--color-text-secondary);margin-top:4px;">Learning Roadmap</div>
+                <div style="position:absolute;left:560px;top:405px;width:180px;height:80px;background:var(--surface);border:1.5px solid var(--divider);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:3;box-sizing:border-box;padding:0 10px;">
+                    <div style="font-size:14px;font-weight:500;color:var(--text);">BA → Data Analyst</div>
+                    <div style="font-size:10px;color:var(--text-sec);margin-top:4px;">Learning Roadmap</div>
                 </div>
 
                 <!-- Data Platforms -->
                 <div class="mn" style="left:280px;top:106px;border-left:4px solid #378ADD;">
                     <span class="mn-t">Data Platforms</span>
-                    <span class="mn-b" style="color:#378ADD;">⑥ pick one to learn</span>
+                    <span class="mn-b" style="color:#378ADD;">③ set up your sandbox</span>
                 </div>
                 <div class="sn" style="left:2px;top:34px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">Snowflake</div>
                 <div class="sn" style="left:2px;top:74px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">Databricks</div>
                 <div class="sn" style="left:2px;top:114px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">MS Synapse</div>
                 <div class="sn" style="left:2px;top:154px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">BigQuery<span class="sp" style="color:#378ADD;">✦</span></div>
                 <div class="sn" style="left:2px;top:194px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">Cloud basics (AWS/Azure)<span class="sp" style="color:#378ADD;">✦</span></div>
+                <div class="sn" style="left:2px;top:218px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">Git basics<span class="sp" style="color:#378ADD;">✦</span></div>
 
                 <!-- Data Formats & Storage -->
                 <div class="mn" style="left:280px;top:421px;border-left:4px solid #1D9E75;">
                     <span class="mn-t">Data Formats &amp; Storage</span>
-                    <span class="mn-b" style="color:#1D9E75;">③ foundational</span>
+                    <span class="mn-b" style="color:#1D9E75;">④ foundational</span>
                 </div>
                 <div class="sn" style="left:2px;top:309px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">Structured (CSV, tables)</div>
                 <div class="sn" style="left:2px;top:349px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">Semi-structured (JSON, Parquet)</div>
@@ -275,24 +354,26 @@
                 <!-- ETL & ELT -->
                 <div class="mn" style="left:280px;top:736px;border-left:4px solid #BA7517;">
                     <span class="mn-t">ETL &amp; ELT</span>
-                    <span class="mn-b" style="color:#BA7517;">⑤ pipeline thinking</span>
+                    <span class="mn-b" style="color:#BA7517;">⑥ pipeline thinking</span>
                 </div>
                 <div class="sn" style="left:2px;top:664px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">ETL vs ELT</div>
                 <div class="sn" style="left:2px;top:704px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">dbt<span class="sp" style="color:#BA7517;">✦</span></div>
                 <div class="sn" style="left:2px;top:744px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">Azure Data Factory<span class="sp" style="color:#BA7517;">✦</span></div>
                 <div class="sn" style="left:2px;top:784px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">Airbyte / Fivetran<span class="sp" style="color:#BA7517;">✦</span></div>
                 <div class="sn" style="left:2px;top:824px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">Airflow (orchestration)<span class="sp" style="color:#BA7517;">✦</span></div>
+                <div class="sn" style="left:2px;top:848px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">Data Quality &amp; Testing<span class="sp" style="color:#BA7517;">✦</span></div>
 
                 <!-- Data Modeling -->
                 <div class="mn" style="left:860px;top:106px;border-left:4px solid #534AB7;">
                     <span class="mn-t">Data Modeling</span>
-                    <span class="mn-b" style="color:#534AB7;">④ design skills</span>
+                    <span class="mn-b" style="color:#534AB7;">⑤ design skills</span>
                 </div>
                 <div class="sn" style="left:1125px;top:34px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Normalized vs Denorm.</div>
                 <div class="sn" style="left:1125px;top:74px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Star Schema</div>
                 <div class="sn" style="left:1125px;top:114px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Snowflake Schema</div>
                 <div class="sn" style="left:1125px;top:154px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Dimensional Modeling<span class="sp" style="color:#534AB7;">✦</span></div>
                 <div class="sn" style="left:1125px;top:194px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Data Vault<span class="sp" style="color:#534AB7;">✦</span></div>
+                <div class="sn" style="left:1125px;top:218px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">SCD Types (1 / 2 / 3)<span class="sp" style="color:#534AB7;">✦</span></div>
 
                 <!-- BA Artifacts -->
                 <div class="mn" style="left:860px;top:421px;border-left:4px solid #D85A30;">
@@ -305,6 +386,7 @@
                 <div class="sn" style="left:1125px;top:429px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">Data Dictionary</div>
                 <div class="sn" style="left:1125px;top:469px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">Data Lineage</div>
                 <div class="sn" style="left:1125px;top:509px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">C / L / P Data Models</div>
+                <div class="sn" style="left:1125px;top:533px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">Data Acceptance Criteria<span class="sp" style="color:#D85A30;">✦</span></div>
 
                 <!-- SQL & Analytics -->
                 <div class="mn" style="left:860px;top:736px;border-left:4px solid #3B6D11;">
@@ -316,14 +398,101 @@
                 <div class="sn" style="left:1125px;top:709px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Window Functions<span class="sp" style="color:#3B6D11;">✦</span></div>
                 <div class="sn" style="left:1125px;top:749px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">CTEs<span class="sp" style="color:#3B6D11;">✦</span></div>
                 <div class="sn" style="left:1125px;top:789px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Power BI / Tableau<span class="sp" style="color:#3B6D11;">✦</span></div>
-                <div class="sn" style="left:1125px;top:829px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Python basics<span class="sp" style="color:#3B6D11;">✦</span></div>
+                <div class="sn" style="left:1125px;top:829px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Python (Pandas + Jupyter)<span class="sp" style="color:#3B6D11;">✦</span></div>
+                <div class="sn" style="left:1125px;top:853px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Statistical Thinking<span class="sp" style="color:#3B6D11;">✦</span></div>
 
                 <!-- Legend -->
-                <div style="position:absolute;left:0;right:0;bottom:8px;display:flex;justify-content:center;gap:24px;font-size:10px;color:var(--color-text-tertiary);">
+                <div style="position:absolute;left:0;right:0;bottom:8px;display:flex;justify-content:center;gap:24px;font-size:10px;color:var(--text-sec);">
                     <span>① ② ... = suggested learning priority</span>
                     <span>✦ = added beyond your original list</span>
                 </div>
             </div>
+        </div>
+
+        <div class="branch-section" style="--branch-color: #D85A30;">
+            <span class="branch-priority">① Start here — your core strength</span>
+            <h2>BA Artifacts</h2>
+            <p>This is your home territory — but the artifacts have different shapes in data projects than in process or requirements work.</p>
+            <ul>
+                <li><strong>Source Mappings</strong> — document exactly where each field in the target system comes from: source table, transformation logic, business rules. Often the most critical BA deliverable in a data project.</li>
+                <li><strong>Data Flow Diagrams</strong> — show how data moves between systems, pipelines, and storage layers. Give developers and architects a shared picture of the data landscape.</li>
+                <li><strong>Data Catalog</strong> — a searchable inventory of all data assets: tables, fields, owners, freshness, usage. Think of it as the data equivalent of a requirements register.</li>
+                <li><strong>Data Dictionary</strong> — defines what each field means in business terms: business definition, valid values, owner. Without this, different teams use the same field to mean different things.</li>
+                <li><strong>Data Lineage</strong> — documents where a piece of data was born, how it was transformed, and where it ends up. Critical for debugging data quality issues and for regulatory compliance.</li>
+                <li><strong>C / L / P Data Models</strong> — Conceptual defines business entities and relationships, Logical adds attributes and data types, Physical translates into actual database tables and constraints. As a BA you'll own the conceptual layer and collaborate on the logical one.</li>
+                <li><strong>Data Acceptance Criteria</strong> — BAs already write acceptance criteria; in data projects these directly become data quality rules and dbt test conditions. Documenting what "valid" means for each field is one of the most concrete bridges between BA work and data engineering.</li>
+            </ul>
+        </div>
+
+        <div class="branch-section" style="--branch-color: #3B6D11;">
+            <span class="branch-priority">② Learn this first</span>
+            <h2>SQL &amp; Analytics</h2>
+            <p>You don't need to become a data engineer. But you do need to be able to query data yourself — otherwise you're dependent on someone else to answer every question.</p>
+            <ul>
+                <li><strong>SQL Fundamentals</strong> — SELECT, WHERE, GROUP BY, ORDER BY, basic filtering. If you already know this, you're not starting from zero.</li>
+                <li><strong>Joins &amp; Aggregations</strong> — where most real analysis happens. Understanding joins deeply (not just knowing they exist) is what lets you trace data across tables and validate source mappings.</li>
+                <li><strong>Window Functions</strong> — calculate running totals, rankings, and moving averages without collapsing your data. The difference between answering "total sales this month" vs "each customer's rank within their region over time."</li>
+                <li><strong>CTEs</strong> — Common Table Expressions make complex queries readable by breaking them into named steps. How data engineers structure SQL — learning to read and write them makes collaboration much easier.</li>
+                <li><strong>Power BI / Tableau</strong> — the most common BI tools you'll encounter. You don't need to master both, but knowing how to build a basic dashboard and read the underlying data model is genuinely useful.</li>
+                <li><strong>Python (Pandas + Jupyter)</strong> — specifically pandas for data manipulation and reshaping, and Jupyter notebooks for running and sharing analysis. Being able to load a dataframe, inspect it, and write a simple transformation puts you in a much stronger position when working alongside engineers.</li>
+                <li><strong>Statistical Thinking</strong> — SQL tells you what the data says; statistics tells you what it means. Distributions, percentiles, and basic hypothesis testing prevent you from reporting a difference that is just noise. An analyst who understands when a result is statistically meaningful earns significantly more trust from stakeholders.</li>
+            </ul>
+        </div>
+
+        <div class="branch-section" style="--branch-color: #378ADD;">
+            <span class="branch-priority">③ Set up your sandbox — don't leave this until last</span>
+            <h2>Data Platforms</h2>
+            <p>You need a platform to practice SQL, run dbt, and build your portfolio. Don't wait until you've "learned everything else" — open a free account on the same week you start learning SQL. Snowflake has a 30-day free trial with sample datasets included. That's your sandbox. The platform choice matters less than getting one running early.</p>
+            <ul>
+                <li><strong>Snowflake</strong> — cloud-native, fully SQL-based, and the easiest starting point for analysts. Free trial, sample datasets built in, no infrastructure to manage. Open an account this week and use it as your SQL practice environment.</li>
+                <li><strong>Databricks</strong> — built on Apache Spark, leans toward engineering and machine learning workloads. You'll encounter it more in data-heavy or ML-focused teams.</li>
+                <li><strong>MS Synapse</strong> — Microsoft's integrated analytics service. Common in enterprises already using the Azure ecosystem. If your client is in Azure, you'll likely meet Synapse.</li>
+                <li><strong>BigQuery</strong> — Google's equivalent: serverless, fast, deeply integrated with Google Cloud. Worth knowing even if you don't use it day one.</li>
+                <li><strong>Cloud basics (AWS / Azure / GCP)</strong> — understanding that all these platforms live somewhere, and that storage, compute, and networking costs are real things your team cares about.</li>
+                <li><strong>Git basics</strong> — not technically a platform, but you need this to use dbt, share SQL scripts, and work in any modern analytics team. Learn commit, branch, and pull request. Takes a weekend, pays back immediately.</li>
+            </ul>
+        </div>
+
+        <div class="branch-section" style="--branch-color: #1D9E75;">
+            <span class="branch-priority">④ Foundational</span>
+            <h2>Data Formats &amp; Storage</h2>
+            <p>Before you can work with data, you need to understand what shape it comes in and where it lives.</p>
+            <ul>
+                <li><strong>Structured data</strong> — rows and columns, like a spreadsheet or SQL table. What most BAs already know. Clean, predictable, easy to query.</li>
+                <li><strong>Semi-structured (JSON, Parquet)</strong> — some structure, more flexible. JSON is what APIs return. Parquet is a columnar file format optimized for analytics, widely used in data lakes.</li>
+                <li><strong>Unstructured data</strong> — no predefined schema: documents, emails, logs, images. Hardest to work with but increasingly common in data projects.</li>
+                <li><strong>Databases (OLTP / OLAP)</strong> — OLTP handles live operational data (CRM, ERP, order systems). OLAP is optimized for querying large historical datasets — the warehouse side. Understanding this distinction helps you ask better questions about data sources.</li>
+                <li><strong>Lakehouses (Delta, Iceberg)</strong> — combine the flexibility of a data lake with the structure of a warehouse. Delta Lake and Apache Iceberg are the two dominant open formats you'll hear often in modern architectures.</li>
+                <li><strong>Object Storage (S3, Blob)</strong> — where raw files live before they're processed. Think of it as a giant cheap hard drive in the cloud. Data almost always passes through here at some point.</li>
+            </ul>
+        </div>
+
+        <div class="branch-section" style="--branch-color: #534AB7;">
+            <span class="branch-priority">⑤ Design skills</span>
+            <h2>Data Modeling</h2>
+            <p>This is where your BA background gives you the most leverage. Data modeling is fundamentally about understanding business entities and their relationships — exactly what you've been doing with ERDs and process flows.</p>
+            <ul>
+                <li><strong>Normalized vs Denormalized</strong> — the foundational design choice. Normalized models eliminate redundancy (good for operational databases). Denormalized models flatten data for faster analytics queries (good for warehouses). Knowing when to use which is one of the most valuable things a BA can contribute.</li>
+                <li><strong>Star Schema</strong> — the most common warehouse pattern: one central fact table surrounded by dimension tables. Simple, fast, easy to understand. Most BI tools are optimized for it.</li>
+                <li><strong>Snowflake Schema</strong> — a normalized version of the star where dimensions are broken into sub-dimensions. More flexible, slightly more complex to query.</li>
+                <li><strong>Dimensional Modeling</strong> — the formal methodology behind star schemas (Ralph Kimball). Gives you a vocabulary and design principles for building warehouses business users can actually understand.</li>
+                <li><strong>Data Vault</strong> — an alternative modeling approach designed for auditability and scalability. Common in financial services and large enterprises. You won't design one as a BA, but you'll encounter the terminology.</li>
+                <li><strong>SCD Types (1 / 2 / 3)</strong> — Slowly Changing Dimensions describe how to handle source data that changes over time. Type 1 overwrites the old value. Type 2 adds a new row and keeps full history. Type 3 adds a "previous value" column. Understanding the difference matters every time a source mapping needs to answer "as of" questions or track customer history — which is constantly.</li>
+            </ul>
+        </div>
+
+        <div class="branch-section" style="--branch-color: #BA7517;">
+            <span class="branch-priority">⑥ Pipeline thinking</span>
+            <h2>ETL &amp; ELT</h2>
+            <p>This is about understanding how data moves from source systems into your warehouse — and who does the work of transforming it.</p>
+            <ul>
+                <li><strong>ETL vs ELT</strong> — ETL transforms data before it lands in the warehouse. ELT loads raw data first, then transforms it inside the warehouse using SQL. Modern stacks have largely shifted to ELT because storage is cheap and warehouse compute is powerful.</li>
+                <li><strong>dbt</strong> — the most widely used tool for the Transform step in ELT. Lets data teams write modular, version-controlled SQL transformations. You probably won't write dbt as a BA, but you'll reference its models when documenting lineage and data flow.</li>
+                <li><strong>Azure Data Factory</strong> — Microsoft's managed pipeline service. Extracts data from sources, moves it, and schedules runs. Common in Azure-heavy environments.</li>
+                <li><strong>Airbyte / Fivetran</strong> — connectors that handle Extract and Load automatically, syncing SaaS tools (Salesforce, HubSpot, Stripe) into your warehouse without custom code.</li>
+                <li><strong>Airflow</strong> — an orchestration tool that schedules and monitors pipelines. Think of it as the manager that makes sure everything runs in the right order at the right time.</li>
+                <li><strong>Data Quality &amp; Testing</strong> — dbt tests (not_null, unique, accepted_values, referential integrity) and tools like Great Expectations enforce that pipelines don't silently produce bad data. A pipeline without tests is a pipeline no one trusts. Your acceptance criteria from the requirements phase become the test cases here.</li>
+            </ul>
         </div>
 
         <div class="guide-footer">
@@ -351,12 +520,12 @@
             c(740, 445, 860, 130, '#534AB7', 2, 0.7);
             c(740, 445, 860, 445, '#D85A30', 2, 0.7);
             c(740, 445, 860, 760, '#3B6D11', 2, 0.7);
-            [50, 90, 130, 170, 210].forEach(y => c(280, 130, 172, y, '#378ADD', 1, 0.4));
+            [50, 90, 130, 170, 210, 234].forEach(y => c(280, 130, 172, y, '#378ADD', 1, 0.4));
             [325, 365, 405, 445, 485, 525].forEach(y => c(280, 445, 172, y, '#1D9E75', 1, 0.4));
-            [680, 720, 760, 800, 840].forEach(y => c(280, 760, 172, y, '#BA7517', 1, 0.4));
-            [50, 90, 130, 170, 210].forEach(y => c(1020, 130, 1125, y, '#534AB7', 1, 0.4));
-            [325, 365, 405, 445, 485, 525].forEach(y => c(1020, 445, 1125, y, '#D85A30', 1, 0.4));
-            [645, 685, 725, 765, 805, 845].forEach(y => c(1020, 760, 1125, y, '#3B6D11', 1, 0.4));
+            [680, 720, 760, 800, 840, 864].forEach(y => c(280, 760, 172, y, '#BA7517', 1, 0.4));
+            [50, 90, 130, 170, 210, 234].forEach(y => c(1020, 130, 1125, y, '#534AB7', 1, 0.4));
+            [325, 365, 405, 445, 485, 525, 549].forEach(y => c(1020, 445, 1125, y, '#D85A30', 1, 0.4));
+            [645, 685, 725, 765, 805, 845, 869].forEach(y => c(1020, 760, 1125, y, '#3B6D11', 1, 0.4));
         })();
     </script>
 
