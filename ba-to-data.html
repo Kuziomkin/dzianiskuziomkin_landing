@@ -273,7 +273,8 @@
         <div class="guide-header">
             <a href="/" class="back-link">← Back</a>
             <h1>From Business Analyst to Business Data Analyst: Skills Roadmap</h1>
-            <p>Seven areas Business Analysts need to cover to transition into data analysis roles, organized by suggested
+            <p>Seven areas Business Analysts need to cover to transition into data analysis roles, organized by
+                suggested
                 learning priority. ✦ marks items added beyond the core list.</p>
         </div>
 
@@ -370,7 +371,7 @@
 
                 <!-- Data Requirements & Mapping -->
                 <div class="mn" style="left:860px;top:380px;border-left:4px solid #D85A30;">
-                    <span class="mn-t">Data Requirements &amp; Mapping</span>
+                    <span class="mn-t">Data Requirements</span>
                     <span class="mn-b" style="color:#D85A30;">① your core strength</span>
                 </div>
                 <div class="sn" style="left:1125px;top:304px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">
@@ -417,11 +418,14 @@
                     Window Functions / CTEs<span class="sp" style="color:#3B6D11;">✦</span></div>
                 <div class="sn" style="left:1125px;top:964px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
                     KPI Storytelling<span class="sp" style="color:#3B6D11;">✦</span></div>
-                <div class="sn" style="left:1125px;top:1004px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
+                <div class="sn"
+                    style="left:1125px;top:1004px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
                     Power BI / Tableau<span class="sp" style="color:#3B6D11;">✦</span></div>
-                <div class="sn" style="left:1125px;top:1044px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
+                <div class="sn"
+                    style="left:1125px;top:1044px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
                     Python (Pandas + Jupyter)</div>
-                <div class="sn" style="left:1125px;top:1084px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
+                <div class="sn"
+                    style="left:1125px;top:1084px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
                     Statistical Thinking<span class="sp" style="color:#3B6D11;">✦</span></div>
 
             </div>
@@ -429,7 +433,7 @@
 
         <div class="branch-section" style="--branch-color: #D85A30;">
             <span class="branch-priority">① Start here — your core strength</span>
-            <h2>Data Requirements &amp; Mapping</h2>
+            <h2>Data Requirements</h2>
             <p>This is your home territory — but the artifacts have different shapes in data projects than in process or
                 requirements work. It's about translating business intent into technical specs.</p>
             <ul>
@@ -494,7 +498,8 @@
             <h2>Data Formats &amp; Storage</h2>
             <p>Before you can work with data, you need to understand what shape it comes in and where it lives.</p>
             <ul>
-                <li><strong>Structured vs. Semi-structured</strong> — moving beyond CSVs to JSON and Parquet. JSON is what
+                <li><strong>Structured vs. Semi-structured</strong> — moving beyond CSVs to JSON and Parquet. JSON is
+                    what
                     APIs return; Parquet is what modern warehouses use for speed.</li>
                 <li><strong>Databases (OLTP / OLAP)</strong> — OLTP handles live operational data; OLAP is optimized for
                     historical analytics. Understanding this helps you ask the right questions about data sources.</li>
@@ -579,16 +584,16 @@
                 p.setAttribute('opacity', String(op || 0.65));
                 svg.appendChild(p);
             }
-            
+
             const CENTER_X_L = 560;
             const CENTER_X_R = 740;
             const CENTER_Y = 550;
-            
+
             // Left main branches (y: 174, 534, 894)
             c(CENTER_X_L, CENTER_Y, 440, 174, '#378ADD', 2, 0.7);
             c(CENTER_X_L, CENTER_Y, 440, 534, '#1D9E75', 2, 0.7);
             c(CENTER_X_L, CENTER_Y, 440, 894, '#BA7517', 2, 0.7);
-            
+
             // Right main branches (y: 144, 404, 664, 964)
             c(CENTER_X_R, CENTER_Y, 860, 144, '#534AB7', 2, 0.7);
             c(CENTER_X_R, CENTER_Y, 860, 404, '#D85A30', 2, 0.7);
@@ -599,7 +604,7 @@
             [74, 114, 154, 194, 234, 274].forEach(y => c(280, 174, 172, y, '#378ADD', 1, 0.4));
             [434, 474, 514, 554, 594, 634].forEach(y => c(280, 534, 172, y, '#1D9E75', 1, 0.4));
             [794, 834, 874, 914, 954, 994].forEach(y => c(280, 894, 172, y, '#BA7517', 1, 0.4));
-            
+
             // Right sub-nodes
             [44, 84, 124, 164, 204, 244].forEach(y => c(1020, 144, 1125, y, '#534AB7', 1, 0.4));
             [304, 344, 384, 424, 464, 504].forEach(y => c(1020, 404, 1125, y, '#D85A30', 1, 0.4));
