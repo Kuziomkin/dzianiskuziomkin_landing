@@ -1,348 +1,302 @@
 ---
 title: "Business Analyst on Data Projects: Skills Roadmap"
-description: "Six skill areas Business Analysts need to cover when working on data platform and analytics projects, organized by suggested learning priority."
+description: "Seven skill areas Business Analysts need to cover when working on data platform and analytics projects, organized by suggested learning priority."
 date: 2026-04-19
 ---
 
 <div class="post-wide">
-<svg viewBox="0 0 1300 920" width="100%" style="display:block;" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1300 1120" width="100%" style="display:block;" xmlns="http://www.w3.org/2000/svg">
 <title>BA to Data Analyst Learning Roadmap</title>
 <defs>
   <filter id="node-shadow" x="-10%" y="-10%" width="120%" height="120%">
     <feDropShadow dx="0" dy="1" stdDeviation="2.5" flood-color="#00000014"/>
   </filter>
-  <style>
-    .leaf-link { cursor: pointer; }
-    .leaf-link .lbg { transition: opacity 0.15s ease; }
-    .leaf-link:hover .lbg { opacity: 0.75; }
-    .leaf-link:hover .ltext { text-decoration: underline; }
-  </style>
 </defs>
 
-<!-- Main branch paths from center -->
-<path d="M560 445 C500 445,500 130,440 130" stroke="#378ADD" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
-<path d="M560 445 C500 445,500 445,440 445" stroke="#1D9E75" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
-<path d="M560 445 C500 445,500 760,440 760" stroke="#BA7517" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+<!-- Main branch paths from center (Y: 550) -->
+<path d="M560 550 C500 550,500 174,440 174" stroke="#378ADD" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+<path d="M560 550 C500 550,500 534,440 534" stroke="#1D9E75" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+<path d="M560 550 C500 550,500 894,440 894" stroke="#BA7517" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
 
-<path d="M740 445 C800 445,800 104,860 104" stroke="#534AB7" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
-<path d="M740 445 C800 445,800 324,860 324" stroke="#D85A30" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
-<path d="M740 445 C800 445,800 544,860 544" stroke="#A855F7" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
-<path d="M740 445 C800 445,800 764,860 764" stroke="#3B6D11" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+<path d="M740 550 C800 550,800 144,860 144" stroke="#534AB7" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+<path d="M740 550 C800 550,800 404,860 404" stroke="#D85A30" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+<path d="M740 550 C800 550,800 664,860 664" stroke="#A855F7" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+<path d="M740 550 C800 550,800 964,860 964" stroke="#3B6D11" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
 
-<!-- Sub-branch paths (recalculated) -->
-<!-- Left: Platforms (130) -->
-<path d="M280 130 C226 130,226 34,172 34" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 130 C226 130,226 74,172 74" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 130 C226 130,226 114,172 114" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 130 C226 130,226 154,172 154" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 130 C226 130,226 194,172 194" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 130 C226 130,226 234,172 234" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<!-- Left: Formats (445) -->
-<path d="M280 445 C226 445,226 309,172 309" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 445 C226 445,226 349,172 349" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 445 C226 445,226 389,172 389" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 445 C226 445,226 429,172 429" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 445 C226 445,226 469,172 469" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 445 C226 445,226 509,172 509" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<!-- Left: ETL (760) -->
-<path d="M280 760 C226 760,226 664,172 664" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 760 C226 760,226 704,172 704" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 760 C226 760,226 744,172 744" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 760 C226 760,226 784,172 784" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 760 C226 760,226 824,172 824" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 760 C226 760,226 864,172 864" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<!-- Sub-branch leaf paths -->
+<!-- Left: Platforms (174) -->
+<path d="M280 174 C226 174,226 74,172 74" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 174 C226 174,226 114,172 114" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 174 C226 174,226 154,172 154" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 174 C226 174,226 194,172 194" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 174 C226 174,226 234,172 234" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 174 C226 174,226 274,172 274" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<!-- Left: Formats (534) -->
+<path d="M280 534 C226 534,226 434,172 434" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 534 C226 534,226 474,172 474" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 534 C226 534,226 514,172 514" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 534 C226 534,226 554,172 554" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 534 C226 534,226 594,172 594" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 534 C226 534,226 634,172 634" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<!-- Left: ETL (894) -->
+<path d="M280 894 C226 894,226 794,172 794" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 894 C226 894,226 834,172 834" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 894 C226 894,226 874,172 874" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 894 C226 894,226 914,172 914" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 894 C226 894,226 954,172 954" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M280 894 C226 894,226 994,172 994" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
 
-<!-- Right: Modeling (104) -->
-<path d="M1020 104 C1072.5 104,1072.5 16.5,1125 16.5" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 104 C1072.5 104,1072.5 51.5,1125 51.5" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 104 C1072.5 104,1072.5 86.5,1125 86.5" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 104 C1072.5 104,1072.5 121.5,1125 121.5" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 104 C1072.5 104,1072.5 156.5,1125 156.5" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 104 C1072.5 104,1072.5 191.5,1125 191.5" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<!-- Right: Mapping (324) -->
-<path d="M1020 324 C1072.5 324,1072.5 219,1125 219" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 324 C1072.5 324,1072.5 254,1125 254" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 324 C1072.5 324,1072.5 289,1125 289" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 324 C1072.5 324,1072.5 324,1125 324" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 324 C1072.5 324,1072.5 359,1125 359" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 324 C1072.5 324,1072.5 394,1125 394" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<!-- Right: Governance (544) -->
-<path d="M1020 544 C1072.5 544,1072.5 456.5,1125 456.5" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 544 C1072.5 544,1072.5 491.5,1125 491.5" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 544 C1072.5 544,1072.5 526.5,1125 526.5" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 544 C1072.5 544,1072.5 561.5,1125 561.5" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 544 C1072.5 544,1072.5 596.5,1125 596.5" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 544 C1072.5 544,1072.5 631.5,1125 631.5" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<!-- Right: SQL (764) -->
-<path d="M1020 764 C1072.5 764,1072.5 641.5,1125 641.5" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 764 C1072.5 764,1072.5 676.5,1125 676.5" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 764 C1072.5 764,1072.5 711.5,1125 711.5" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 764 C1072.5 764,1072.5 746.5,1125 746.5" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 764 C1072.5 764,1072.5 781.5,1125 781.5" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 764 C1072.5 764,1072.5 816.5,1125 816.5" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 764 C1072.5 764,1072.5 851.5,1125 851.5" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<!-- Right: Modeling (144) -->
+<path d="M1020 144 C1072.5 144,1072.5 44,1125 44" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 144 C1072.5 144,1072.5 84,1125 84" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 144 C1072.5 144,1072.5 124,1125 124" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 144 C1072.5 144,1072.5 164,1125 164" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 144 C1072.5 144,1072.5 204,1125 204" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 144 C1072.5 144,1072.5 244,1125 244" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<!-- Right: Mapping (404) -->
+<path d="M1020 404 C1072.5 404,1072.5 304,1125 304" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 404 C1072.5 404,1072.5 344,1125 344" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 404 C1072.5 404,1072.5 384,1125 384" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 404 C1072.5 404,1072.5 424,1125 424" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 404 C1072.5 404,1072.5 464,1125 464" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 404 C1072.5 404,1072.5 504,1125 504" stroke="#D85A30" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<!-- Right: Governance (664) -->
+<path d="M1020 664 C1072.5 664,1072.5 564,1125 564" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 664 C1072.5 664,1072.5 604,1125 604" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 664 C1072.5 664,1072.5 644,1125 644" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 664 C1072.5 664,1072.5 684,1125 684" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 664 C1072.5 664,1072.5 724,1125 724" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 664 C1072.5 664,1072.5 764,1125 764" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<!-- Right: SQL (964) -->
+<path d="M1020 964 C1072.5 964,1072.5 844,1125 844" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 964 C1072.5 964,1072.5 884,1125 884" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 964 C1072.5 964,1072.5 924,1125 924" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 964 C1072.5 964,1072.5 964,1125 964" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 964 C1072.5 964,1072.5 1004,1125 1004" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 964 C1072.5 964,1072.5 1044,1125 1044" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+<path d="M1020 964 C1072.5 964,1072.5 1084,1125 1084" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
 
 <!-- ===== CENTER NODE ===== -->
-<rect x="560" y="405" width="180" height="80" rx="12" fill="var(--surface)" stroke="var(--divider)" stroke-width="1.5" filter="url(#node-shadow)"/>
-<text x="650" y="437" text-anchor="middle" style="font-size:12px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">BA on Data Projects</text>
-<text x="650" y="453" text-anchor="middle" style="font-size:10px;fill:var(--text-sec);font-family:'DM Sans',sans-serif;">Skills Roadmap</text>
+<rect x="560" y="510" width="180" height="80" rx="12" fill="var(--surface)" stroke="var(--divider)" stroke-width="1.5" filter="url(#node-shadow)"/>
+<text x="650" y="542" text-anchor="middle" style="font-size:12px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">BA on Data Projects</text>
+<text x="650" y="558" text-anchor="middle" style="font-size:10px;fill:var(--text-sec);font-family:'DM Sans',sans-serif;">Skills Roadmap</text>
 
 <!-- ===== LEFT BRANCH NODES ===== -->
-<rect x="280" y="106" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="280" y="106" width="4" height="48" fill="#378ADD"/>
-<text x="292" y="129" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Platforms</text>
-<text x="292" y="143" style="font-size:9.5px;fill:#378ADD;font-family:'DM Sans',sans-serif;">&#x2462; set up your sandbox</text>
+<rect x="280" y="150" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
+<rect x="280" y="150" width="4" height="48" fill="#378ADD"/>
+<text x="292" y="173" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Platforms</text>
+<text x="292" y="187" style="font-size:9.5px;fill:#378ADD;font-family:'DM Sans',sans-serif;">&#x2462; set up your sandbox</text>
 
-<rect x="280" y="421" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="280" y="421" width="4" height="48" fill="#1D9E75"/>
-<text x="292" y="444" style="font-size:11px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Formats &amp; Storage</text>
-<text x="292" y="458" style="font-size:9.5px;fill:#1D9E75;font-family:'DM Sans',sans-serif;">&#x2463; foundational</text>
+<rect x="280" y="510" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
+<rect x="280" y="510" width="4" height="48" fill="#1D9E75"/>
+<text x="292" y="533" style="font-size:11px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Formats &amp; Storage</text>
+<text x="292" y="547" style="font-size:9.5px;fill:#1D9E75;font-family:'DM Sans',sans-serif;">&#x2463; foundational</text>
 
-<rect x="280" y="736" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="280" y="736" width="4" height="48" fill="#BA7517"/>
-<text x="292" y="759" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">ETL &amp; ELT</text>
-<text x="292" y="773" style="font-size:9.5px;fill:#BA7517;font-family:'DM Sans',sans-serif;">&#x2465; pipeline thinking</text>
+<rect x="280" y="870" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
+<rect x="280" y="870" width="4" height="48" fill="#BA7517"/>
+<text x="292" y="893" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">ETL &amp; ELT</text>
+<text x="292" y="907" style="font-size:9.5px;fill:#BA7517;font-family:'DM Sans',sans-serif;">&#x2465; pipeline thinking</text>
 
 <!-- ===== RIGHT BRANCH NODES ===== -->
-<rect x="860" y="80" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="860" y="80" width="4" height="48" fill="#534AB7"/>
-<text x="872" y="103" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Analytical Data Modeling</text>
-<text x="872" y="117" style="font-size:9.5px;fill:#534AB7;font-family:'DM Sans',sans-serif;">&#x2464; design skills</text>
+<rect x="860" y="120" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
+<rect x="860" y="120" width="4" height="48" fill="#534AB7"/>
+<text x="872" y="143" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Analytical Data Modeling</text>
+<text x="872" y="157" style="font-size:9.5px;fill:#534AB7;font-family:'DM Sans',sans-serif;">&#x2464; design skills</text>
 
-<rect x="860" y="300" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="860" y="300" width="4" height="48" fill="#D85A30"/>
-<text x="872" y="323" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Requirements & Mapping</text>
-<text x="872" y="337" style="font-size:9.5px;fill:#D85A30;font-family:'DM Sans',sans-serif;">&#x2460; your core strength</text>
+<rect x="860" y="380" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
+<rect x="860" y="380" width="4" height="48" fill="#D85A30"/>
+<text x="872" y="403" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Requirements & Mapping</text>
+<text x="872" y="417" style="font-size:9.5px;fill:#D85A30;font-family:'DM Sans',sans-serif;">&#x2460; your core strength</text>
 
-<rect x="860" y="520" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="860" y="520" width="4" height="48" fill="#A855F7"/>
-<text x="872" y="543" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Governance &amp; MDM</text>
-<text x="872" y="557" style="font-size:9.5px;fill:#A855F7;font-family:'DM Sans',sans-serif;">&#x2466; strategic foundation</text>
+<rect x="860" y="640" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
+<rect x="860" y="640" width="4" height="48" fill="#A855F7"/>
+<text x="872" y="663" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Governance &amp; MDM</text>
+<text x="872" y="677" style="font-size:9.5px;fill:#A855F7;font-family:'DM Sans',sans-serif;">&#x2466; strategic foundation</text>
 
-<rect x="860" y="740" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="860" y="740" width="4" height="48" fill="#3B6D11"/>
-<text x="872" y="763" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">SQL &amp; Analytics</text>
-<text x="872" y="777" style="font-size:9.5px;fill:#3B6D11;font-family:'DM Sans',sans-serif;">&#x2461; learn this first</text>
+<rect x="860" y="940" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
+<rect x="860" y="940" width="4" height="48" fill="#3B6D11"/>
+<text x="872" y="963" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">SQL &amp; Analytics</text>
+<text x="872" y="977" style="font-size:9.5px;fill:#3B6D11;font-family:'DM Sans',sans-serif;">&#x2461; learn this first</text>
 
 <!-- ===== LEFT LEAF NODES ===== -->
-
-<!-- Data Platforms -->
-<a class="leaf-link" href="https://www.youtube.com/watch?v=rDbYQ_PG5oo" target="_blank" rel="noopener noreferrer"><title>Watch: Snowflake Tutorial for Beginners</title>
-<rect class="lbg" x="2" y="34" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
-<rect x="2" y="34" width="3" height="32" fill="#378ADD"/>
-<text class="ltext" x="11" y="55" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Snowflake <tspan fill="#378ADD" font-size="9">&#x2197;</tspan></text>
-</a>
-
 <rect x="2" y="74" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
 <rect x="2" y="74" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="95" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Databricks</text>
+<text x="11" y="95" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Snowflake</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=OWdLptqIgn8" target="_blank" rel="noopener noreferrer"><title>Watch: Azure Synapse Analytics Tutorial</title>
-<rect class="lbg" x="2" y="114" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
+<rect x="2" y="114" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
 <rect x="2" y="114" width="3" height="32" fill="#378ADD"/>
-<text class="ltext" x="11" y="135" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">MS Synapse <tspan fill="#378ADD" font-size="9">&#x2197;</tspan></text>
-</a>
+<text x="11" y="135" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Databricks</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=eYBTdiwzJqQ" target="_blank" rel="noopener noreferrer"><title>Watch: Google BigQuery Tutorial</title>
-<rect class="lbg" x="2" y="154" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
+<rect x="2" y="154" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
 <rect x="2" y="154" width="3" height="32" fill="#378ADD"/>
-<text class="ltext" x="11" y="175" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">BigQuery <tspan fill="#378ADD" font-size="9">&#x2197;</tspan> <tspan fill="#378ADD" font-size="10">&#x2726;</tspan></text>
-</a>
+<text x="11" y="175" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">MS Synapse</text>
 
 <rect x="2" y="194" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
 <rect x="2" y="194" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="215" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Environment Strategy <tspan fill="#378ADD" font-size="10">&#x2726;</tspan></text>
+<text x="11" y="215" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">BigQuery</text>
 
 <rect x="2" y="234" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
 <rect x="2" y="234" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="255" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Git basics <tspan fill="#378ADD" font-size="10">&#x2726;</tspan></text>
+<text x="11" y="255" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Env. Strategy (Dev/Prod)</text>
 
-<!-- Data Formats -->
-<rect x="2" y="309" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
-<rect x="2" y="309" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="330" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Structured (CSV, tables)</text>
+<rect x="2" y="274" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
+<rect x="2" y="274" width="3" height="32" fill="#378ADD"/>
+<text x="11" y="295" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Git basics</text>
 
-<rect x="2" y="349" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
-<rect x="2" y="349" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="370" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Semi-struct. (JSON, Parquet)</text>
+<!-- Formats -->
+<rect x="2" y="434" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="434" width="3" height="32" fill="#1D9E75"/>
+<text x="11" y="455" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Structured (CSV, tables)</text>
 
-<rect x="2" y="389" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
-<rect x="2" y="389" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="410" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Unstructured (docs, logs)</text>
+<rect x="2" y="474" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="474" width="3" height="32" fill="#1D9E75"/>
+<text x="11" y="495" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Semi-struct. (JSON, Parquet)</text>
 
-<rect x="2" y="429" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
-<rect x="2" y="429" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="450" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Databases (OLTP / OLAP)</text>
+<rect x="2" y="514" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="514" width="3" height="32" fill="#1D9E75"/>
+<text x="11" y="535" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Unstructured (docs, logs)</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=PeMieu730J4" target="_blank" rel="noopener noreferrer"><title>Watch: Open Table Formats — Iceberg, Delta Lake &amp; Hudi</title>
-<rect class="lbg" x="2" y="469" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
-<rect x="2" y="469" width="3" height="32" fill="#1D9E75"/>
-<text class="ltext" x="11" y="490" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Lakehouses (Delta, Iceberg) <tspan fill="#1D9E75" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="2" y="554" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="554" width="3" height="32" fill="#1D9E75"/>
+<text x="11" y="575" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Databases (OLTP / OLAP)</text>
 
-<rect x="2" y="509" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
-<rect x="2" y="509" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="530" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Object Storage (S3, Blob) <tspan fill="#1D9E75" font-size="10">&#x2726;</tspan></text>
+<rect x="2" y="594" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="594" width="3" height="32" fill="#1D9E75"/>
+<text x="11" y="615" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Lakehouses (Delta, Iceberg)</text>
+
+<rect x="2" y="634" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
+<rect x="2" y="634" width="3" height="32" fill="#1D9E75"/>
+<text x="11" y="655" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Object Storage (S3, Blob)</text>
 
 <!-- ETL -->
-<rect x="2" y="664" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
-<rect x="2" y="664" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="685" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">ETL vs ELT</text>
+<rect x="2" y="794" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="794" width="3" height="32" fill="#BA7517"/>
+<text x="11" y="815" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">ETL vs ELT</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=ia9aPgbYYjQ" target="_blank" rel="noopener noreferrer"><title>Watch: DBT Step-by-Step Tutorial</title>
-<rect class="lbg" x="2" y="704" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
-<rect x="2" y="704" width="3" height="32" fill="#BA7517"/>
-<text class="ltext" x="11" y="725" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">dbt <tspan fill="#BA7517" font-size="9">&#x2197;</tspan> <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
-</a>
+<rect x="2" y="834" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="834" width="3" height="32" fill="#BA7517"/>
+<text x="11" y="855" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">dbt</text>
 
-<rect x="2" y="744" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
-<rect x="2" y="744" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="765" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Quality &amp; Testing <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
+<rect x="2" y="874" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="874" width="3" height="32" fill="#BA7517"/>
+<text x="11" y="895" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Quality & Testing</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=l2jVYx3RTsU" target="_blank" rel="noopener noreferrer"><title>Watch: Azure Data Factory — ETL/ELT in Azure</title>
-<rect class="lbg" x="2" y="784" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
-<rect x="2" y="784" width="3" height="32" fill="#BA7517"/>
-<text class="ltext" x="11" y="805" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Azure Data Factory <tspan fill="#BA7517" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="2" y="914" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="914" width="3" height="32" fill="#BA7517"/>
+<text x="11" y="935" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Azure Data Factory</text>
 
-<rect x="2" y="824" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
-<rect x="2" y="824" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="845" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Airbyte / Fivetran <tspan fill="#BA7517" font-size="10">&#x2726;</tspan></text>
+<rect x="2" y="954" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="954" width="3" height="32" fill="#BA7517"/>
+<text x="11" y="975" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Airbyte / Fivetran</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=iYQVhVYtO50" target="_blank" rel="noopener noreferrer"><title>Watch: Apache Airflow Full Course 2026</title>
-<rect class="lbg" x="2" y="864" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
-<rect x="2" y="864" width="3" height="32" fill="#BA7517"/>
-<text class="ltext" x="11" y="885" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Airflow (orchestration) <tspan fill="#BA7517" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="2" y="994" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
+<rect x="2" y="994" width="3" height="32" fill="#BA7517"/>
+<text x="11" y="1015" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Airflow (orchestration)</text>
 
 <!-- ===== RIGHT LEAF NODES ===== -->
+<!-- Modeling (120) -->
+<rect x="1125" y="44" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="44" width="3" height="32" fill="#534AB7"/>
+<text x="1134" y="65" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Normalized vs Denorm.</text>
 
-<!-- Data Modeling -->
-<rect x="1125" y="16.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
-<rect x="1125" y="16.5" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="37.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Normalized vs Denorm.</text>
+<rect x="1125" y="84" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="84" width="3" height="32" fill="#534AB7"/>
+<text x="1134" y="105" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Star Schema</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=mPnnygpy2lY" target="_blank" rel="noopener noreferrer"><title>Watch: Star Schema in 10 Minutes</title>
-<rect class="lbg" x="1125" y="51.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
-<rect x="1125" y="51.5" width="3" height="32" fill="#534AB7"/>
-<text class="ltext" x="1134" y="72.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Star Schema <tspan fill="#534AB7" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="1125" y="124" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="124" width="3" height="32" fill="#534AB7"/>
+<text x="1134" y="145" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Snowflake Schema</text>
 
-<rect x="1125" y="86.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
-<rect x="1125" y="86.5" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="107.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Snowflake Schema</text>
+<rect x="1125" y="164" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="164" width="3" height="32" fill="#534AB7"/>
+<text x="1134" y="185" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Dimensional Modeling</text>
 
-<rect x="1125" y="121.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
-<rect x="1125" y="121.5" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="142.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Dimensional Modeling <tspan fill="#534AB7" font-size="10">&#x2726;</tspan></text>
+<rect x="1125" y="204" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="204" width="3" height="32" fill="#534AB7"/>
+<text x="1134" y="225" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Vault</text>
 
-<rect x="1125" y="156.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
-<rect x="1125" y="156.5" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="177.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Vault <tspan fill="#534AB7" font-size="10">&#x2726;</tspan></text>
+<rect x="1125" y="244" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
+<rect x="1125" y="244" width="3" height="32" fill="#534AB7"/>
+<text x="1134" y="265" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">SCD Types</text>
 
-<rect x="1125" y="191.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
-<rect x="1125" y="191.5" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="212.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">SCD Types <tspan fill="#534AB7" font-size="10">&#x2726;</tspan></text>
+<!-- Mapping (380) -->
+<rect x="1125" y="304" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="304" width="3" height="32" fill="#D85A30"/>
+<text x="1134" y="325" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Source Mappings</text>
 
-<!-- BA Mapping -->
-<a class="leaf-link" href="https://www.youtube.com/watch?v=0GuDMjERWYc" target="_blank" rel="noopener noreferrer"><title>Watch: Source to Target Mappings (STTM) — CBAP Tutorials</title>
-<rect class="lbg" x="1125" y="219" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
-<rect x="1125" y="219" width="3" height="32" fill="#D85A30"/>
-<text class="ltext" x="1134" y="240" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Source Mappings <tspan fill="#D85A30" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="1125" y="344" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="344" width="3" height="32" fill="#D85A30"/>
+<text x="1134" y="365" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Flow Diagrams</text>
 
-<rect x="1125" y="254" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
-<rect x="1125" y="254" width="3" height="32" fill="#D85A30"/>
-<text x="1134" y="275" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Flow Diagrams</text>
+<rect x="1125" y="384" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="384" width="3" height="32" fill="#D85A30"/>
+<text x="1134" y="405" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Catalog / Dict.</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=PiHzDxrJMp4" target="_blank" rel="noopener noreferrer"><title>Watch: Data Catalog &amp; Metadata Management</title>
-<rect class="lbg" x="1125" y="289" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
-<rect x="1125" y="289" width="3" height="32" fill="#D85A30"/>
-<text class="ltext" x="1134" y="310" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Catalog / Dict. <tspan fill="#D85A30" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="1125" y="424" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="424" width="3" height="32" fill="#D85A30"/>
+<text x="1134" y="445" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Lineage</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=s-x4Uy0Z_so" target="_blank" rel="noopener noreferrer"><title>Watch: Data Lineage Beyond the Basics</title>
-<rect class="lbg" x="1125" y="324" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
-<rect x="1125" y="324" width="3" height="32" fill="#D85A30"/>
-<text class="ltext" x="1134" y="345" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Lineage <tspan fill="#D85A30" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="1125" y="464" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="464" width="3" height="32" fill="#D85A30"/>
+<text x="1134" y="485" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Conceptual Models</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=vrENzIkWt60" target="_blank" rel="noopener noreferrer"><title>Watch: The 3 Levels of Data Modeling</title>
-<rect class="lbg" x="1125" y="359" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
-<rect x="1125" y="359" width="3" height="32" fill="#D85A30"/>
-<text class="ltext" x="1134" y="380" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Conceptual Models <tspan fill="#D85A30" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="1125" y="504" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
+<rect x="1125" y="504" width="3" height="32" fill="#D85A30"/>
+<text x="1134" y="525" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Acceptance Criteria</text>
 
-<rect x="1125" y="394" width="170" height="32" rx="3" fill="var(--bg)" stroke="#F5C4B3" stroke-width="0.5"/>
-<rect x="1125" y="394" width="3" height="32" fill="#D85A30"/>
-<text x="1134" y="415" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Acceptance Criteria <tspan fill="#D85A30" font-size="10">&#x2726;</tspan></text>
+<!-- Governance (640) -->
+<rect x="1125" y="564" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
+<rect x="1125" y="564" width="3" height="32" fill="#A855F7"/>
+<text x="1134" y="585" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Master Data (MDM)</text>
 
-<!-- Data Governance -->
-<rect x="1125" y="456.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
-<rect x="1125" y="456.5" width="3" height="32" fill="#A855F7"/>
-<text x="1134" y="477.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Master Data (MDM)</text>
+<rect x="1125" y="604" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
+<rect x="1125" y="604" width="3" height="32" fill="#A855F7"/>
+<text x="1134" y="625" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Reference Data</text>
 
-<rect x="1125" y="491.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
-<rect x="1125" y="491.5" width="3" height="32" fill="#A855F7"/>
-<text x="1134" y="512.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Reference Data</text>
+<rect x="1125" y="644" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
+<rect x="1125" y="644" width="3" height="32" fill="#A855F7"/>
+<text x="1134" y="665" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">DQ Framework</text>
 
-<rect x="1125" y="526.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
-<rect x="1125" y="526.5" width="3" height="32" fill="#A855F7"/>
-<text x="1134" y="547.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">DQ Framework</text>
+<rect x="1125" y="684" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
+<rect x="1125" y="684" width="3" height="32" fill="#A855F7"/>
+<text x="1134" y="705" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Privacy & Ethics</text>
 
-<rect x="1125" y="561.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
-<rect x="1125" y="561.5" width="3" height="32" fill="#A855F7"/>
-<text x="1134" y="582.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Privacy &amp; Ethics</text>
+<rect x="1125" y="724" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
+<rect x="1125" y="724" width="3" height="32" fill="#A855F7"/>
+<text x="1134" y="745" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Stewardship</text>
 
-<rect x="1125" y="596.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
-<rect x="1125" y="596.5" width="3" height="32" fill="#A855F7"/>
-<text x="1134" y="617.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Stewardship</text>
+<rect x="1125" y="764" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
+<rect x="1125" y="764" width="3" height="32" fill="#A855F7"/>
+<text x="1134" y="785" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Metadata Mgmt.</text>
 
-<rect x="1125" y="631.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
-<rect x="1125" y="631.5" width="3" height="32" fill="#A855F7"/>
-<text x="1134" y="652.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Metadata Mgmt.</text>
+<!-- SQL (940) -->
+<rect x="1125" y="844" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="844" width="3" height="32" fill="#3B6D11"/>
+<text x="1134" y="865" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">SQL Fundamentals</text>
 
-<!-- SQL & Analytics -->
-<a class="leaf-link" href="https://www.youtube.com/watch?v=3KABA76euyY" target="_blank" rel="noopener noreferrer"><title>Watch: SQL Full Course 2026 — Beginner to Advanced</title>
-<rect class="lbg" x="1125" y="641.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="641.5" width="3" height="32" fill="#3B6D11"/>
-<text class="ltext" x="1134" y="662.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">SQL Fundamentals <tspan fill="#3B6D11" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="1125" y="884" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="884" width="3" height="32" fill="#3B6D11"/>
+<text x="1134" y="905" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Joins & Aggregations</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=3KABA76euyY" target="_blank" rel="noopener noreferrer"><title>Watch: SQL Full Course 2026 — Joins &amp; Aggregations</title>
-<rect class="lbg" x="1125" y="676.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="676.5" width="3" height="32" fill="#3B6D11"/>
-<text class="ltext" x="1134" y="697.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Joins &amp; Aggregations <tspan fill="#3B6D11" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="1125" y="924" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="924" width="3" height="32" fill="#3B6D11"/>
+<text x="1134" y="945" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Window Functions / CTEs</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=3KABA76euyY" target="_blank" rel="noopener noreferrer"><title>Watch: SQL Full Course 2026 — Window Functions / CTEs</title>
-<rect class="lbg" x="1125" y="711.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="711.5" width="3" height="32" fill="#3B6D11"/>
-<text class="ltext" x="1134" y="732.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Window Functions / CTEs <tspan fill="#3B6D11" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="1125" y="964" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="964" width="3" height="32" fill="#3B6D11"/>
+<text x="1134" y="985" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">KPI Storytelling</text>
 
-<rect x="1125" y="746.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="746.5" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="767.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">KPI Storytelling <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
+<rect x="1125" y="1004" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="1004" width="3" height="32" fill="#3B6D11"/>
+<text x="1134" y="1025" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Power BI / Tableau</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=cyWVzAQF9YU" target="_blank" rel="noopener noreferrer"><title>Watch: Power BI Complete Course 2026</title>
-<rect class="lbg" x="1125" y="781.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="781.5" width="3" height="32" fill="#3B6D11"/>
-<text class="ltext" x="1134" y="802.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Power BI / Tableau <tspan fill="#3B6D11" font-size="9">&#x2197;</tspan></text>
-</a>
+<rect x="1125" y="1044" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="1044" width="3" height="32" fill="#3B6D11"/>
+<text x="1134" y="1065" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Python (Pandas+Jupyter)</text>
 
-<a class="leaf-link" href="https://www.youtube.com/watch?v=lk_EE3Wm-Eo" target="_blank" rel="noopener noreferrer"><title>Watch: Python for Data Analytics Full Course</title>
-<rect class="lbg" x="1125" y="816.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="816.5" width="3" height="32" fill="#3B6D11"/>
-<text class="ltext" x="1134" y="837.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Python (Pandas+Jupyter) <tspan fill="#3B6D11" font-size="9">&#x2197;</tspan></text>
-</a>
-
-<rect x="1125" y="851.5" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="851.5" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="872.5" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Statistical Thinking <tspan fill="#3B6D11" font-size="10">&#x2726;</tspan></text>
-
-<!-- Legend -->
-<text x="650" y="908" text-anchor="middle" style="font-size:10px;fill:var(--text-sec);font-family:'DM Sans',sans-serif;">&#x2460; &#x2461; ... = priority &#xB7; &#x2726; = added &#xB7; &#x2197; = video resource</text>
+<rect x="1125" y="1084" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
+<rect x="1125" y="1084" width="3" height="32" fill="#3B6D11"/>
+<text x="1134" y="1105" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Statistical Thinking</text>
 
 </svg>
 </div>
