@@ -105,7 +105,7 @@ date: 2026-04-19
 
 <rect x="860" y="380" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
 <rect x="860" y="380" width="4" height="48" fill="#D85A30"/>
-<text x="872" y="403" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Requirements & Mapping</text>
+<text x="872" y="403" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Requirements</text>
 <text x="872" y="417" style="font-size:9.5px;fill:#D85A30;font-family:'DM Sans',sans-serif;">&#x2460; your core strength</text>
 
 <rect x="860" y="640" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
@@ -355,7 +355,7 @@ date: 2026-04-19
 
 <div class="branch-section" style="--branch-color: #D85A30;">
   <span class="branch-priority">① Start here — your core strength</span>
-  <h2>Data Requirements &amp; Mapping</h2>
+  <h2>Data Requirements</h2>
   <p>This is your home territory — but the artifacts have different shapes in data projects than in process or requirements work. It's about translating business intent into technical specs.</p>
   <ul>
     <li><strong>Source Mappings</strong> — document exactly where each field in the target system comes from: source table, transformation logic, business rules. Often the most critical BA deliverable in a data project.</li>
