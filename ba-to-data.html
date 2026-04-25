@@ -125,7 +125,7 @@
         #mm {
             position: relative;
             width: 1300px;
-            height: 1100px;
+            height: 1020px;
         }
 
         #mmsvg {
@@ -273,295 +273,218 @@
         <div class="guide-header">
             <a href="/" class="back-link">← Back</a>
             <h1>From Business Analyst to Business Data Analyst: Skills Roadmap</h1>
-            <p>Seven areas Business Analysts need to cover to transition into data analysis roles, organized by
-                suggested
-                learning priority. ✦ marks items added beyond the core list.</p>
+            <p>Six skill areas for Business Analysts transitioning to data roles — organized by learning priority, from
+                foundational concepts to strategic frameworks.</p>
         </div>
 
-        <h2 class="sr-only">Mind map: skills BAs need to transition to data analysis, organized into seven color-coded
-            branches with priority order</h2>
+        <h2 class="sr-only">Mind map: six skill areas for BAs transitioning to data analytics, organized by priority
+            from foundational to strategic</h2>
 
         <div class="mindmap-wrap">
             <div id="mm">
-                <svg id="mmsvg" width="1300" height="1100">
+                <svg id="mmsvg" width="1300" height="1020">
                 </svg>
 
                 <!-- Center node -->
                 <div
-                    style="position:absolute;left:560px;top:510px;width:180px;height:80px;background:var(--surface);border:1.5px solid var(--divider);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:3;box-sizing:border-box;padding:0 10px;">
+                    style="position:absolute;left:560px;top:470px;width:180px;height:80px;background:var(--surface);border:1.5px solid var(--divider);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:3;box-sizing:border-box;padding:0 10px;">
                     <div style="font-size:14px;font-weight:500;color:var(--text);">BA → Data Analyst</div>
                     <div style="font-size:10px;color:var(--text-sec);margin-top:4px;">Learning Roadmap</div>
                 </div>
 
                 <!-- LEFT SIDE -->
 
-                <!-- Data Platforms -->
-                <div class="mn" style="left:280px;top:150px;border-left:4px solid #378ADD;">
-                    <span class="mn-t">Data Platforms</span>
-                    <span class="mn-b" style="color:#378ADD;">③ set up your sandbox</span>
+                <!-- Data Basics -->
+                <div class="mn" style="left:280px;top:150px;border-left:4px solid #1D9E75;">
+                    <span class="mn-t">Data Basics</span>
+                    <span class="mn-b" style="color:#1D9E75;">① understand the landscape</span>
                 </div>
-                <div class="sn" style="left:2px;top:74px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">
-                    Snowflake<span class="sp" style="color:#378ADD;">✦</span></div>
-                <div class="sn" style="left:2px;top:114px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">
-                    Databricks<span class="sp" style="color:#378ADD;">✦</span></div>
-                <div class="sn" style="left:2px;top:154px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">MS
-                    Synapse</div>
-                <div class="sn" style="left:2px;top:194px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">
-                    BigQuery</div>
-                <div class="sn" style="left:2px;top:234px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">
-                    Environment Strategy (Dev/Prod)<span class="sp" style="color:#378ADD;">✦</span></div>
-                <div class="sn" style="left:2px;top:274px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">Git
-                    basics</div>
+                <div class="sn" style="left:2px;top:114px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">OLTP vs OLAP</div>
+                <div class="sn" style="left:2px;top:154px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">Structured (CSV, tables)</div>
+                <div class="sn" style="left:2px;top:194px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">Semi-structured (JSON, Parquet)</div>
+                <div class="sn" style="left:2px;top:234px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">Unstructured (docs, logs)</div>
 
-                <!-- Data Formats & Storage -->
-                <div class="mn" style="left:280px;top:510px;border-left:4px solid #1D9E75;">
-                    <span class="mn-t">Data Formats &amp; Storage</span>
-                    <span class="mn-b" style="color:#1D9E75;">④ foundational</span>
+                <!-- Data Platform -->
+                <div class="mn" style="left:280px;top:490px;border-left:4px solid #378ADD;">
+                    <span class="mn-t">Data Platform</span>
+                    <span class="mn-b" style="color:#378ADD;">③ where you practice</span>
                 </div>
-                <div class="sn" style="left:2px;top:434px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">
-                    Structured (CSV, tables)<span class="sp" style="color:#1D9E75;">✦</span></div>
-                <div class="sn" style="left:2px;top:474px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">
-                    Semi-structured (JSON, Parquet)<span class="sp" style="color:#1D9E75;">✦</span></div>
-                <div class="sn" style="left:2px;top:514px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">
-                    Unstructured (docs, logs)<span class="sp" style="color:#1D9E75;">✦</span></div>
-                <div class="sn" style="left:2px;top:554px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">
-                    Databases (OLTP / OLAP)</div>
-                <div class="sn" style="left:2px;top:594px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">
-                    Lakehouses (Delta, Iceberg)</div>
-                <div class="sn" style="left:2px;top:634px;border:0.5px solid #9FE1CB;border-left:3px solid #1D9E75;">
-                    Object Storage (S3, Blob)</div>
+                <div class="sn" style="left:2px;top:474px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">Snowflake</div>
+                <div class="sn" style="left:2px;top:514px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">Databricks</div>
+                <div class="sn" style="left:2px;top:554px;border:0.5px solid #B5D4F4;border-left:3px solid #378ADD;">BigQuery</div>
 
                 <!-- ETL & ELT -->
-                <div class="mn" style="left:280px;top:870px;border-left:4px solid #BA7517;">
+                <div class="mn" style="left:280px;top:830px;border-left:4px solid #BA7517;">
                     <span class="mn-t">ETL &amp; ELT</span>
-                    <span class="mn-b" style="color:#BA7517;">⑥ pipeline thinking</span>
+                    <span class="mn-b" style="color:#BA7517;">⑤ how data moves</span>
                 </div>
-                <div class="sn" style="left:2px;top:794px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">ETL
-                    vs ELT<span class="sp" style="color:#BA7517;">✦</span></div>
-                <div class="sn" style="left:2px;top:834px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">
-                    dbt<span class="sp" style="color:#BA7517;">✦</span></div>
-                <div class="sn" style="left:2px;top:874px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">
-                    Data Quality &amp; Testing<span class="sp" style="color:#BA7517;">✦</span></div>
-                <div class="sn" style="left:2px;top:914px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">
-                    Azure Data Factory</div>
-                <div class="sn" style="left:2px;top:954px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">
-                    Airbyte / Fivetran</div>
-                <div class="sn" style="left:2px;top:994px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">
-                    Airflow (orchestration)</div>
+                <div class="sn" style="left:2px;top:814px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">dbt</div>
+                <div class="sn" style="left:2px;top:854px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">Azure Data Factory</div>
+                <div class="sn" style="left:2px;top:894px;border:0.5px solid #FAC775;border-left:3px solid #BA7517;">Airflow</div>
 
                 <!-- RIGHT SIDE -->
 
-                <!-- Analytical Data Modeling -->
-                <div class="mn" style="left:860px;top:120px;border-left:4px solid #534AB7;">
-                    <span class="mn-t">Analytical Data Modeling</span>
-                    <span class="mn-b" style="color:#534AB7;">⑤ design skills</span>
-                </div>
-                <div class="sn" style="left:1125px;top:44px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">
-                    Normalized vs Denorm<span class="sp" style="color:#534AB7;">✦</span></div>
-                <div class="sn" style="left:1125px;top:84px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">
-                    Star Schema<span class="sp" style="color:#534AB7;">✦</span></div>
-                <div class="sn" style="left:1125px;top:124px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">
-                    Snowflake Schema<span class="sp" style="color:#534AB7;">✦</span></div>
-                <div class="sn" style="left:1125px;top:164px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">
-                    Dimensional Modeling<span class="sp" style="color:#534AB7;">✦</span></div>
-                <div class="sn" style="left:1125px;top:204px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">
-                    Data Vault<span class="sp" style="color:#534AB7;">✦</span></div>
-                <div class="sn" style="left:1125px;top:244px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">
-                    SCD Types<span class="sp" style="color:#534AB7;">✦</span></div>
-
-                <!-- Data Requirements -->
-                <div class="mn" style="left:860px;top:380px;border-left:4px solid #D85A30;">
-                    <span class="mn-t">Data Requirements</span>
-                    <span class="mn-b" style="color:#D85A30;">① your core strength</span>
-                </div>
-                <div class="sn" style="left:1125px;top:304px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">
-                    Source Mappings<span class="sp" style="color:#D85A30;">✦</span></div>
-                <div class="sn" style="left:1125px;top:344px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">
-                    Data Flow Diagrams<span class="sp" style="color:#D85A30;">✦</span></div>
-                <div class="sn" style="left:1125px;top:384px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">
-                    Data Catalog / Dictionary<span class="sp" style="color:#D85A30;">✦</span></div>
-                <div class="sn" style="left:1125px;top:424px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">
-                    Data Lineage<span class="sp" style="color:#D85A30;">✦</span></div>
-                <div class="sn" style="left:1125px;top:464px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">
-                    Conceptual Data Models<span class="sp" style="color:#D85A30;">✦</span></div>
-                <div class="sn" style="left:1125px;top:504px;border:0.5px solid #F5C4B3;border-left:3px solid #D85A30;">
-                    Data Acceptance Criteria<span class="sp" style="color:#D85A30;">✦</span></div>
-
-                <!-- Data Governance & MDM -->
-                <div class="mn" style="left:860px;top:640px;border-left:4px solid #A855F7;">
-                    <span class="mn-t">Data Governance &amp; MDM</span>
-                    <span class="mn-b" style="color:#A855F7;">⑦ strategic foundation</span>
-                </div>
-                <div class="sn" style="left:1125px;top:564px;border:0.5px solid #E9D5FF;border-left:3px solid #A855F7;">
-                    Master Data Management (MDM)</div>
-                <div class="sn" style="left:1125px;top:604px;border:0.5px solid #E9D5FF;border-left:3px solid #A855F7;">
-                    Reference Data Management</div>
-                <div class="sn" style="left:1125px;top:644px;border:0.5px solid #E9D5FF;border-left:3px solid #A855F7;">
-                    Data Quality Framework</div>
-                <div class="sn" style="left:1125px;top:684px;border:0.5px solid #E9D5FF;border-left:3px solid #A855F7;">
-                    Data Privacy &amp; Ethics</div>
-                <div class="sn" style="left:1125px;top:724px;border:0.5px solid #E9D5FF;border-left:3px solid #A855F7;">
-                    Data Stewardship</div>
-                <div class="sn" style="left:1125px;top:764px;border:0.5px solid #E9D5FF;border-left:3px solid #A855F7;">
-                    Metadata Management</div>
-
-                <!-- SQL & Analytics -->
-                <div class="mn" style="left:860px;top:940px;border-left:4px solid #3B6D11;">
-                    <span class="mn-t">SQL &amp; Analytics</span>
+                <!-- Analytics -->
+                <div class="mn" style="left:860px;top:150px;border-left:4px solid #3B6D11;">
+                    <span class="mn-t">Analytics</span>
                     <span class="mn-b" style="color:#3B6D11;">② learn this first</span>
                 </div>
-                <div class="sn" style="left:1125px;top:844px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
-                    SQL Fundamentals<span class="sp" style="color:#3B6D11;">✦</span></div>
-                <div class="sn" style="left:1125px;top:884px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
-                    Joins &amp; Aggregations</div>
-                <div class="sn" style="left:1125px;top:924px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
-                    Window Functions / CTEs<span class="sp" style="color:#3B6D11;">✦</span></div>
-                <div class="sn" style="left:1125px;top:964px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
-                    KPI Storytelling<span class="sp" style="color:#3B6D11;">✦</span></div>
-                <div class="sn"
-                    style="left:1125px;top:1004px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
-                    Power BI / Tableau<span class="sp" style="color:#3B6D11;">✦</span></div>
-                <div class="sn"
-                    style="left:1125px;top:1044px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
-                    Python (Pandas + Jupyter)</div>
-                <div class="sn"
-                    style="left:1125px;top:1084px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">
-                    Statistical Thinking<span class="sp" style="color:#3B6D11;">✦</span></div>
+                <div class="sn" style="left:1125px;top:94px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">SQL Fundamentals</div>
+                <div class="sn" style="left:1125px;top:134px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Window Functions / CTEs</div>
+                <div class="sn" style="left:1125px;top:174px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Python (Pandas)</div>
+                <div class="sn" style="left:1125px;top:214px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Statistical Thinking</div>
+                <div class="sn" style="left:1125px;top:254px;border:0.5px solid #C0DD97;border-left:3px solid #3B6D11;">Power BI / Tableau</div>
+
+                <!-- Data Modeling -->
+                <div class="mn" style="left:860px;top:490px;border-left:4px solid #534AB7;">
+                    <span class="mn-t">Data Modeling</span>
+                    <span class="mn-b" style="color:#534AB7;">④ design skills</span>
+                </div>
+                <div class="sn" style="left:1125px;top:434px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Normalized vs Denormalized</div>
+                <div class="sn" style="left:1125px;top:474px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Dimensional Modeling</div>
+                <div class="sn" style="left:1125px;top:514px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Star Schema</div>
+                <div class="sn" style="left:1125px;top:554px;border:0.5px solid #CECBF6;border-left:3px solid #534AB7;">Snowflake Schema</div>
+
+                <!-- Data Governance -->
+                <div class="mn" style="left:860px;top:830px;border-left:4px solid #A855F7;">
+                    <span class="mn-t">Data Governance</span>
+                    <span class="mn-b" style="color:#A855F7;">⑥ trust &amp; compliance</span>
+                </div>
+                <div class="sn" style="left:1125px;top:814px;border:0.5px solid #E9D5FF;border-left:3px solid #A855F7;">MDM</div>
+                <div class="sn" style="left:1125px;top:854px;border:0.5px solid #E9D5FF;border-left:3px solid #A855F7;">Data Security &amp; Privacy</div>
+                <div class="sn" style="left:1125px;top:894px;border:0.5px solid #E9D5FF;border-left:3px solid #A855F7;">Data Quality Framework</div>
 
             </div>
         </div>
 
-        <div class="branch-section" style="--branch-color: #D85A30;">
-            <span class="branch-priority">① Start here — your core strength</span>
-            <h2>Data Requirements</h2>
-            <p>This is your home territory — but the artifacts have different shapes in data projects than in process or
-                requirements work. It's about translating business intent into technical specs.</p>
+        <div class="branch-section" style="--branch-color: #1D9E75;">
+            <span class="branch-priority">① Start here — understand the landscape</span>
+            <h2>Data Basics</h2>
+            <p>Before you analyze data, you need to understand what shape it comes in and where it lives. These four
+                concepts appear in nearly every data conversation — knowing them helps you ask the right questions from
+                day one.</p>
             <ul>
-                <li><strong>Source Mappings</strong> — document exactly where each field in the target system comes
-                    from: source table, transformation logic, business rules. Often the most critical BA deliverable in
-                    a data project.</li>
-                <li><strong>Data Flow Diagrams</strong> — show how data moves between systems, pipelines, and storage
-                    layers. Give developers and architects a shared picture of the data landscape.</li>
-                <li><strong>Data Catalog &amp; Dictionary</strong> — a searchable inventory of all data assets. Defines
-                    what each field means in business terms: business definition, valid values, and data ownership.</li>
-                <li><strong>Data Lineage</strong> — documents where a piece of data was born, how it was transformed,
-                    and where it ends up. Critical for debugging data quality issues and for regulatory compliance.</li>
-                <li><strong>Conceptual Data Models</strong> — defines business entities and relationships (ERDs). As a
-                    BA, you'll own this layer, ensuring the technical design matches the reality of the business.</li>
-                <li><strong>Data Acceptance Criteria</strong> — in data projects, these directly become data quality
-                    rules and dbt test conditions. Documenting what "valid" means is the most concrete bridge to
-                    engineering.</li>
+                <li><strong>OLTP vs OLAP</strong> — OLTP (transactional) databases handle live operations: each write
+                    is one event. OLAP (analytical) databases store historical data optimized for large-scale reads.
+                    Always ask: "which type of system am I querying?" — the answer changes how you write your query and
+                    what performance to expect.</li>
+                <li><strong>Structured</strong> — data in rows and columns: spreadsheets, SQL tables. Every field has a
+                    fixed type and position. The easiest format to query and the most common in analytics.</li>
+                <li><strong>Semi-structured</strong> — flexible structure with key-value pairs: JSON (what APIs return),
+                    Parquet (what data warehouses store internally). Has fields and values, but the schema can vary
+                    between records.</li>
+                <li><strong>Unstructured</strong> — free text, logs, images, PDFs. No fixed schema. Requires
+                    significant processing — parsing, extraction, or ML — before it can be analyzed like tabular data.
+                </li>
             </ul>
         </div>
 
         <div class="branch-section" style="--branch-color: #3B6D11;">
             <span class="branch-priority">② Learn this first</span>
-            <h2>SQL &amp; Analytics</h2>
-            <p>You don't need to become a data engineer. But you do need to be able to query data yourself and tell a
-                story with the results — otherwise you're dependent on others to answer every question.</p>
+            <h2>Analytics</h2>
+            <p>This is the core toolkit. SQL is the language of data — nothing else matters as much in day-to-day
+                work. Everything here builds directly on top of it. You don't need to become a data engineer, but
+                you do need to be able to answer questions yourself.</p>
             <ul>
-                <li><strong>SQL Fundamentals &amp; Window Functions</strong> — SELECT, JOINS, and CTEs. Window functions
-                    let you calculate rankings and moving averages. This is the bedrock of analytical work.</li>
-                <li><strong>KPI Storytelling</strong> — calculating the number is only 50% of the job. The other 50% is
-                    explaining it. BAs excel here by documenting the logic behind KPIs and translating charts into
-                    actionable insights.</li>
-                <li><strong>Power BI / Tableau</strong> — knowing how to build a basic dashboard and read the underlying
-                    data model is essential for communicating with stakeholders.</li>
-                <li><strong>Python (Pandas + Jupyter)</strong> — specifically for data manipulation and reshaping. Being
-                    able to load a dataframe and inspect it puts you in a much stronger position when working alongside
-                    engineers.</li>
-                <li><strong>Statistical Thinking</strong> — SQL tells you what the data says; statistics tells you what
-                    it means. Understanding distributions and significance prevents you from reporting noise as insight.
-                </li>
+                <li><strong>SQL Fundamentals</strong> — SELECT, FROM, WHERE, JOIN, GROUP BY. Non-negotiable. You cannot
+                    work in data without SQL. Start here and don't move on until joins feel natural.</li>
+                <li><strong>Window Functions &amp; CTEs</strong> — window functions calculate rankings, running totals,
+                    and moving averages without collapsing your rows. CTEs (WITH clauses) break complex queries into
+                    named, readable steps. Together they replace most subquery spaghetti.</li>
+                <li><strong>Python (Pandas)</strong> — specifically for loading and reshaping data. Not full
+                    engineering. Being able to read a CSV into a dataframe, inspect it, and filter it puts you in
+                    a much stronger position alongside technical teams.</li>
+                <li><strong>Statistical Thinking</strong> — mean, median, distributions, correlation. SQL tells you
+                    what the data says; statistics tells you what it means. Understanding variance prevents you from
+                    reporting noise as insight or treating a random spike as a trend.</li>
+                <li><strong>Power BI / Tableau</strong> — knowing how to build a basic dashboard and read the
+                    underlying data model separates analysts from report consumers. The goal is to communicate
+                    findings, not just produce charts.</li>
             </ul>
         </div>
 
         <div class="branch-section" style="--branch-color: #378ADD;">
-            <span class="branch-priority">③ Set up your sandbox — don't leave this until last</span>
-            <h2>Data Platforms</h2>
-            <p>You need a platform to practice SQL and build your portfolio. Don't wait — open a free account on the
-                same week you start learning. The choice matters less than getting one running early.</p>
+            <span class="branch-priority">③ Set up a sandbox early</span>
+            <h2>Data Platform</h2>
+            <p>You need a platform to practice SQL and build your portfolio. Open a free account in the same week
+                you start learning — not later. The choice of platform matters less than getting one running early.
+                All three below have free tiers and sample datasets built in.</p>
             <ul>
-                <li><strong>Snowflake / Databricks</strong> — cloud-native platforms that are the easiest starting point
-                    for analysts. Most have free trials with sample datasets built in.</li>
-                <li><strong>MS Synapse / BigQuery</strong> — common in enterprise ecosystems (Azure/GCP). Understanding
-                    where the data "lives" is the first step to querying it.</li>
-                <li><strong>Environment Strategy</strong> — understanding the flow from Dev to Prod. BAs often manage
-                    UAT (User Acceptance Testing) in specific environments, so knowing how they differ is crucial.</li>
-                <li><strong>Git basics</strong> — learn commit, branch, and pull request. It takes a weekend but pays
-                    back immediately when you start collaborating with technical teams.</li>
-            </ul>
-        </div>
-
-        <div class="branch-section" style="--branch-color: #1D9E75;">
-            <span class="branch-priority">④ Foundational</span>
-            <h2>Data Formats &amp; Storage</h2>
-            <p>Before you can work with data, you need to understand what shape it comes in and where it lives.</p>
-            <ul>
-                <li><strong>Structured vs. Semi-structured</strong> — moving beyond CSVs to JSON and Parquet. JSON is
-                    what
-                    APIs return; Parquet is what modern warehouses use for speed.</li>
-                <li><strong>Databases (OLTP / OLAP)</strong> — OLTP handles live operational data; OLAP is optimized for
-                    historical analytics. Understanding this helps you ask the right questions about data sources.</li>
-                <li><strong>Lakehouses (Delta, Iceberg)</strong> — the modern standard: combining the flexibility of a
-                    data lake with the structure of a warehouse.</li>
-                <li><strong>Object Storage (S3, Blob)</strong> — where raw files live before they're processed. Data
-                    almost always passes through here at some point in its lifecycle.</li>
+                <li><strong>Snowflake</strong> — the most analyst-friendly cloud warehouse. Separates compute from
+                    storage so queries are fast without managing infrastructure. The default starting point for most
+                    learners because the SQL dialect is clean and the UI is intuitive.</li>
+                <li><strong>Databricks</strong> — combines SQL and Python notebooks in one environment. Stronger for
+                    data engineering and larger datasets. Common in companies running machine learning pipelines
+                    alongside analytics.</li>
+                <li><strong>BigQuery</strong> — Google's serverless warehouse. No clusters to manage: you run a query
+                    and pay per byte scanned. Generous free tier and access to public datasets (Wikipedia, GitHub,
+                    weather data) make it ideal for self-directed practice projects.</li>
             </ul>
         </div>
 
         <div class="branch-section" style="--branch-color: #534AB7;">
-            <span class="branch-priority">⑤ Design skills</span>
-            <h2>Analytical Data Modeling</h2>
-            <p>This is where your BA background gives you the most leverage. Analytical modeling is about structuring
-                data so it's easy for business users to understand and fast for tools to query.</p>
+            <span class="branch-priority">④ Design skills</span>
+            <h2>Data Modeling</h2>
+            <p>This is about structuring data so it's fast to query and easy for business users to understand.
+                Your BA instinct for business entities and relationships gives you a head start — the concepts
+                map directly onto ERDs and process models you already know.</p>
             <ul>
-                <li><strong>Star Schema &amp; Dimensional Modeling</strong> — the formal methodology (Ralph Kimball).
-                    Fact tables surrounded by dimensions. Simple, fast, and easy for business users to query.</li>
-                <li><strong>Normalized vs Denormalized</strong> — knowing when to keep data separate (efficiency) and
-                    when to flatten it (speed). A foundational design choice for every warehouse.</li>
-                <li><strong>SCD Types (1 / 2 / 3)</strong> — Slowly Changing Dimensions. Crucial for answering "as of"
-                    questions, like "What was this customer's address at the time they made this purchase?"</li>
-                <li><strong>Data Vault</strong> — an alternative approach for auditability and scalability. Common in
-                    large, regulated industries like banking.</li>
+                <li><strong>Normalized vs Denormalized</strong> — normalized splits data into separate related tables,
+                    reducing duplication but requiring joins. Denormalized flattens everything into fewer wide tables,
+                    making queries simpler and faster. Most analytical warehouses favor denormalization; most
+                    transactional systems favor normalization.</li>
+                <li><strong>Dimensional Modeling</strong> — the Ralph Kimball methodology: the dominant pattern for
+                    analytical warehouses. Business events (sales, logins, orders) become Fact tables; context about
+                    those events (who, what, where, when) becomes Dimension tables.</li>
+                <li><strong>Star Schema</strong> — one central Fact table linked to Dimension tables radiating outward.
+                    Fast, simple, and the most common warehouse structure you'll encounter. Named for how it looks in
+                    an ERD.</li>
+                <li><strong>Snowflake Schema</strong> — a normalized star schema where large dimension tables are
+                    split into sub-dimensions. More tables and joins, less data redundancy. Useful when dimensions
+                    change frequently, harder to query for analysts.</li>
             </ul>
         </div>
 
         <div class="branch-section" style="--branch-color: #BA7517;">
-            <span class="branch-priority">⑥ Pipeline thinking</span>
+            <span class="branch-priority">⑤ Pipeline thinking</span>
             <h2>ETL &amp; ELT</h2>
-            <p>This is about how data moves from source systems into your warehouse — and how you ensure it stays
-                accurate during the journey.</p>
+            <p>Data rarely arrives clean and ready to use. ETL and ELT describe two patterns for moving data from
+                source systems into the warehouse and transforming it along the way. As a BA, you don't build these
+                pipelines — but you need to understand them to write good data requirements and trace where numbers
+                come from.</p>
             <ul>
-                <li><strong>ETL vs ELT</strong> — the shift from transforming data *before* loading to transforming it
-                    *inside* the warehouse using SQL (ELT).</li>
-                <li><strong>dbt (data build tool)</strong> — the standard for SQL transformations. You'll reference its
-                    models when documenting lineage and business logic.</li>
-                <li><strong>Data Quality &amp; Testing</strong> — using automated tests (not_null, unique) to ensure
-                    pipelines don't produce bad data. Your acceptance criteria become the test cases here.</li>
-                <li><strong>Airbyte / Fivetran / Airflow</strong> — the tools that move and schedule data. They handle
-                    the "plumbing" so the team can focus on the analysis.</li>
+                <li><strong>dbt (data build tool)</strong> — the current industry standard for SQL-based
+                    transformations inside the warehouse. You write SELECT statements organized as models; dbt
+                    handles documentation, lineage, and automated testing automatically. Most data teams you join
+                    will already use it.</li>
+                <li><strong>Azure Data Factory</strong> — Microsoft's drag-and-drop data integration tool. Moves
+                    data between systems (databases, APIs, file storage) using configurable pipelines without writing
+                    code. Common in organizations running on the Azure ecosystem.</li>
+                <li><strong>Airflow</strong> — the scheduler and orchestrator. Defines what runs, in what order,
+                    and what to do when something fails. Think of it as the conductor: it doesn't transform data
+                    itself, but it coordinates every tool that does.</li>
             </ul>
         </div>
 
         <div class="branch-section" style="--branch-color: #A855F7;">
-            <span class="branch-priority">⑦ Strategic Foundation</span>
-            <h2>Data Governance &amp; MDM</h2>
-            <p>This is where you bridge the gap between business rules and technical implementation, ensuring data is
-                trusted, consistent, and compliant across the organization.</p>
+            <span class="branch-priority">⑥ Strategic foundation</span>
+            <h2>Data Governance</h2>
+            <p>Governance answers one question: can you trust this data? It becomes critical as organizations
+                scale — and BAs are naturally positioned to lead this work because it sits at the intersection
+                of business rules and technical implementation.</p>
             <ul>
-                <li><strong>Master Data Management (MDM)</strong> — defining the "Golden Record" for core entities like
-                    Customers or Products. Solving the problem of having three different names for the same client.</li>
-                <li><strong>Reference Data Management</strong> — standardizing lookup codes (e.g., country codes, status
-                    flags) to ensure every system speaks the same language.</li>
-                <li><strong>Data Quality Framework</strong> — defining the 6 dimensions of quality (Accuracy,
-                    Completeness, Consistency, etc.) and the rules needed to enforce them.</li>
-                <li><strong>Data Privacy &amp; Ethics</strong> — identifying sensitive PII (Personally Identifiable
-                    Information) and ensuring compliance with GDPR/CCPA.</li>
-                <li><strong>Data Stewardship</strong> — acting as the custodian of data definitions, mediating between
-                    business owners who "own" the data and engineers who "build" the systems.</li>
-                <li><strong>Metadata Management</strong> — maintaining the "data about data," ensuring that every column
-                    in the warehouse has a clear, documented purpose and origin.</li>
+                <li><strong>MDM (Master Data Management)</strong> — creates one authoritative "golden record" per core
+                    business entity: Customer, Product, Supplier. Solves the practical problem of three different
+                    systems having three different names for the same client. BAs own the business rules that define
+                    what the golden record looks like.</li>
+                <li><strong>Data Security &amp; Privacy</strong> — defines who can see what data (role-based access
+                    control), masks or pseudonymizes sensitive PII fields, and ensures pipelines comply with
+                    regulations like GDPR and CCPA. Knowing which fields are sensitive and why is a BA's
+                    responsibility before engineering builds anything.</li>
+                <li><strong>Data Quality Framework</strong> — defines the six dimensions of quality (Accuracy,
+                    Completeness, Consistency, Timeliness, Validity, Uniqueness) and the rules needed to enforce them.
+                    In practice, your acceptance criteria become the automated test conditions that run every time a
+                    pipeline loads new data.</li>
             </ul>
         </div>
 
@@ -587,29 +510,27 @@
 
             const CENTER_X_L = 560;
             const CENTER_X_R = 740;
-            const CENTER_Y = 550;
+            const CENTER_Y = 510;
 
-            // Left main branches (y: 174, 534, 894)
-            c(CENTER_X_L, CENTER_Y, 440, 174, '#378ADD', 2, 0.7);
-            c(CENTER_X_L, CENTER_Y, 440, 534, '#1D9E75', 2, 0.7);
-            c(CENTER_X_L, CENTER_Y, 440, 894, '#BA7517', 2, 0.7);
+            // Left main branches (center y: 174, 514, 854)
+            c(CENTER_X_L, CENTER_Y, 440, 174, '#1D9E75', 2, 0.7);
+            c(CENTER_X_L, CENTER_Y, 440, 514, '#378ADD', 2, 0.7);
+            c(CENTER_X_L, CENTER_Y, 440, 854, '#BA7517', 2, 0.7);
 
-            // Right main branches (y: 144, 404, 664, 964)
-            c(CENTER_X_R, CENTER_Y, 860, 144, '#534AB7', 2, 0.7);
-            c(CENTER_X_R, CENTER_Y, 860, 404, '#D85A30', 2, 0.7);
-            c(CENTER_X_R, CENTER_Y, 860, 664, '#A855F7', 2, 0.7);
-            c(CENTER_X_R, CENTER_Y, 860, 964, '#3B6D11', 2, 0.7);
+            // Right main branches (center y: 174, 514, 854)
+            c(CENTER_X_R, CENTER_Y, 860, 174, '#3B6D11', 2, 0.7);
+            c(CENTER_X_R, CENTER_Y, 860, 514, '#534AB7', 2, 0.7);
+            c(CENTER_X_R, CENTER_Y, 860, 854, '#A855F7', 2, 0.7);
 
             // Left sub-nodes
-            [74, 114, 154, 194, 234, 274].forEach(y => c(280, 174, 172, y, '#378ADD', 1, 0.4));
-            [434, 474, 514, 554, 594, 634].forEach(y => c(280, 534, 172, y, '#1D9E75', 1, 0.4));
-            [794, 834, 874, 914, 954, 994].forEach(y => c(280, 894, 172, y, '#BA7517', 1, 0.4));
+            [114, 154, 194, 234].forEach(y => c(280, 174, 172, y, '#1D9E75', 1, 0.4));
+            [474, 514, 554].forEach(y => c(280, 514, 172, y, '#378ADD', 1, 0.4));
+            [814, 854, 894].forEach(y => c(280, 854, 172, y, '#BA7517', 1, 0.4));
 
             // Right sub-nodes
-            [44, 84, 124, 164, 204, 244].forEach(y => c(1020, 144, 1125, y, '#534AB7', 1, 0.4));
-            [304, 344, 384, 424, 464, 504].forEach(y => c(1020, 404, 1125, y, '#D85A30', 1, 0.4));
-            [564, 604, 644, 684, 724, 764].forEach(y => c(1020, 664, 1125, y, '#A855F7', 1, 0.4));
-            [844, 884, 924, 964, 1004, 1044, 1084].forEach(y => c(1020, 964, 1125, y, '#3B6D11', 1, 0.4));
+            [94, 134, 174, 214, 254].forEach(y => c(1020, 174, 1125, y, '#3B6D11', 1, 0.4));
+            [434, 474, 514, 554].forEach(y => c(1020, 514, 1125, y, '#534AB7', 1, 0.4));
+            [814, 854, 894].forEach(y => c(1020, 854, 1125, y, '#A855F7', 1, 0.4));
         })();
     </script>
 
