@@ -1,318 +1,355 @@
 ---
-title: "Business Analyst on Data Projects: Skills Roadmap"
-description: "Six skill areas Business Analysts need to cover when transitioning to data roles, organized by suggested learning priority."
+layout: default
+title: "From Business Analyst to Data Analyst: Skills Roadmap"
+description: "A six-stage roadmap I wish I had when I started — what to learn, in what order, and why it matters once you are inside an enterprise data team."
 date: 2026-04-19
+extra_css: '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">'
 ---
 
-<div class="post-wide">
-<svg viewBox="0 0 1300 980" width="100%" style="display:block;" xmlns="http://www.w3.org/2000/svg">
-<title>BA to Data Analyst Learning Roadmap</title>
-<defs>
-  <filter id="node-shadow" x="-10%" y="-10%" width="120%" height="120%">
-    <feDropShadow dx="0" dy="1" stdDeviation="2.5" flood-color="#00000014"/>
-  </filter>
-</defs>
-
-<!-- Main branch paths from center -->
-<path d="M560 510 C500 510,500 174,440 174" stroke="#1D9E75" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
-<path d="M560 510 C500 510,500 514,440 514" stroke="#378ADD" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
-<path d="M560 510 C500 510,500 854,440 854" stroke="#BA7517" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
-
-<path d="M740 510 C800 510,800 174,860 174" stroke="#3B6D11" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
-<path d="M740 510 C800 510,800 514,860 514" stroke="#534AB7" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
-<path d="M740 510 C800 510,800 854,860 854" stroke="#A855F7" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
-
-<!-- Sub-branch leaf paths -->
-<!-- Left: Data Basics (174) — 4 items -->
-<path d="M280 174 C226 174,226 114,172 114" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 174 C226 174,226 154,172 154" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 174 C226 174,226 194,172 194" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 174 C226 174,226 234,172 234" stroke="#1D9E75" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<!-- Left: Data Platform (514) — 3 items -->
-<path d="M280 514 C226 514,226 474,172 474" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 514 C226 514,226 514,172 514" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 514 C226 514,226 554,172 554" stroke="#378ADD" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<!-- Left: ETL & ELT (854) — 3 items -->
-<path d="M280 854 C226 854,226 814,172 814" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 854 C226 854,226 854,172 854" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M280 854 C226 854,226 894,172 894" stroke="#BA7517" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-
-<!-- Right: Analytics (174) — 5 items -->
-<path d="M1020 174 C1072.5 174,1072.5 94,1125 94" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 174 C1072.5 174,1072.5 134,1125 134" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 174 C1072.5 174,1072.5 174,1125 174" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 174 C1072.5 174,1072.5 214,1125 214" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 174 C1072.5 174,1072.5 254,1125 254" stroke="#3B6D11" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<!-- Right: Data Modeling (514) — 4 items -->
-<path d="M1020 514 C1072.5 514,1072.5 434,1125 434" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 514 C1072.5 514,1072.5 474,1125 474" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 514 C1072.5 514,1072.5 514,1125 514" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 514 C1072.5 514,1072.5 554,1125 554" stroke="#534AB7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<!-- Right: Data Governance (854) — 3 items -->
-<path d="M1020 854 C1072.5 854,1072.5 814,1125 814" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 854 C1072.5 854,1072.5 854,1125 854" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-<path d="M1020 854 C1072.5 854,1072.5 894,1125 894" stroke="#A855F7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-
-<!-- ===== CENTER NODE ===== -->
-<rect x="560" y="470" width="180" height="80" rx="12" fill="var(--surface)" stroke="var(--divider)" stroke-width="1.5" filter="url(#node-shadow)"/>
-<text x="650" y="502" text-anchor="middle" style="font-size:12px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">BA → Data Analyst</text>
-<text x="650" y="518" text-anchor="middle" style="font-size:10px;fill:var(--text-sec);font-family:'DM Sans',sans-serif;">Learning Roadmap</text>
-
-<!-- ===== LEFT BRANCH NODES ===== -->
-<!-- Data Basics -->
-<rect x="280" y="150" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="280" y="150" width="4" height="48" fill="#1D9E75"/>
-<text x="292" y="173" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Basics</text>
-<text x="292" y="187" style="font-size:9.5px;fill:#1D9E75;font-family:'DM Sans',sans-serif;">&#x2460; understand the landscape</text>
-
-<!-- Data Platform -->
-<rect x="280" y="490" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="280" y="490" width="4" height="48" fill="#378ADD"/>
-<text x="292" y="513" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Platform</text>
-<text x="292" y="527" style="font-size:9.5px;fill:#378ADD;font-family:'DM Sans',sans-serif;">&#x2462; where you practice</text>
-
-<!-- ETL & ELT -->
-<rect x="280" y="830" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="280" y="830" width="4" height="48" fill="#BA7517"/>
-<text x="292" y="853" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">ETL &amp; ELT</text>
-<text x="292" y="867" style="font-size:9.5px;fill:#BA7517;font-family:'DM Sans',sans-serif;">&#x2464; how data moves</text>
-
-<!-- ===== RIGHT BRANCH NODES ===== -->
-<!-- Analytics -->
-<rect x="860" y="150" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="860" y="150" width="4" height="48" fill="#3B6D11"/>
-<text x="872" y="173" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Analytics</text>
-<text x="872" y="187" style="font-size:9.5px;fill:#3B6D11;font-family:'DM Sans',sans-serif;">&#x2461; learn this first</text>
-
-<!-- Data Modeling -->
-<rect x="860" y="490" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="860" y="490" width="4" height="48" fill="#534AB7"/>
-<text x="872" y="513" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Modeling</text>
-<text x="872" y="527" style="font-size:9.5px;fill:#534AB7;font-family:'DM Sans',sans-serif;">&#x2463; design skills</text>
-
-<!-- Data Governance -->
-<rect x="860" y="830" width="160" height="48" rx="4" fill="var(--surface)" filter="url(#node-shadow)"/>
-<rect x="860" y="830" width="4" height="48" fill="#A855F7"/>
-<text x="872" y="853" style="font-size:11.5px;font-weight:500;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Governance</text>
-<text x="872" y="867" style="font-size:9.5px;fill:#A855F7;font-family:'DM Sans',sans-serif;">&#x2465; trust &amp; compliance</text>
-
-<!-- ===== LEFT LEAF NODES ===== -->
-<!-- Data Basics -->
-<rect x="2" y="114" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
-<rect x="2" y="114" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="135" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">OLTP vs OLAP</text>
-
-<rect x="2" y="154" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
-<rect x="2" y="154" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="175" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Structured (CSV, tables)</text>
-
-<rect x="2" y="194" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
-<rect x="2" y="194" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="215" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Semi-structured (JSON, Parquet)</text>
-
-<rect x="2" y="234" width="170" height="32" rx="3" fill="var(--bg)" stroke="#9FE1CB" stroke-width="0.5"/>
-<rect x="2" y="234" width="3" height="32" fill="#1D9E75"/>
-<text x="11" y="255" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Unstructured (docs, logs)</text>
-
-<!-- Data Platform -->
-<rect x="2" y="474" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
-<rect x="2" y="474" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="495" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Snowflake</text>
-
-<rect x="2" y="514" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
-<rect x="2" y="514" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="535" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Databricks</text>
-
-<rect x="2" y="554" width="170" height="32" rx="3" fill="var(--bg)" stroke="#B5D4F4" stroke-width="0.5"/>
-<rect x="2" y="554" width="3" height="32" fill="#378ADD"/>
-<text x="11" y="575" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">BigQuery</text>
-
-<!-- ETL & ELT -->
-<rect x="2" y="814" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
-<rect x="2" y="814" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="835" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">dbt</text>
-
-<rect x="2" y="854" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
-<rect x="2" y="854" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="875" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Azure Data Factory</text>
-
-<rect x="2" y="894" width="170" height="32" rx="3" fill="var(--bg)" stroke="#FAC775" stroke-width="0.5"/>
-<rect x="2" y="894" width="3" height="32" fill="#BA7517"/>
-<text x="11" y="915" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Airflow</text>
-
-<!-- ===== RIGHT LEAF NODES ===== -->
-<!-- Analytics -->
-<rect x="1125" y="94" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="94" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="115" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">SQL Fundamentals</text>
-
-<rect x="1125" y="134" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="134" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="155" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Window Functions / CTEs</text>
-
-<rect x="1125" y="174" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="174" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="195" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Python (Pandas)</text>
-
-<rect x="1125" y="214" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="214" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="235" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Statistical Thinking</text>
-
-<rect x="1125" y="254" width="170" height="32" rx="3" fill="var(--bg)" stroke="#C0DD97" stroke-width="0.5"/>
-<rect x="1125" y="254" width="3" height="32" fill="#3B6D11"/>
-<text x="1134" y="275" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Power BI / Tableau</text>
-
-<!-- Data Modeling -->
-<rect x="1125" y="434" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
-<rect x="1125" y="434" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="455" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Normalized vs Denormalized</text>
-
-<rect x="1125" y="474" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
-<rect x="1125" y="474" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="495" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Dimensional Modeling</text>
-
-<rect x="1125" y="514" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
-<rect x="1125" y="514" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="535" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Star Schema</text>
-
-<rect x="1125" y="554" width="170" height="32" rx="3" fill="var(--bg)" stroke="#CECBF6" stroke-width="0.5"/>
-<rect x="1125" y="554" width="3" height="32" fill="#534AB7"/>
-<text x="1134" y="575" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Snowflake Schema</text>
-
-<!-- Data Governance -->
-<rect x="1125" y="814" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
-<rect x="1125" y="814" width="3" height="32" fill="#A855F7"/>
-<text x="1134" y="835" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">MDM</text>
-
-<rect x="1125" y="854" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
-<rect x="1125" y="854" width="3" height="32" fill="#A855F7"/>
-<text x="1134" y="875" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Security &amp; Privacy</text>
-
-<rect x="1125" y="894" width="170" height="32" rx="3" fill="var(--bg)" stroke="#E9D5FF" stroke-width="0.5"/>
-<rect x="1125" y="894" width="3" height="32" fill="#A855F7"/>
-<text x="1134" y="915" style="font-size:11px;fill:var(--text);font-family:'DM Sans',sans-serif;">Data Quality Framework</text>
-
-</svg>
-</div>
-
 <style>
-.branch-section {
-    margin: 48px 0 0;
-    padding-left: 20px;
-    border-left: 3px solid var(--branch-color, #ccc);
-}
-.branch-section h2 {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--branch-color);
-    margin: 0 0 12px;
-    letter-spacing: -0.01em;
-}
-.branch-section .branch-priority {
-    font-size: 11px;
-    font-weight: 500;
-    color: var(--branch-color);
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-bottom: 14px;
-    display: block;
-}
-.branch-section p {
-    font-size: 15px;
-    line-height: 1.75;
-    color: var(--text);
-    margin: 0 0 16px;
-}
-.branch-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.branch-section ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid color-mix(in srgb, var(--branch-color) 20%, transparent);
-    font-size: 15px;
-    line-height: 1.65;
-    color: var(--text);
-}
-.branch-section ul li:last-child { border-bottom: none; padding-bottom: 0; }
-.branch-section ul li strong {
-    color: var(--branch-color);
-    font-weight: 500;
-    display: inline-block;
-    min-width: 0;
-    margin-right: 4px;
-}
+  body { background: #f5f2ec; }
+
+  .post {
+    --ink:       #15140f;
+    --ink-2:     #3a3833;
+    --ink-3:     #6f6c64;
+    --ink-4:     #a7a49b;
+    --rule:      #d9d4c8;
+    --rule-soft: #e6e1d4;
+    --lnk:       #2a4cd2;
+    --serif:     'Fraunces', 'Times New Roman', serif;
+    --sans:      'Inter', system-ui, -apple-system, sans-serif;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: calc(var(--nav-h, 64px) + 48px) 40px 80px;
+    font-family: var(--sans);
+  }
+
+  .intro { max-width: 760px; }
+
+  .intro__eyebrow {
+    display: flex; gap: 10px; align-items: center;
+    color: var(--lnk); font-size: 12px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 28px;
+  }
+  .intro__sep { color: var(--ink-4); }
+
+  .intro__title {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(40px, 5.2vw, 72px); line-height: 1.04;
+    letter-spacing: -0.02em; margin: 0 0 28px; color: var(--ink);
+  }
+
+  .intro__lede {
+    font-size: 18px; line-height: 1.65; color: var(--ink-2);
+    margin: 0 0 36px; max-width: 640px;
+  }
+
+  .intro__meta {
+    display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+    padding-top: 24px; border-top: 1px solid var(--rule-soft);
+  }
+
+  .intro__progress {
+    display: flex; align-items: center; gap: 14px;
+    flex: 1 1 auto; min-width: 280px;
+  }
+
+  .intro__bar {
+    flex: 1 1 auto; max-width: 280px; height: 4px;
+    background: var(--rule-soft); border-radius: 999px; overflow: hidden;
+  }
+
+  .intro__bar-fill {
+    height: 100%; width: 0%; background: var(--ink);
+    border-radius: 999px; transition: width 280ms ease;
+  }
+
+  .intro__progress-text {
+    font-size: 13px; color: var(--ink-3);
+    font-variant-numeric: tabular-nums; white-space: nowrap;
+  }
+
+  .intro__reset {
+    font-family: var(--sans); font-size: 13px; color: var(--ink-2);
+    background: transparent; border: 1px solid var(--rule);
+    padding: 8px 16px; border-radius: 999px; cursor: pointer;
+    transition: border-color 160ms ease, color 160ms ease;
+  }
+  .intro__reset:hover { border-color: var(--ink-2); color: var(--ink); }
+
+  .legend {
+    margin: 48px 0 28px; display: flex; align-items: center;
+    gap: 18px; flex-wrap: wrap; padding: 14px 0;
+    border-top: 1px solid var(--rule-soft);
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .legend__label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.18em;
+    color: var(--ink-3); margin-right: 4px;
+  }
+  .legend__items { display: flex; gap: 4px; flex-wrap: wrap; flex: 1 1 auto; }
+  .legend__item {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 5px 11px 5px 9px; border-radius: 999px;
+    font-family: var(--sans); color: var(--ink-2); font-size: 13.5px;
+  }
+  .legend__dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    flex: 0 0 8px; background: var(--ldot);
+  }
+  .legend__step { font-size: 11px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+  .canvas-wrap {
+    width: 100%; overflow-x: auto; overflow-y: hidden; position: relative;
+  }
+  .canvas-wrap::after {
+    content: ''; position: absolute; top: 0; right: 0; bottom: 0;
+    width: 48px; background: linear-gradient(to right, transparent, #f5f2ec);
+    pointer-events: none;
+  }
+  @media (min-width: 1540px) { .canvas-wrap::after { display: none; } }
+
+  .canvas {
+    position: relative; width: 1480px; height: 900px;
+    background: radial-gradient(1200px 600px at 50% 50%, rgba(255,255,255,0.5), transparent 70%), #f5f2ec;
+  }
+  .canvas-edges {
+    position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none;
+  }
+
+  .center-node {
+    position: absolute; background: #fff; border: 1px solid #d9d4c8;
+    border-radius: 14px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    z-index: 3; box-sizing: border-box; padding: 0 16px;
+    box-shadow: 0 1px 0 rgba(21,20,15,.02), 0 8px 24px -16px rgba(21,20,15,.18);
+  }
+  .center-node__title {
+    font-family: 'Fraunces', Georgia, serif; font-size: 20px; font-weight: 600;
+    letter-spacing: -0.01em; color: #15140f;
+  }
+  .center-node__sub {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.18em;
+    color: #6f6c64; margin-top: 5px;
+  }
+
+  .mn {
+    position: absolute; width: 200px; height: 64px;
+    background: #fff; border: 1px solid #d9d4c8;
+    border-left: 3px solid var(--accent, #ccc); border-radius: 6px;
+    display: flex; flex-direction: column; align-items: flex-start;
+    justify-content: center; padding: 9px 14px 9px 12px;
+    z-index: 2; box-sizing: border-box;
+  }
+  .mn-step {
+    position: absolute; top: 6px; right: 10px; font-size: 10px;
+    color: #6f6c64; font-variant-numeric: tabular-nums; letter-spacing: 0.1em;
+  }
+  .mn-t {
+    font-family: 'Fraunces', Georgia, serif; font-size: 16px; font-weight: 600;
+    color: #15140f; line-height: 1.2; letter-spacing: -0.005em;
+  }
+  .mn-b { font-size: 12px; margin-top: 3px; color: var(--accent, #999); line-height: 1.2; }
+
+  .sn {
+    position: absolute; width: 200px; height: 36px;
+    background: #fff; border: 1px solid #d9d4c8;
+    border-left: 3px solid var(--accent, #ccc); border-radius: 4px;
+    display: flex; align-items: center; gap: 6px; padding: 0 8px 0 7px;
+    font-size: 12.5px; color: #3a3833; box-sizing: border-box;
+    cursor: pointer; user-select: none; transition: border-color 160ms ease;
+  }
+  .sn:hover { border-color: color-mix(in oklab, var(--accent) 60%, #d9d4c8); }
+  .sn-check {
+    width: 14px; height: 14px; border: 1px solid #d9d4c8; border-radius: 3px;
+    flex: 0 0 14px; display: flex; align-items: center; justify-content: center;
+    font-size: 9px; color: transparent; background: transparent;
+    transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+  }
+  .sn-check.is-done { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .sn-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+
+  .post-foot { margin-top: 56px; }
+  .post-foot__line { height: 1px; background: var(--rule-soft); margin-bottom: 28px; }
+  .post-foot__row {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    gap: 32px; flex-wrap: wrap;
+  }
+  .post-foot__label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.18em;
+    color: var(--ink-3); margin-bottom: 8px;
+  }
+  .post-foot__name {
+    font-family: var(--serif); font-weight: 600; font-size: 18px; color: var(--ink);
+  }
+  .post-foot__meta { font-size: 13px; color: var(--ink-3); margin-top: 4px; }
+  .post-foot__links { display: flex; gap: 20px; }
+  .post-foot__links a {
+    color: var(--lnk); font-size: 14px; text-decoration: none;
+    border-bottom: 1px solid color-mix(in oklab, #2a4cd2 30%, transparent);
+    padding-bottom: 1px; transition: border-color 160ms ease;
+  }
+  .post-foot__links a:hover { border-bottom-color: var(--lnk); }
 </style>
 
-<div class="branch-section" style="--branch-color: #1D9E75;">
-  <span class="branch-priority">① Start here — understand the landscape</span>
-  <h2>Data Basics</h2>
-  <p>Before you analyze data, you need to understand what shape it comes in and where it lives. These four concepts appear in nearly every data conversation — knowing them helps you ask the right questions from day one.</p>
-  <ul>
-    <li><strong>OLTP vs OLAP</strong> — OLTP (transactional) databases handle live operations: each write is one event, optimized for speed and integrity. OLAP (analytical) databases store historical data optimized for large-scale reads. Always ask which type you're querying — the answer changes how you write queries and what performance to expect.</li>
-    <li><strong>Structured</strong> — data in rows and columns: spreadsheets, SQL tables. Every field has a fixed type and position. The easiest format to query and the most common in analytics work.</li>
-    <li><strong>Semi-structured</strong> — flexible structure with key-value pairs: JSON (what APIs return), Parquet (what data warehouses store internally). Has fields and values, but the schema can vary between records.</li>
-    <li><strong>Unstructured</strong> — free text, logs, images, PDFs. No fixed schema. Requires significant processing — parsing, extraction, or ML — before it can be analyzed like tabular data.</li>
-  </ul>
+<div class="post">
+
+  <section class="intro">
+    <div class="intro__eyebrow">
+      <span>BLOG</span>
+      <span class="intro__sep">·</span>
+      <span>LEARNING ROADMAP</span>
+      <span class="intro__sep">·</span>
+      <span>2026</span>
+    </div>
+    <h1 class="intro__title">From Business Analyst<br>to Data Analyst.</h1>
+    <p class="intro__lede">A six-stage roadmap I wish I had when I started — what to learn, in what order, and why it matters once you are inside an enterprise data team. Tap any topic to mark it done; your progress is saved on this device.</p>
+    <div class="intro__meta">
+      <div class="intro__progress">
+        <div class="intro__bar"><div class="intro__bar-fill" id="progress-bar"></div></div>
+        <span class="intro__progress-text" id="progress-text">0 of 22 topics marked as learned</span>
+      </div>
+      <button class="intro__reset" id="reset-btn" type="button">Reset progress</button>
+    </div>
+  </section>
+
+  <div class="legend">
+    <span class="legend__label">Stages</span>
+    <div class="legend__items">
+      <div class="legend__item" style="--ldot:oklch(0.58 0.09 155);"><span class="legend__dot"></span><span class="legend__step">01</span> Data Basics</div>
+      <div class="legend__item" style="--ldot:oklch(0.58 0.09 155);"><span class="legend__dot"></span><span class="legend__step">02</span> Analytics</div>
+      <div class="legend__item" style="--ldot:oklch(0.58 0.09 245);"><span class="legend__dot"></span><span class="legend__step">03</span> Data Platform</div>
+      <div class="legend__item" style="--ldot:oklch(0.58 0.09 305);"><span class="legend__dot"></span><span class="legend__step">04</span> Data Modeling</div>
+      <div class="legend__item" style="--ldot:oklch(0.62 0.09 65);"><span class="legend__dot"></span><span class="legend__step">05</span> ETL &amp; ELT</div>
+      <div class="legend__item" style="--ldot:oklch(0.58 0.09 305);"><span class="legend__dot"></span><span class="legend__step">06</span> Data Governance</div>
+    </div>
+  </div>
+
+  <div class="canvas-wrap">
+    <div class="canvas" id="mm">
+      <svg class="canvas-edges" id="mmsvg" width="1480" height="900"></svg>
+
+      <div class="center-node" style="left:630px;top:412px;width:220px;height:96px;">
+        <div class="center-node__title">BA → Data Analyst</div>
+        <div class="center-node__sub">Learning Roadmap</div>
+      </div>
+
+      <!-- Data Basics -->
+      <div class="mn" style="left:260px;top:148px;--accent:oklch(0.58 0.09 155);"><span class="mn-step">01</span><span class="mn-t">Data Basics</span><span class="mn-b">understand the landscape</span></div>
+      <div class="sn" style="left:20px;top:62px; --accent:oklch(0.58 0.09 155);" onclick="toggleLeaf('oltp')" ><div class="sn-check" id="c-oltp">✓</div><span class="sn-label">OLTP vs OLAP</span></div>
+      <div class="sn" style="left:20px;top:129px;--accent:oklch(0.58 0.09 155);" onclick="toggleLeaf('csv')"  ><div class="sn-check" id="c-csv">✓</div><span class="sn-label">Structured (CSV, tables)</span></div>
+      <div class="sn" style="left:20px;top:195px;--accent:oklch(0.58 0.09 155);" onclick="toggleLeaf('json')" ><div class="sn-check" id="c-json">✓</div><span class="sn-label">Semi-structured (JSON, Parquet)</span></div>
+      <div class="sn" style="left:20px;top:262px;--accent:oklch(0.58 0.09 155);" onclick="toggleLeaf('docs')" ><div class="sn-check" id="c-docs">✓</div><span class="sn-label">Unstructured (docs, logs)</span></div>
+
+      <!-- Data Platform -->
+      <div class="mn" style="left:260px;top:428px;--accent:oklch(0.58 0.09 245);"><span class="mn-step">03</span><span class="mn-t">Data Platform</span><span class="mn-b">where you practice</span></div>
+      <div class="sn" style="left:20px;top:360px;--accent:oklch(0.58 0.09 245);" onclick="toggleLeaf('snow')"><div class="sn-check" id="c-snow">✓</div><span class="sn-label">Snowflake</span></div>
+      <div class="sn" style="left:20px;top:442px;--accent:oklch(0.58 0.09 245);" onclick="toggleLeaf('dbx')" ><div class="sn-check" id="c-dbx">✓</div><span class="sn-label">Databricks</span></div>
+      <div class="sn" style="left:20px;top:524px;--accent:oklch(0.58 0.09 245);" onclick="toggleLeaf('bq')"  ><div class="sn-check" id="c-bq">✓</div><span class="sn-label">BigQuery</span></div>
+
+      <!-- ETL & ELT -->
+      <div class="mn" style="left:260px;top:708px;--accent:oklch(0.62 0.09 65);"><span class="mn-step">05</span><span class="mn-t">ETL &amp; ELT</span><span class="mn-b">how data moves</span></div>
+      <div class="sn" style="left:20px;top:640px;--accent:oklch(0.62 0.09 65);" onclick="toggleLeaf('dbt')"><div class="sn-check" id="c-dbt">✓</div><span class="sn-label">dbt</span></div>
+      <div class="sn" style="left:20px;top:722px;--accent:oklch(0.62 0.09 65);" onclick="toggleLeaf('adf')"><div class="sn-check" id="c-adf">✓</div><span class="sn-label">Azure Data Factory</span></div>
+      <div class="sn" style="left:20px;top:804px;--accent:oklch(0.62 0.09 65);" onclick="toggleLeaf('air')"><div class="sn-check" id="c-air">✓</div><span class="sn-label">Airflow</span></div>
+
+      <!-- Analytics -->
+      <div class="mn" style="left:1020px;top:148px;--accent:oklch(0.58 0.09 155);"><span class="mn-step">02</span><span class="mn-t">Analytics</span><span class="mn-b">learn this first</span></div>
+      <div class="sn" style="left:1260px;top:52px; --accent:oklch(0.58 0.09 155);" onclick="toggleLeaf('sql')"   ><div class="sn-check" id="c-sql">✓</div><span class="sn-label">SQL Fundamentals</span></div>
+      <div class="sn" style="left:1260px;top:107px;--accent:oklch(0.58 0.09 155);" onclick="toggleLeaf('win')"   ><div class="sn-check" id="c-win">✓</div><span class="sn-label">Window Functions / CTEs</span></div>
+      <div class="sn" style="left:1260px;top:162px;--accent:oklch(0.58 0.09 155);" onclick="toggleLeaf('pandas')"><div class="sn-check" id="c-pandas">✓</div><span class="sn-label">Python (Pandas)</span></div>
+      <div class="sn" style="left:1260px;top:217px;--accent:oklch(0.58 0.09 155);" onclick="toggleLeaf('stats')" ><div class="sn-check" id="c-stats">✓</div><span class="sn-label">Statistical Thinking</span></div>
+      <div class="sn" style="left:1260px;top:272px;--accent:oklch(0.58 0.09 155);" onclick="toggleLeaf('bi')"    ><div class="sn-check" id="c-bi">✓</div><span class="sn-label">Power BI / Tableau</span></div>
+
+      <!-- Data Modeling -->
+      <div class="mn" style="left:1020px;top:428px;--accent:oklch(0.58 0.09 305);"><span class="mn-step">04</span><span class="mn-t">Data Modeling</span><span class="mn-b">design skills</span></div>
+      <div class="sn" style="left:1260px;top:342px;--accent:oklch(0.58 0.09 305);" onclick="toggleLeaf('norm')" ><div class="sn-check" id="c-norm">✓</div><span class="sn-label">Normalized vs Denormalized</span></div>
+      <div class="sn" style="left:1260px;top:409px;--accent:oklch(0.58 0.09 305);" onclick="toggleLeaf('dim')"  ><div class="sn-check" id="c-dim">✓</div><span class="sn-label">Dimensional Modeling</span></div>
+      <div class="sn" style="left:1260px;top:475px;--accent:oklch(0.58 0.09 305);" onclick="toggleLeaf('star')" ><div class="sn-check" id="c-star">✓</div><span class="sn-label">Star Schema</span></div>
+      <div class="sn" style="left:1260px;top:542px;--accent:oklch(0.58 0.09 305);" onclick="toggleLeaf('snowS')"><div class="sn-check" id="c-snowS">✓</div><span class="sn-label">Snowflake Schema</span></div>
+
+      <!-- Data Governance -->
+      <div class="mn" style="left:1020px;top:708px;--accent:oklch(0.58 0.09 305);"><span class="mn-step">06</span><span class="mn-t">Data Governance</span><span class="mn-b">trust &amp; compliance</span></div>
+      <div class="sn" style="left:1260px;top:640px;--accent:oklch(0.58 0.09 305);" onclick="toggleLeaf('mdm')" ><div class="sn-check" id="c-mdm">✓</div><span class="sn-label">MDM</span></div>
+      <div class="sn" style="left:1260px;top:722px;--accent:oklch(0.58 0.09 305);" onclick="toggleLeaf('sec')" ><div class="sn-check" id="c-sec">✓</div><span class="sn-label">Data Security &amp; Privacy</span></div>
+      <div class="sn" style="left:1260px;top:804px;--accent:oklch(0.58 0.09 305);" onclick="toggleLeaf('qual')"><div class="sn-check" id="c-qual">✓</div><span class="sn-label">Data Quality Framework</span></div>
+
+    </div>
+  </div>
+
+  <footer class="post-foot">
+    <div class="post-foot__line"></div>
+    <div class="post-foot__row">
+      <div>
+        <div class="post-foot__label">Written by</div>
+        <div class="post-foot__name">Dzianis Kuziomkin</div>
+        <div class="post-foot__meta">Lead BA Analyst · CBAP &amp; CBDA · 8 years in enterprise data</div>
+      </div>
+      <div class="post-foot__links">
+        <a href="/">→ Read the full essay</a>
+        <a href="https://www.linkedin.com/in/dzianis-kuziomkin/" target="_blank" rel="noopener">→ Discuss on LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
 </div>
 
-<div class="branch-section" style="--branch-color: #3B6D11;">
-  <span class="branch-priority">② Learn this first</span>
-  <h2>Analytics</h2>
-  <p>This is the core toolkit. SQL is the language of data — nothing else matters as much in day-to-day work. You don't need to become a data engineer, but you do need to be able to answer questions yourself without depending on others for every query.</p>
-  <ul>
-    <li><strong>SQL Fundamentals</strong> — SELECT, FROM, WHERE, JOIN, GROUP BY. Non-negotiable. You cannot work in data without SQL. Start here and don't move on until joins feel natural.</li>
-    <li><strong>Window Functions &amp; CTEs</strong> — window functions calculate rankings, running totals, and moving averages without collapsing your rows. CTEs (WITH clauses) break complex queries into named, readable steps. Together they replace most subquery spaghetti.</li>
-    <li><strong>Python (Pandas)</strong> — specifically for loading and reshaping data. Not full engineering. Being able to read a CSV into a dataframe, inspect it, and filter it puts you in a much stronger position alongside technical teams.</li>
-    <li><strong>Statistical Thinking</strong> — mean, median, distributions, correlation. SQL tells you what the data says; statistics tells you what it means. Understanding variance prevents you from reporting noise as insight or treating a random spike as a trend.</li>
-    <li><strong>Power BI / Tableau</strong> — knowing how to build a basic dashboard and read the underlying data model separates analysts from report consumers. The goal is to communicate findings, not just produce charts.</li>
-  </ul>
-</div>
+<script>
+(function () {
+  const svg = document.getElementById('mmsvg');
+  function c(x1, y1, x2, y2, col, w, op) {
+    const mx = (x1 + x2) / 2;
+    const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    p.setAttribute('d', `M${x1} ${y1} C${mx} ${y1},${mx} ${y2},${x2} ${y2}`);
+    p.setAttribute('stroke', col);
+    p.setAttribute('stroke-width', String(w || 2));
+    p.setAttribute('fill', 'none');
+    p.setAttribute('stroke-linecap', 'round');
+    p.setAttribute('opacity', String(op || 0.65));
+    svg.appendChild(p);
+  }
+  const CL = 630, CR = 850, CY = 460;
+  c(CL,CY, 460, 180, 'oklch(0.58 0.09 155)', 2, 0.7);
+  c(CL,CY, 460, 460, 'oklch(0.58 0.09 245)', 2, 0.7);
+  c(CL,CY, 460, 740, 'oklch(0.62 0.09 65)',  2, 0.7);
+  c(CR,CY, 1020,180, 'oklch(0.58 0.09 155)', 2, 0.7);
+  c(CR,CY, 1020,460, 'oklch(0.58 0.09 305)', 2, 0.7);
+  c(CR,CY, 1020,740, 'oklch(0.58 0.09 305)', 2, 0.7);
+  [80,147,213,280].forEach(y => c(260,180, 220,y, 'oklch(0.58 0.09 155)', 1, 0.4));
+  [378,460,542].forEach(y    => c(260,460, 220,y, 'oklch(0.58 0.09 245)', 1, 0.4));
+  [658,740,822].forEach(y    => c(260,740, 220,y, 'oklch(0.62 0.09 65)',  1, 0.4));
+  [70,125,180,235,290].forEach(y => c(1220,180, 1260,y, 'oklch(0.58 0.09 155)', 1, 0.4));
+  [360,427,493,560].forEach(y    => c(1220,460, 1260,y, 'oklch(0.58 0.09 305)', 1, 0.4));
+  [658,740,822].forEach(y        => c(1220,740, 1260,y, 'oklch(0.58 0.09 305)', 1, 0.4));
+})();
 
-<div class="branch-section" style="--branch-color: #378ADD;">
-  <span class="branch-priority">③ Set up a sandbox early</span>
-  <h2>Data Platform</h2>
-  <p>You need a place to practice. Set up a free account in the same week you start learning SQL — not later. The choice of platform matters less than getting one running early. All three below have free tiers and sample datasets built in.</p>
-  <ul>
-    <li><strong>Snowflake</strong> — the most analyst-friendly cloud warehouse. Separates compute from storage so queries are fast without managing infrastructure. The default starting point for most learners because the SQL dialect is clean and the UI is intuitive.</li>
-    <li><strong>Databricks</strong> — combines SQL and Python notebooks in one environment. Stronger for data engineering and larger datasets. Common in companies running machine learning pipelines alongside analytics.</li>
-    <li><strong>BigQuery</strong> — Google's serverless warehouse. No clusters to manage: you run a query and pay per byte scanned. A generous free tier and access to public datasets (Wikipedia, GitHub, weather data) make it ideal for self-directed practice projects.</li>
-  </ul>
-</div>
+const TOTAL = 22;
+const STORE_KEY = 'ba-to-data-done';
+const done = new Set(JSON.parse(localStorage.getItem(STORE_KEY) || '[]'));
 
-<div class="branch-section" style="--branch-color: #534AB7;">
-  <span class="branch-priority">④ Design skills</span>
-  <h2>Data Modeling</h2>
-  <p>This is about structuring data so it's fast to query and easy for business users to understand. Your BA instinct for business entities and relationships gives you a head start — the concepts map directly onto ERDs and process models you already know.</p>
-  <ul>
-    <li><strong>Normalized vs Denormalized</strong> — normalized splits data into separate related tables, reducing duplication but requiring joins. Denormalized flattens everything into fewer wide tables, making queries simpler and faster. Most analytical warehouses favor denormalization; most transactional systems favor normalization.</li>
-    <li><strong>Dimensional Modeling</strong> — the Ralph Kimball methodology: the dominant pattern for analytical warehouses. Business events (sales, logins, orders) become Fact tables; context about those events (who, what, where, when) becomes Dimension tables.</li>
-    <li><strong>Star Schema</strong> — one central Fact table linked to Dimension tables radiating outward. Fast, simple, and the most common warehouse structure you'll encounter in practice.</li>
-    <li><strong>Snowflake Schema</strong> — a normalized star schema where large dimension tables are split into sub-dimensions. More tables and joins, less data redundancy. Harder to query for analysts but useful when dimensions change frequently.</li>
-  </ul>
-</div>
+function refreshProgress() {
+  const n = done.size;
+  document.getElementById('progress-bar').style.width = `${(n / TOTAL) * 100}%`;
+  document.getElementById('progress-text').textContent = `${n} of ${TOTAL} topics marked as learned`;
+}
 
-<div class="branch-section" style="--branch-color: #BA7517;">
-  <span class="branch-priority">⑤ Pipeline thinking</span>
-  <h2>ETL &amp; ELT</h2>
-  <p>Data rarely arrives clean and ready to use. ETL and ELT describe two patterns for moving data from source systems into the warehouse and transforming it along the way. As a BA you don't build these pipelines — but you need to understand them to write good data requirements and trace where numbers come from.</p>
-  <ul>
-    <li><strong>dbt (data build tool)</strong> — the current industry standard for SQL-based transformations inside the warehouse. You write SELECT statements organized as models; dbt handles documentation, lineage, and automated testing automatically. Most data teams you join will already use it.</li>
-    <li><strong>Azure Data Factory</strong> — Microsoft's drag-and-drop data integration tool. Moves data between systems (databases, APIs, file storage) using configurable pipelines without writing code. Common in organizations running on the Azure ecosystem.</li>
-    <li><strong>Airflow</strong> — the scheduler and orchestrator. Defines what runs, in what order, and what to do when something fails. Think of it as the conductor: it doesn't transform data itself, but it coordinates every tool that does.</li>
-  </ul>
-</div>
+function toggleLeaf(id) {
+  const el = document.getElementById('c-' + id);
+  if (!el) return;
+  if (done.has(id)) { done.delete(id); el.classList.remove('is-done'); }
+  else              { done.add(id);    el.classList.add('is-done'); }
+  localStorage.setItem(STORE_KEY, JSON.stringify([...done]));
+  refreshProgress();
+}
 
-<div class="branch-section" style="--branch-color: #A855F7;">
-  <span class="branch-priority">⑥ Strategic foundation</span>
-  <h2>Data Governance</h2>
-  <p>Governance answers one question: can you trust this data? It becomes critical as organizations scale — and BAs are naturally positioned to lead this work because it sits at the intersection of business rules and technical implementation.</p>
-  <ul>
-    <li><strong>MDM (Master Data Management)</strong> — creates one authoritative "golden record" per core business entity: Customer, Product, Supplier. Solves the practical problem of three different systems having three different names for the same client. BAs own the business rules that define what the golden record looks like.</li>
-    <li><strong>Data Security &amp; Privacy</strong> — defines who can see what data (role-based access control), masks or pseudonymizes sensitive PII fields, and ensures pipelines comply with GDPR and CCPA. Knowing which fields are sensitive and why is a BA's responsibility before engineering builds anything.</li>
-    <li><strong>Data Quality Framework</strong> — defines the six dimensions of quality (Accuracy, Completeness, Consistency, Timeliness, Validity, Uniqueness) and the rules needed to enforce them. In practice, your acceptance criteria become the automated test conditions that run every time a pipeline loads new data.</li>
-  </ul>
-</div>
+document.getElementById('reset-btn').addEventListener('click', () => {
+  done.clear();
+  localStorage.removeItem(STORE_KEY);
+  document.querySelectorAll('.sn-check').forEach(el => el.classList.remove('is-done'));
+  refreshProgress();
+});
+
+done.forEach(id => { const el = document.getElementById('c-' + id); if (el) el.classList.add('is-done'); });
+refreshProgress();
+</script>
