@@ -213,8 +213,8 @@ img { display: block; max-width: 100%; }
    Hero Section
    ========================================= */
 .hero {
-  padding-top: calc(var(--nav-h) + 72px);
-  padding-bottom: 96px;
+  padding-top: calc(var(--nav-h) + 56px);
+  padding-bottom: 64px;
 }
 
 .hero-inner {
@@ -231,25 +231,34 @@ img { display: block; max-width: 100%; }
 .hero-photo { order: 2; }
 
 .hero-eyebrow {
-  display: inline-block;
+  display: block;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 16px;
+  color: var(--text-sec);
+  margin-bottom: 20px;
+  line-height: 1.8;
 }
 
 .hero-name {
   font-family: 'DM Serif Display', serif;
-  font-size: clamp(40px, 5vw, 54px);
-  line-height: 1.1;
+  font-size: clamp(56px, 8.5vw, 88px);
+  line-height: 1.05;
   color: var(--text);
-  margin: 0 0 24px 0;
+  margin: 0 0 28px 0;
 }
 
 .hero-subtitle {
-  font-size: 18px;
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.75;
+  margin: 0 0 16px 0;
+  max-width: 480px;
+}
+
+.hero-subtitle-2 {
+  font-size: 15px;
   color: var(--text-sec);
   line-height: 1.75;
   margin: 0 0 36px 0;
@@ -283,6 +292,104 @@ img { display: block; max-width: 100%; }
   border: 2px solid #E2DFD8;
   object-fit: cover;
   object-position: center top;
+}
+
+/* =========================================
+   Currently Section
+   ========================================= */
+.currently-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.currently-block {
+  border-top: 1px solid var(--divider);
+  border-bottom: 1px solid var(--divider);
+  padding: 36px 0;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.currently-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-sec);
+  padding-top: 3px;
+}
+
+.currently-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 24px;
+  padding: 12px 0;
+  border-top: 1px solid var(--divider);
+  align-items: baseline;
+}
+
+.currently-row:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.currently-row-key {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-sec);
+}
+
+.currently-row-val {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* =========================================
+   Stats Section
+   ========================================= */
+.stats-wrap {
+  padding: 64px 0;
+  border-bottom: 1px solid var(--divider);
+}
+
+.stats-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.stat-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--text);
+}
+
+.stat-unit {
+  font-size: 14px;
+  color: var(--text-sec);
+}
+
+.stat-sub {
+  font-size: 12px;
+  color: var(--text-sec);
+  line-height: 1.5;
 }
 
 /* =========================================
@@ -633,7 +740,25 @@ img { display: block; max-width: 100%; }
     border-radius: 50%;
   }
 
-  .hero-subtitle { font-size: 16px; }
+  .hero-subtitle { font-size: 15px; }
+  .hero-subtitle-2 { font-size: 14px; }
+
+  /* Currently — stack on mobile */
+  .currently-block {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .currently-row {
+    grid-template-columns: 80px 1fr;
+    gap: 16px;
+  }
+
+  /* Stats — 2 cols on mobile */
+  .stats-inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+  }
 
   /* Expertise — single column */
   .expertise-grid { grid-template-columns: 1fr; }
