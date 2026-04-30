@@ -11,7 +11,25 @@
       "Bash(curl -sL \"https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/f4/26/34f4264d-5b2e-cbe0-d4b9-2f8bb1e47aac/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/1200x630wa.png\" -o /Users/dzianiskuziomkin/Repositories/dzianiskuziomkin_landing/images/fxboard-icon.png)",
       "WebSearch",
       "Bash(git add *)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(bundle exec *)",
+      "Bash(jekyll serve *)",
+      "Bash(rbenv versions *)",
+      "Bash(rvm list *)",
+      "Read(//Users/dzianiskuziomkin/.rbenv/**)",
+      "Read(//usr/local/**)",
+      "Bash(ruby -v)",
+      "Bash(gem list *)",
+      "Bash(gem environment *)",
+      "Read(//Users/dzianiskuziomkin/.gem/ruby/**)",
+      "Bash(brew list *)",
+      "Bash(/opt/homebrew/opt/ruby/bin/gem list *)",
+      "Bash(/opt/homebrew/opt/ruby/bin/bundle install *)",
+      "Bash(PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" /opt/homebrew/opt/ruby/bin/bundle exec *)",
+      "WebFetch(domain:127.0.0.1)",
+      "Bash(curl -s http://127.0.0.1:4000/)",
+      "Bash(curl -s http://127.0.0.1:4000/2026/04/19/ba-to-data-analyst-skills-roadmap.html)",
+      "Bash(curl -s http://127.0.0.1:4000/blog/)"
     ]
   }
 }
