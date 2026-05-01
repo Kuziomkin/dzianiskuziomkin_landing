@@ -9,20 +9,20 @@
     <meta name="description" content="A six-stage roadmap I wish I had when I started — what to learn, in what order, and why it matters once you are inside an enterprise data team." />
     
 
-    <link rel="canonical" href="http://localhost:4000/blog/ba-to-data-analyst-skills-roadmap/" />
+    <link rel="canonical" href="https://dzianiskuziomkin.com/blog/ba-to-data-analyst-skills-roadmap/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://localhost:4000/blog/ba-to-data-analyst-skills-roadmap/" />
+    <meta property="og:url" content="https://dzianiskuziomkin.com/blog/ba-to-data-analyst-skills-roadmap/" />
     <meta property="og:title" content="From Business Analyst to Data Analyst: Skills Roadmap" />
     <meta property="og:description" content="A six-stage roadmap I wish I had when I started — what to learn, in what order, and why it matters once you are inside an enterprise data team." />
-    <meta property="og:image" content="http://localhost:4000/images/portrait-square-800.png" />
+    <meta property="og:image" content="https://dzianiskuziomkin.com/images/portrait-square-800.png" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="From Business Analyst to Data Analyst: Skills Roadmap" />
     <meta name="twitter:description" content="A six-stage roadmap I wish I had when I started — what to learn, in what order, and why it matters once you are inside an enterprise data team." />
-    <meta name="twitter:image" content="http://localhost:4000/images/portrait-square-800.png" />
+    <meta name="twitter:image" content="https://dzianiskuziomkin.com/images/portrait-square-800.png" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,15 +44,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A six-stage roadmap I wish I had when I started — what to learn, in what order, and why it matters once you are inside an enterprise data team." />
 <meta property="og:description" content="A six-stage roadmap I wish I had when I started — what to learn, in what order, and why it matters once you are inside an enterprise data team." />
-<link rel="canonical" href="http://localhost:4000/blog/ba-to-data-analyst-skills-roadmap/" />
-<meta property="og:url" content="http://localhost:4000/blog/ba-to-data-analyst-skills-roadmap/" />
+<link rel="canonical" href="https://dzianiskuziomkin.com/blog/ba-to-data-analyst-skills-roadmap/" />
+<meta property="og:url" content="https://dzianiskuziomkin.com/blog/ba-to-data-analyst-skills-roadmap/" />
 <meta property="og:site_name" content="Dzianis Kuziomkin" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2026-04-19T00:00:00+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="From Business Analyst to Data Analyst: Skills Roadmap" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dzianis Kuziomkin"},"dateModified":"2026-04-19T00:00:00+00:00","datePublished":"2026-04-19T00:00:00+00:00","description":"A six-stage roadmap I wish I had when I started — what to learn, in what order, and why it matters once you are inside an enterprise data team.","headline":"From Business Analyst to Data Analyst: Skills Roadmap","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/ba-to-data-analyst-skills-roadmap/"},"url":"http://localhost:4000/blog/ba-to-data-analyst-skills-roadmap/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dzianis Kuziomkin"},"dateModified":"2026-04-19T00:00:00+00:00","datePublished":"2026-04-19T00:00:00+00:00","description":"A six-stage roadmap I wish I had when I started — what to learn, in what order, and why it matters once you are inside an enterprise data team.","headline":"From Business Analyst to Data Analyst: Skills Roadmap","mainEntityOfPage":{"@type":"WebPage","@id":"https://dzianiskuziomkin.com/blog/ba-to-data-analyst-skills-roadmap/"},"url":"https://dzianiskuziomkin.com/blog/ba-to-data-analyst-skills-roadmap/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -289,6 +289,69 @@
     padding-bottom: 1px; transition: border-color 160ms ease;
   }
   .post-foot__links a:hover { border-bottom-color: var(--lnk); }
+
+  /* ── Section nav ─────────────────────────────── */
+  .sec-nav {
+    margin: 56px 0 0; display: flex; gap: 0; flex-wrap: wrap;
+    border-top: 1px solid var(--rule-soft);
+    border-bottom: 1px solid var(--rule-soft);
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+  }
+  .sec-nav__item {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 12px 18px; font-size: 13px; color: var(--ink-3);
+    text-decoration: none; white-space: nowrap;
+    border-bottom: 2px solid transparent; margin-bottom: -1px;
+    transition: color 160ms ease, border-color 160ms ease;
+  }
+  .sec-nav__item:hover { color: var(--ink); border-bottom-color: var(--ink-4); }
+  .sec-nav__dot {
+    width: 7px; height: 7px; border-radius: 50%; flex: 0 0 7px;
+    background: var(--dot);
+  }
+
+  /* ── Skill sections ───────────────────────────── */
+  .skill-section {
+    max-width: 760px; padding-top: 72px;
+  }
+  .skill-section__eyebrow {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.18em;
+    color: var(--ink-3); margin-bottom: 16px;
+  }
+  .skill-section__title {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(28px, 3.6vw, 42px); line-height: 1.1;
+    letter-spacing: -0.015em; color: var(--ink); margin: 0 0 20px;
+  }
+  .skill-section__lede {
+    font-size: 16px; line-height: 1.7; color: var(--ink-2);
+    margin: 0 0 36px; border-bottom: 1px solid var(--rule-soft); padding-bottom: 32px;
+  }
+  .skill-list { display: flex; flex-direction: column; gap: 0; }
+  .skill-row {
+    display: grid; grid-template-columns: 220px 1fr;
+    gap: 0 32px; padding: 20px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    align-items: baseline;
+  }
+  .skill-row:last-child { border-bottom: none; }
+  .skill-row__name {
+    font-size: 14px; font-weight: 500; color: var(--ink);
+    padding-right: 16px;
+  }
+  .skill-row__desc {
+    font-size: 14px; line-height: 1.65; color: var(--ink-2);
+  }
+  .skill-back {
+    display: inline-block; margin-top: 36px; font-size: 13px;
+    color: var(--ink-3); text-decoration: none;
+    transition: color 160ms ease;
+  }
+  .skill-back:hover { color: var(--ink); }
+  @media (max-width: 600px) {
+    .skill-row { grid-template-columns: 1fr; gap: 6px 0; }
+    .skill-row__name { padding-right: 0; }
+  }
 </style>
 
 <div class="post">
@@ -376,6 +439,164 @@
     </div>
   </div>
 
+  <!-- ── Jump navigation ─────────────────────────── -->
+  <nav class="sec-nav" aria-label="Explore stages">
+    <a class="sec-nav__item" href="#stage-basics"><span class="sec-nav__dot" style="--dot:oklch(0.58 0.09 155);"></span>Data Basics</a>
+    <a class="sec-nav__item" href="#stage-analytics"><span class="sec-nav__dot" style="--dot:oklch(0.58 0.09 155);"></span>Analytics</a>
+    <a class="sec-nav__item" href="#stage-platform"><span class="sec-nav__dot" style="--dot:oklch(0.58 0.09 245);"></span>Data Platform</a>
+    <a class="sec-nav__item" href="#stage-modeling"><span class="sec-nav__dot" style="--dot:oklch(0.58 0.09 305);"></span>Data Modeling</a>
+    <a class="sec-nav__item" href="#stage-etl"><span class="sec-nav__dot" style="--dot:oklch(0.62 0.09 65);"></span>ETL &amp; ELT</a>
+    <a class="sec-nav__item" href="#stage-gov"><span class="sec-nav__dot" style="--dot:oklch(0.58 0.09 305);"></span>Data Governance</a>
+  </nav>
+
+  <!-- ── 01 Data Basics ─────────────────────────── -->
+  <section class="skill-section" id="stage-basics">
+    <div class="skill-section__eyebrow">01 · DATA BASICS</div>
+    <h2 class="skill-section__title">Data Basics</h2>
+    <p class="skill-section__lede">Before you analyze data, you need to understand what shape it comes in and where it lives. These four concepts appear in nearly every data conversation — knowing them helps you ask the right questions from day one.</p>
+    <div class="skill-list">
+      <div class="skill-row">
+        <div class="skill-row__name">OLTP vs OLAP</div>
+        <div class="skill-row__desc">OLTP (e.g., Salesforce) databases handle live operations — each write is a fixed type at a fixed position. OLAP (analytical) databases store historical data optimized for aggregated queries. Always ask which one you're querying before you optimize anything; the two behave very differently.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Structured (CSV, tables)</div>
+        <div class="skill-row__desc">Structured data lives in rows and columns — spreadsheets, SQL tables, CSV files. Every field has a fixed type and position. The easiest format to search and work with, and the one analysts do most of their analysis work in.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Semi-structured (JSON, Parquet)</div>
+        <div class="skill-row__desc">Semi-structured: flexible structure with key-value pairs. JSON (APIs, event logs), Parquet (the data-warehouse pivot format). Has fields and values, but the structure can vary between records — you cannot treat it like a CSV until you parse it.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Unstructured (docs, logs)</div>
+        <div class="skill-row__desc">Raw: free text, logs, images, PDFs. No fixed schema. Requires significant pre-processing — usually NLP or ML — before it becomes usable for analysis.</div>
+      </div>
+    </div>
+    <a class="skill-back" href="#mm">↑ Back to map</a>
+  </section>
+
+  <!-- ── 02 Analytics ───────────────────────────── -->
+  <section class="skill-section" id="stage-analytics">
+    <div class="skill-section__eyebrow">02 · ANALYTICS</div>
+    <h2 class="skill-section__title">Analytics</h2>
+    <p class="skill-section__lede">This is the core toolkit. SQL is the language of data — nothing else matters as much in day-to-day work. You don't need to be a data engineer, but you do need to be able to answer questions yourself without depending on others for every query.</p>
+    <div class="skill-list">
+      <div class="skill-row">
+        <div class="skill-row__name">SQL Fundamentals</div>
+        <div class="skill-row__desc">SELECT, FROM, WHERE, JOIN, GROUP BY, row aggregates — the core of analytics work. You cannot do this without it. Know it well and don't rely on someone else for every query.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Window Functions / CTEs</div>
+        <div class="skill-row__desc">Window functions calculate rankings, running totals, and moving averages without collapsing your data. CTEs (WITH clause) break complex queries into readable, sequential steps. Together they replace most subquery spaghetti.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Python (Pandas)</div>
+        <div class="skill-row__desc">Python specifically for loading and reshaping data. Not for ML pipelines. Pandas puts you one <code>read_csv()</code> away from a full DataFrame so you can quickly inspect it, then pass you to a much stronger position alongside familiar BI tooling.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Statistical Thinking</div>
+        <div class="skill-row__desc">Mean, median, distribution, correlation. SQL tells you what the data says; statistics helps you understand whether that answer is meaningful. Understanding variation prevents you from drawing too much insight from noise.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Power BI / Tableau</div>
+        <div class="skill-row__desc">Knowing how to build a dashboard and tell the underlying data story. The goal is decision-making findings, not just charts. Pick one tool and go deep — breadth here matters less than depth.</div>
+      </div>
+    </div>
+    <a class="skill-back" href="#mm">↑ Back to map</a>
+  </section>
+
+  <!-- ── 03 Data Platform ───────────────────────── -->
+  <section class="skill-section" id="stage-platform">
+    <div class="skill-section__eyebrow">03 · DATA PLATFORM</div>
+    <h2 class="skill-section__title">Data Platform</h2>
+    <p class="skill-section__lede">The cloud warehouses are where you will spend most of your time querying and building. You don't need to administer them — but knowing their architecture helps you write better queries and ask smarter questions of the engineers around you.</p>
+    <div class="skill-list">
+      <div class="skill-row">
+        <div class="skill-row__name">Snowflake</div>
+        <div class="skill-row__desc">A cloud data warehouse purpose-built for analytics. Separates storage and compute so teams can scale independently. The most common place BAs find themselves querying production data in enterprise environments.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Databricks</div>
+        <div class="skill-row__desc">A Lakehouse platform built on Apache Spark, purpose-built for data engineering and ML pipelines. Increasingly the engine behind enterprise data transformations — if your company has a large data science team, you will encounter it.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">BigQuery</div>
+        <div class="skill-row__desc">Google's serverless analytics warehouse. Pay-per-query pricing and native integration with GCP services. Often the entry point for teams already invested in Google Workspace or using Google Analytics data.</div>
+      </div>
+    </div>
+    <a class="skill-back" href="#mm">↑ Back to map</a>
+  </section>
+
+  <!-- ── 04 Data Modeling ───────────────────────── -->
+  <section class="skill-section" id="stage-modeling">
+    <div class="skill-section__eyebrow">04 · DATA MODELING</div>
+    <h2 class="skill-section__title">Data Modeling</h2>
+    <p class="skill-section__lede">Data modeling is how analysts and engineers agree on what the data means before it's built. Getting this wrong makes every downstream report inconsistent. Getting it right makes the warehouse easy to query for years.</p>
+    <div class="skill-list">
+      <div class="skill-row">
+        <div class="skill-row__name">Normalized vs Denormalized</div>
+        <div class="skill-row__desc">Normalization removes data redundancy by splitting tables; denormalization trades storage for query speed. Knowing when to apply which is a core design decision that determines how easy — or painful — your data is to query downstream.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Dimensional Modeling</div>
+        <div class="skill-row__desc">A technique for organizing data warehouses into fact tables (measurements) and dimension tables (context). It is the standard mental model for analytical databases — understanding this unlocks how real enterprise data is structured and why.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Star Schema</div>
+        <div class="skill-row__desc">The simplest dimensional model: one fact table in the centre, dimension tables radiating outward. Easy to query, easy to explain to stakeholders, and what most BI tools are optimized to consume.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Snowflake Schema</div>
+        <div class="skill-row__desc">An extension of the star schema where dimension tables are further normalized. More storage-efficient but more complex to query. Knowing when to choose one over the other separates junior data analysts from senior ones.</div>
+      </div>
+    </div>
+    <a class="skill-back" href="#mm">↑ Back to map</a>
+  </section>
+
+  <!-- ── 05 ETL & ELT ───────────────────────────── -->
+  <section class="skill-section" id="stage-etl">
+    <div class="skill-section__eyebrow">05 · ETL &amp; ELT</div>
+    <h2 class="skill-section__title">ETL &amp; ELT</h2>
+    <p class="skill-section__lede">Data doesn't arrive analysis-ready. Understanding how it moves — from source systems into the warehouse — helps you trace data quality issues, contribute to pipeline design conversations, and avoid requesting reports built on broken data.</p>
+    <div class="skill-list">
+      <div class="skill-row">
+        <div class="skill-row__name">dbt</div>
+        <div class="skill-row__desc">The de-facto tool for transforming raw data into analytics-ready models, in SQL. Version-controlled data transformations with built-in testing and documentation. If your team isn't using dbt, someone is spending time solving a problem it has already solved.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Azure Data Factory</div>
+        <div class="skill-row__desc">Microsoft's cloud ETL service for ingesting and moving data at scale. The standard connector between source systems and the warehouse in most enterprise Microsoft stacks. Knowing it means you can trace where data comes from without asking an engineer every time.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Airflow</div>
+        <div class="skill-row__desc">An orchestration platform that schedules and monitors data pipelines as code. When pipelines grow complex enough that "run this after that finishes" needs to be reliable and auditable, Airflow is the standard choice.</div>
+      </div>
+    </div>
+    <a class="skill-back" href="#mm">↑ Back to map</a>
+  </section>
+
+  <!-- ── 06 Data Governance ─────────────────────── -->
+  <section class="skill-section" id="stage-gov">
+    <div class="skill-section__eyebrow">06 · DATA GOVERNANCE</div>
+    <h2 class="skill-section__title">Data Governance</h2>
+    <p class="skill-section__lede">Trust is slow to build and fast to lose. Governance is the set of practices that keeps data trustworthy — who can access it, what it means, and how good it is. In enterprise environments, this is non-negotiable from day one.</p>
+    <div class="skill-list">
+      <div class="skill-row">
+        <div class="skill-row__name">MDM</div>
+        <div class="skill-row__desc">Master Data Management — the practice of creating a single, authoritative record for key business entities (customers, products, accounts). Without MDM, "customer count" returns a different number in every system, and every report becomes a negotiation.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Data Security &amp; Privacy</div>
+        <div class="skill-row__desc">Defining who can see what, how long sensitive data is retained, and how it is classified. GDPR, CCPA, and internal compliance policies all fall here. Non-negotiable in any regulated industry — and increasingly standard everywhere else.</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-row__name">Data Quality Framework</div>
+        <div class="skill-row__desc">The systematic process for measuring, monitoring, and improving data quality — completeness, accuracy, consistency, timeliness. Bad data is the most common reason analytics projects lose stakeholder trust long before the insight is ever acted on.</div>
+      </div>
+    </div>
+    <a class="skill-back" href="#mm">↑ Back to map</a>
+  </section>
+
   <footer class="post-foot">
     <div class="post-foot__line"></div>
     <div class="post-foot__row">
@@ -421,6 +642,20 @@
   [360,427,493,560].forEach(y    => c(1220,460, 1260,y, 'oklch(0.58 0.09 305)', 1, 0.4));
   [658,740,822].forEach(y        => c(1220,740, 1260,y, 'oklch(0.58 0.09 305)', 1, 0.4));
 })();
+
+function focusBranch(branch) {
+  document.querySelectorAll('.mn, .sn').forEach(el => {
+    if (!branch) { el.classList.remove('is-active','is-dim'); return; }
+    const b = el.dataset.branch;
+    if (b === branch) { el.classList.add('is-active'); el.classList.remove('is-dim'); }
+    else              { el.classList.add('is-dim');    el.classList.remove('is-active'); }
+  });
+  if (branch) {
+    const map = { basics:'stage-basics', analytics:'stage-analytics', platform:'stage-platform', modeling:'stage-modeling', etl:'stage-etl', gov:'stage-gov' };
+    const target = document.getElementById(map[branch]);
+    if (target) target.scrollIntoView({ behavior:'smooth', block:'start' });
+  }
+}
 
 const TOTAL = 22;
 const STORE_KEY = 'ba-to-data-done';

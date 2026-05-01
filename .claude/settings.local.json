@@ -29,7 +29,10 @@
       "WebFetch(domain:127.0.0.1)",
       "Bash(curl -s http://127.0.0.1:4000/)",
       "Bash(curl -s http://127.0.0.1:4000/2026/04/19/ba-to-data-analyst-skills-roadmap.html)",
-      "Bash(curl -s http://127.0.0.1:4000/blog/)"
+      "Bash(curl -s http://127.0.0.1:4000/blog/)",
+      "Bash(jekyll build *)",
+      "Bash(gem install *)",
+      "Bash(gem --version)"
     ]
   }
 }

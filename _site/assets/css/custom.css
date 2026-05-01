@@ -40,7 +40,7 @@ img { display: block; max-width: 100%; }
 
 /* --- Typography --- */
 .font-display {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 /* --- Layout wrapper --- */
@@ -105,8 +105,9 @@ img { display: block; max-width: 100%; }
 }
 
 .nav-logo {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 16px;
+  font-weight: 700;
   color: var(--text);
   white-space: nowrap;
 }
@@ -242,7 +243,7 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-name {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(56px, 8.5vw, 88px);
   line-height: 1.05;
   color: var(--text);
@@ -375,7 +376,7 @@ img { display: block; max-width: 100%; }
 }
 
 .stat-num {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 64px;
   line-height: 1;
   color: var(--text);
@@ -529,7 +530,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-weight: 700;
   color: #fff;
@@ -537,7 +538,7 @@ img { display: block; max-width: 100%; }
 }
 
 .product-name {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 20px;
   color: var(--text);
   margin: 0 0 8px 0;
